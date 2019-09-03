@@ -1,11 +1,19 @@
 import React from 'react';
 
 const Box = () => {
-  let wid = 10;
-  let hei = 20;
+  const boxWidth=40,
+    boxHeight=10;
+  const shelfWidth=500,
+    shelfHeight=500;
+  const boxLocationX=0,
+    boxLocationY=490;
 
-  return (<Rect width="${wid}" height="${hei}" x="50" y="20" />);
-}
+  return (
+    <svg width={shelfWidth} height={shelfHeight}>
+      <rect x={boxLocationX} y={boxLocationY} width={boxWidth} height={boxHeight}/>
+    </svg>
+  )
+};
 
 
 export default Box;
