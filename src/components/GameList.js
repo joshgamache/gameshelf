@@ -3,7 +3,7 @@ import GameDisplay from './GameDisplay.js';
 
 const GameList = ({games}) => {
   return (
-    <div>
+    <div className = "columns is-multiline">
       {
         games.map((game, i) => {
           return ( <

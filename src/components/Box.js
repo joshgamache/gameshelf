@@ -1,16 +1,12 @@
 import React from 'react';
 
-const Box = () => {
-  const boxWidth=40,
-    boxHeight=10;
-  const shelfWidth=500,
-    shelfHeight=500;
+const Box = (props) => {
   const boxLocationX=0,
-    boxLocationY=490;
+    boxLocationY=0;
 
   return (
-    <svg width={shelfWidth} height={shelfHeight}>
-      <rect x={boxLocationX} y={boxLocationY} width={boxWidth} height={boxHeight}/>
+    <svg>
+      <rect x={boxLocationX} y={boxLocationY} width={props.dimensions.z} height={props.dimensions.x}/>
     </svg>
   )
 };

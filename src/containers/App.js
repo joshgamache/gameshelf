@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Box from '../components/Box.js';
 import './App.css';
 import '../App.sass';
-import Searchbox from '../components/Searchbox.js';
-import GameDisplay from '../components/GameDisplay.js';
+// import Searchbox from '../components/Searchbox.js';
 import GameList from '../components/GameList.js';
 // import ministub from '../assets/ministub.json';
 import games from "../assets/stubData.json"
+import StubList from "../components/selectionTestStub";
 
 class App extends Component {
   constructor() {
@@ -32,7 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-          <GameList games={gameList}/>
+          <StubList games={gameList}/>
           {/* <Searchbox searchChange={this.onSearchChange}/> */}
           {/* shelf display, contains boxes */}
           {/* Game list, contains single game display */}
