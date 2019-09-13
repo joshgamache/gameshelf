@@ -1,17 +1,20 @@
 import React from "react";
 
-const stubList = (allGames) => {
-  return (
-    <div>
-      <ul>
-        {
-          allGames.map((keyName, i) => {
-            return(<li>{ allGames[keyName].name }</li>);
-          })
-        }
-      </ul>
-    </div>
-  );
+//TODO: clean up this code. I'm pretty sure I'm doing something wrong here.
+class stubList extends React.Component {
+  render() {
+    return (
+      <div>
+        <ul>
+          {
+            Object.keys(this.props.games).map((keyName, i) => {
+              return(<button onClick={() => this.props.onClick(this.props.games[keyName].id)} className="button">{this.props.games[keyName].name}</button>);
+            })
+          }
+        </ul>
+      </div>
+    );
+  }
 }
 
 export default stubList;

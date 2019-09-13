@@ -13,11 +13,13 @@ class App extends Component {
     this.state = {
       searchField: '',
       gameList: [],
+      allGames: [],
+      newGame: {}
     }
   }
 
   componentDidMount() {
-    this.setState({gameList: games.games});
+    this.setState({allGames: games.games});
   }
 
   onSearchChange = (event) => {
@@ -26,15 +28,30 @@ class App extends Component {
     });
   }
 
+//TODO: I'm pretty sure this is the wrong way to do this...but it works for now. FIX IT!
+  toAddClick = (keyID) => {
+    const newGameList = this.state.gameList.slice();
+    newGameList.push(this.state.allGames.find(({id}) => id === keyID));
+
+    this.setState({
+      gameList: newGameList
+    })
+  }
+
   render() {
-    const {gameList} = this.state;
+    const {allGames, gameList} = this.state;
     return (
       <div className="App">
         <div className="container">
-          <StubList games={gameList}/>
+          <StubList games={allGames} onClick={(gameKeyId) => this.toAddClick(gameKeyId)}/>
           {/* <Searchbox searchChange={this.onSearchChange}/> */}
           {/* shelf display, contains boxes */}
           {/* Game list, contains single game display */}
+        </div>
+        <div className="section">
+          <div className="container">
+            <GameList games={gameList}/>
+          </div>
         </div>
       </div>
     );

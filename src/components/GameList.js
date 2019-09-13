@@ -7,7 +7,7 @@ const GameList = ({games}) => {
       {
         games.map((game, i) => {
           return ( <
-            GameDisplay key = { games[i].id }
+            GameDisplay key = { i }
             id = { games[i].id }
             name = { games[i].name }
             image = { games[i].image_url }
