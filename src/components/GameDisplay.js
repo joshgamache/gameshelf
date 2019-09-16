@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from './Box';
+import GameBox from './GameBox';
 
 const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
   const dimensions = {
@@ -24,7 +24,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
               </p>
             </div>
           </div>
-          <Box dimensions = {dimensions}/>
+          <GameBox dimensions = {dimensions}/>
         </article>
         {/* A block containing */}
           {/* Game image */}
