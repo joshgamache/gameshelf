@@ -1,5 +1,5 @@
 import React from 'react'
-import Box from './GameBox'
+import GameBox from './GameBox'
 
 const SingleShelf = (props) => {
   const boxDimensions = {
@@ -44,31 +44,29 @@ const SingleShelf = (props) => {
 // insert multiple boxes into canvas
 
   return(
+    <div>
+      {/* <svg width={shelfDimensions.x} height={shelfDimensions.y}  style={{outline: '4px solid black'}}> */}
+        <GameBox dimensions={sgDim} />
+        <GameBox dimensions={eDim} />
+      {/* </svg> */}
+    </div>
+
     // <div>
-    //   <svg width={shelfDimensions.x} height={shelfDimensions.y}  style={{outline: '4px solid black'}}>
-    //     <rect x="0" y="0" width={sgDim.x} height={sgDim.y} stroke-width="2" stroke="blue" fill="none" strokeOpacity="0.5"/>
-    //     <rect x={sgDim.x} y="0" width={eDim.x} height={eDim.y} stroke-width="2" stroke="green" fill="none" strokeOpacity="0.5"/>
-    //     <rect x="0" y="0" width={sgDim.x} height={sgDim.y} stroke-width="2" stroke="blue" fill="none" strokeOpacity="0.5"/>
+    //   <svg width={shelfDimensions.x} height={shelfDimensions.y} style={{outline: '4px solid black'}}>
+    //     {
+    //       binStub[0].map((bin, i) => {
+    //       return (<rect x={bin.x} y={bin.y - bin.h} width={bin.w} height={bin.h} stroke-width="2" stroke="blue" fill="none" strokeOpacity="0.5" />);
+    //       })
+    //     }
+    //   </svg>
+    //   <svg width={shelfDimensions.x} height={shelfDimensions.y} style={{outline: '4px solid black'}}>
+    //     {
+    //       binStub[1].map((bin, i) => {
+    //       return (<rect x={bin.x} y={bin.y - bin.h} width={bin.w} height={bin.h} stroke-width="2" stroke="blue" fill="none" strokeOpacity="0.5" />);
+    //       })
+    //     }
     //   </svg>
     // </div>
-
-    <div>
-      <svg width={shelfDimensions.x} height={shelfDimensions.y} style={{outline: '4px solid black'}}>
-        {
-          binStub[0].map((bin, i) => {
-          return (<rect x={bin.x} y={bin.y - bin.h} width={bin.w} height={bin.h} stroke-width="2" stroke="blue" fill="none" strokeOpacity="0.5" />);
-          })
-        }
-      </svg>
-      <svg width={shelfDimensions.x} height={shelfDimensions.y} style={{outline: '4px solid black'}}>
-        {
-          binStub[1].map((bin, i) => {
-          return (<rect x={bin.x} y={bin.y - bin.h} width={bin.w} height={bin.h} stroke-width="2" stroke="blue" fill="none" strokeOpacity="0.5" />);
-          })
-        }
-      </svg>
-
-    </div>
   )
   // return <div><Box dimensions = {boxDimensions} /><Box dimensions = {boxDimensions} /></div>
 };
