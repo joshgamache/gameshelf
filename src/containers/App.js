@@ -7,6 +7,8 @@ import GameList from '../components/GameList.js';
 import games from "../assets/stubData.json"
 import StubList from "../components/selectionTestStub";
 import SingleShelf from "../components/SingleShelf";
+import ShelfBay from "../components/ShelfBay";
+
 
 class App extends Component {
   constructor() {
@@ -51,14 +53,20 @@ class App extends Component {
         </div>
         <div className="section">
           <div className="container">
-            <GameList games={gameList}/>
+              <GameList games={gameList}/>
           </div>
         </div>
         <div className="section">
           <div className="container">
-            <SingleShelf />
+            <ShelfBay />
           </div>
         </div>
+
+        {/* <div className="section">
+          <div className="container">
+            <SingleShelf />
+          </div>
+        </div> */}
       </div>
     );
   }

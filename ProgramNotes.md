@@ -1,3 +1,19 @@
+Overall setup
+
+TODO: try and build shelves as flexbox components rather than SVG
+
+
+
+
+
+
+
+
+## Unused code
+
+### SingleShelf.js (SVG based)
+The initial implementation of SingleShelf, which originally attempted to build the shelf using a SVG canvas. 
+```
 import React from 'react'
 import GameBox from './GameBox'
 
@@ -69,3 +85,4 @@ const SingleShelf = (props) => {
 };
 
 export default SingleShelf;
+```

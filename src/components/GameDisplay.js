@@ -24,7 +24,12 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
               </p>
             </div>
           </div>
-          <GameBox dimensions = {dimensions}/>
+          <svg height="48" viewBox="0 0 100 100">
+            <rect height="1000" width="1000" fill="SkyBlue"/>
+            <svg viewBox={"0 0 330 330"} >
+              <GameBox dimensions = {dimensions}/>
+            </svg>
+          </svg>
         </article>
         {/* A block containing */}
           {/* Game image */}
