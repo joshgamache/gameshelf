@@ -1,5 +1,10 @@
 import React from 'react';
-import GameBox from './GameBox';
+
+// TODO:
+// Replace local variables with incoming props.
+// Will need:
+// - Dimensions of the individual shelf (w, h)
+// - An array of games to put on that shelf (name, x, y, z, color)
 
 const ShelfBay = () => {
   const shelfDimensions = {
@@ -7,24 +12,88 @@ const ShelfBay = () => {
     "h" : 330,
   }
 
-  const box1stub = {
+  const sg = {
     "name" : "Sushi Go!",
-    "x" : 106.68,
-    "y" : 147.32,
-    "z" : 38.1,
+    "y" : 106.68,
+    "z" : 147.32,
+    "x" : 38.1,
+    "color" : "red"
   }
 
-  const box2stub = {
+  const ctan = {
     "name" : "Catan",
-    "x" : 200.66,
-    "y" : 299.72,
-    "z" : 299.72
+    "x" : 294.64,
+    "y" : 241.3,
+    "z" : 76.2,
+    "color" : "blue"
   }
+
+  const cnames = {
+    "name" : "Codenames",
+    "x" : 71.12,
+    "y" : 160.02,
+    "z" : 228.6,
+    "color" : "orange"
+  }
+
+  const cob = {
+    "name" : "Castles of Burgundy",
+    "x" : 309.88,
+    "y" : 215.9,
+    "z" : 71.12,
+    "color" : "brown"
+  }
+
+  const NF = {
+    "name" : "Near and Far",
+    "x" : 292.1,
+    "y" : 71.12,
+    "z" : 292.1,
+    "color" : "yellow"
+  }
+
+  const gameBoxList = [sg, cnames, NF, cob,ctan];
+
+  const builtShelfList = gameBoxList.map((game, i) => {
+    const sortedShapeArray = [game.x, game.y, game.z].sort((a, b) => a - b);
+
+    const styleset = {
+      display: "flex", 
+      width: sortedShapeArray[0], 
+      height: sortedShapeArray[1], 
+      color:"white", 
+      background: game.color, 
+      alignItems: "center", 
+      justifyContent: "center"
+    }
+    
+    return (
+      // <GameDisplay key = {i}
+      //   id = {game.id}
+      //   name = {game.name}
+      //   image = {game.image_url}
+      //   size_x = {game.size_height}
+      //   size_y = {game.size_width}
+      //   size_z = {game.size_depth}
+      // />
+      <li style={styleset}><span style={{transform: "rotate(90deg)"}}>{game.name}</span></li>
+    )
+  });
+
+  const shelfstyleset = {
+    display: "flex", 
+    width: shelfDimensions.w, 
+    height: shelfDimensions.h, 
+    flexWrap: "wrap-reverse", 
+    alignContent: "flex-start", 
+    alignItems: "flex-start", 
+    background: "LightGrey"
+  }
+
 
   return (
-    <ul style={{display: "flex", width: shelfDimensions.w, height: shelfDimensions.h, flexWrap: "wrap-reverse", alignContent: "flex-start", alignItems: "flex-start", background: "grey" }}>
-      <li style={{display: "flex", width: box1stub.z, height: box1stub.x, color:"white", background: "red", alignItems: "center", justifyContent: "center"}}><span style={{transform: "rotate(90deg)"}}>{box1stub.name}</span></li>
-      <li style={{display: "flex", width: box2stub.x, height: box2stub.y, color:"white", background: "green", alignItems: "center", justifyContent: "center"}}><span style={{transform: "rotate(90deg)"}}>{box2stub.name}</span></li>
+    <ul style={shelfstyleset}>
+      {builtShelfList}
     </ul>
   )
 }
