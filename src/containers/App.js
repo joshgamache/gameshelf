@@ -8,6 +8,7 @@ import games from "../assets/stubData.json"
 import StubList from "../components/selectionTestStub";
 import SingleShelf from "../components/SingleShelf";
 import ShelfBay from "../components/ShelfBay";
+import GameShelf from "../components/GameShelf";
 
 
 class App extends Component {
@@ -58,7 +59,7 @@ class App extends Component {
         </div>
         <div className="section">
           <div className="container">
-            <ShelfBay />
+            <GameShelf />
           </div>
         </div>
 
