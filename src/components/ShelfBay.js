@@ -6,10 +6,10 @@ import React from 'react';
 // - Dimensions of the individual shelf (w, h)
 // - An array of games to put on that shelf (name, x, y, z, color)
 
-const ShelfBay = () => {
+const ShelfBay = (props) => {
   const shelfDimensions = {
-    "w" : 330,
-    "h" : 330,
+    "w" : props.individualShelfArea.individualShelfWidth,
+    "h" : props.individualShelfArea.individualShelfHeight,
   }
 
   const sg = {
@@ -52,7 +52,7 @@ const ShelfBay = () => {
     "color" : "yellow"
   }
 
-  const gameBoxList = [sg, cnames, NF, cob,ctan];
+  const gameBoxList = [sg, sg, sg];
 
   const builtShelfList = gameBoxList.map((game, i) => {
     const sortedShapeArray = [game.x, game.y, game.z].sort((a, b) => a - b);
@@ -68,28 +68,19 @@ const ShelfBay = () => {
     }
     
     return (
-      // <GameDisplay key = {i}
-      //   id = {game.id}
-      //   name = {game.name}
-      //   image = {game.image_url}
-      //   size_x = {game.size_height}
-      //   size_y = {game.size_width}
-      //   size_z = {game.size_depth}
-      // />
-      <li style={styleset}><span style={{transform: "rotate(90deg)"}}>{game.name}</span></li>
+      <li key={game.name} style={styleset}><span style={{transform: "rotate(90deg)"}}>{game.name}</span></li>
     )
   });
 
   const shelfstyleset = {
     display: "flex", 
-    width: shelfDimensions.w, 
-    height: shelfDimensions.h, 
+    width: `${shelfDimensions.w}px`, 
+    height: `${shelfDimensions.h}px`, 
     flexWrap: "wrap-reverse", 
     alignContent: "flex-start", 
     alignItems: "flex-start", 
     background: "LightGrey"
   }
-
 
   return (
     <ul style={shelfstyleset}>

@@ -6,8 +6,8 @@ import GameList from '../components/GameList.js';
 // import ministub from '../assets/ministub.json';
 import games from "../assets/stubData.json"
 import StubList from "../components/selectionTestStub";
-import SingleShelf from "../components/SingleShelf";
-import ShelfBay from "../components/ShelfBay";
+// import SingleShelf from "../components/SingleShelf";
+// import ShelfBay from "../components/ShelfBay";
 import GameShelf from "../components/GameShelf";
 
 

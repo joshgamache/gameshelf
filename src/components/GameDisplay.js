@@ -2,7 +2,7 @@ import React from 'react';
 import GameBox from './GameBox';
 
 const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
-  const dimensions = {
+  const dims = {
     "x" : size_x,
     "y" : size_y,
     "z" : size_z,
@@ -27,7 +27,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
           <svg height="48" viewBox="0 0 100 100">
             <rect height="1000" width="1000" fill="SkyBlue"/>
             <svg viewBox={"0 0 330 330"} >
-              <GameBox dimensions = {dimensions}/>
+              <GameBox dimensions = {dims}/>
             </svg>
           </svg>
         </article>
