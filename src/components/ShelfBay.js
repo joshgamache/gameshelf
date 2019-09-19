@@ -52,10 +52,13 @@ const ShelfBay = (props) => {
     "color" : "yellow"
   }
 
-  const gameBoxList = [sg, sg, sg];
+  const gameBoxList = [sg, sg, cob, cob];
+
 
   const builtShelfList = gameBoxList.map((game, i) => {
     const sortedShapeArray = [game.x, game.y, game.z].sort((a, b) => a - b);
+
+    let idKey = `"${i}"`;
 
     const styleset = {
       display: "flex", 
@@ -66,9 +69,8 @@ const ShelfBay = (props) => {
       alignItems: "center", 
       justifyContent: "center"
     }
-    
     return (
-      <li key={game.name} style={styleset}><span style={{transform: "rotate(90deg)"}}>{game.name}</span></li>
+      <li key={idKey} style={styleset}><span style={{transform: "rotate(90deg)"}}>{game.name}</span></li>
     )
   });
 

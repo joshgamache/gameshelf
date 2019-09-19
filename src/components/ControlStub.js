@@ -8,8 +8,8 @@ class ControlStub extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(e) {
-    this.props.onFormChange(e.target);
+  handleChange(event) {
+    this.props.onFormChange(event.target);
   }
 
   // Shelf width

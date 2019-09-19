@@ -11,6 +11,22 @@ TODO: try and build shelves as flexbox components rather than SVG
 
 ## Unused code
 
+### Colsure for unique ids in lists
+
+```
+  const first = () => {
+    let num = 0;
+    const second = () => {
+      num++;
+      return num;
+    }
+    return second;
+  }
+
+  let incrementNumber = first();
+```
+
+
 ### SingleShelf.js (SVG based)
 The initial implementation of SingleShelf, which originally attempted to build the shelf using a SVG canvas. 
 ```

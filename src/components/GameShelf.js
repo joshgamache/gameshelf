@@ -14,8 +14,8 @@ class GameShelf extends React.Component {
     this.state = {
       shelfWidth : 330,
       shelfHeight : 330,
-      shelfColumns : 3,
-      shelfRows : 3,
+      shelfColumns : 1,
+      shelfRows : 1,
     };
 
     this.handleFormChange = this.handleFormChange.bind(this);
@@ -55,7 +55,7 @@ class GameShelf extends React.Component {
       const shelfArray = [];
 
       for (let i=0; i<numberOfShelvesTotal; i++) {
-        shelfArray.push(<li id={i}><ShelfBay individualShelfArea={FullShelfObject} /></li>)
+        shelfArray.push(<li key={i}><ShelfBay individualShelfArea={FullShelfObject} /></li>)
       }
     
 
