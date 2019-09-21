@@ -1,5 +1,7 @@
 import React from 'react';
-import { green } from 'ansi-colors';
+// import Splashy from 'splashy';
+
+// const splashy = Splashy;
 
 // TODO:
 // Replace local variables with incoming props.
@@ -55,11 +57,24 @@ const ShelfBay = (props) => {
 
   const gameBoxList = props.gamesToAddToShelf;
 
+  (async () => {
+    // const got = require('got')
+   
+    // const url = 'https://kikobeats.com/images/avatar.jpg'
+    // const { body } = await got(url, { encoding: null })
+    // const palette = await splashy(body)
+   
+    // console.log(palette)
+  })()
 
   const builtShelfList = gameBoxList.map((game, i) => {
     const sortedShapeArray = [game.size_depth, game.size_width, game.size_height].sort((a, b) => a - b);
 
     let idKey = `"${i}"`;
+
+    // const { extractedColors, loading, error } = Palette.usePalette(game.image_url);
+
+    // console.log(game.image_url)
 
     const styleset = {
       display: "flex", 
