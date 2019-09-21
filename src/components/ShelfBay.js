@@ -1,4 +1,5 @@
 import React from 'react';
+import { green } from 'ansi-colors';
 
 // TODO:
 // Replace local variables with incoming props.
@@ -52,11 +53,11 @@ const ShelfBay = (props) => {
     "color" : "yellow"
   }
 
-  const gameBoxList = [sg, sg, cob, cob];
+  const gameBoxList = props.gamesToAddToShelf;
 
 
   const builtShelfList = gameBoxList.map((game, i) => {
-    const sortedShapeArray = [game.x, game.y, game.z].sort((a, b) => a - b);
+    const sortedShapeArray = [game.size_depth, game.size_width, game.size_height].sort((a, b) => a - b);
 
     let idKey = `"${i}"`;
 
@@ -65,7 +66,7 @@ const ShelfBay = (props) => {
       width: sortedShapeArray[0], 
       height: sortedShapeArray[1], 
       color:"white", 
-      background: game.color, 
+      background: "green", 
       alignItems: "center", 
       justifyContent: "center"
     }

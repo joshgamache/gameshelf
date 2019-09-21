@@ -1,6 +1,7 @@
 import React from "react";
 import ShelfBay from "./ShelfBay"
 import ControlStub from "./ControlStub"
+import GameList from "./GameList";
 
 // TODO:
 // Need to pass in props
@@ -55,7 +56,7 @@ class GameShelf extends React.Component {
       const shelfArray = [];
 
       for (let i=0; i<numberOfShelvesTotal; i++) {
-        shelfArray.push(<li key={i}><ShelfBay individualShelfArea={FullShelfObject} /></li>)
+        shelfArray.push(<li key={i}><ShelfBay individualShelfArea={FullShelfObject} gamesToAddToShelf={this.props.games}/></li>)
       }
     
 

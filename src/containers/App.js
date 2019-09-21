@@ -59,7 +59,7 @@ class App extends Component {
         </div>
         <div className="section">
           <div className="container">
-            <GameShelf />
+            <GameShelf games={gameList}/>
           </div>
         </div>
 
