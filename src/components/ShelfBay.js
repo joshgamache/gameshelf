@@ -1,5 +1,8 @@
 import React from 'react';
+import * as Vibrant from 'node-vibrant'
+
 // import Splashy from 'splashy';
+
 
 // const splashy = Splashy;
 
@@ -8,8 +11,15 @@ import React from 'react';
 // Will need:
 // - Dimensions of the individual shelf (w, h)
 // - An array of games to put on that shelf (name, x, y, z, color)
+const determineBoxColour = (imgURL) => {
+  let v = new Vibrant(imgURL)
+  v.getPalette().then((palette) => palette.Vibrant.rgb)
+}
 
 const ShelfBay = (props) => {
+  let boxRGB = determineBoxColour("https://images.pexels.com/photos/459793/pexels-photo-459793.jpeg");
+  // // let boxRGB = Vibrant.from("https://images.pexels.com/photos/459793/pexels-photo-459793.jpeg").getPalette((err, palette) => palette)
+  // // console.log(boxRGB)
   const shelfDimensions = {
     "w" : props.individualShelfArea.individualShelfWidth,
     "h" : props.individualShelfArea.individualShelfHeight,
