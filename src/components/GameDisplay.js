@@ -1,5 +1,9 @@
 import React from 'react';
 import GameBox from './GameBox';
+// import {Palette} from 'react-palette'
+// import { usePalette } from 'react-palette'
+import ImagePalette from 'react-image-palette'
+
 
 const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
   const dims = {
@@ -7,7 +11,22 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
     "y" : size_y,
     "z" : size_z,
   }
+
+  // const SomeComponent = ({ image }) => (
+  //   <ImagePalette image={image} crossOrigin={true}>
+  //     {({ backgroundColor, color, alternativeColor }) => (
+  //       <div style={{ backgroundColor, color }}>
+  //         This div has been themed based on
+  //         <span style={{ color: alternativeColor }}>a box image</span>
+  //       </div>
+  //     )}
+  //   </ImagePalette>
+  // )
   
+
+// Pulls data from image to determine vibrant color. Gives CORS errors, need to fix.
+  // const { data } = usePalette(image);
+// TODO: Streamline colour finding process. Maybe have a helper perform this when games are added to list?
   return(
     <div className = "column is-half">
       <div className = "box is-fullwidth is-outlined game-container">
@@ -24,12 +43,16 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
               </p>
             </div>
           </div>
-          <svg height="48" viewBox="0 0 100 100">
-            <rect height="1000" width="1000" fill="SkyBlue"/>
-            <svg viewBox={"0 0 330 330"} >
-              <GameBox dimensions = {dims}/>
-            </svg>
-          </svg>
+          <ImagePalette image={image} crossOrigin>
+            {({ backgroundColor, color }) => (
+              <svg height="48" viewBox="0 0 100 100">
+                <rect height="1000" width="1000" fill={backgroundColor} />
+                <svg viewBox={"0 0 330 330"} >
+                  <GameBox dimensions = {dims} boxColor = {color} />
+                </svg>
+              </svg>
+            )}
+          </ImagePalette>
         </article>
         {/* A block containing */}
           {/* Game image */}

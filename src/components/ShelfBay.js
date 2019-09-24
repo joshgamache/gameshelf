@@ -1,5 +1,6 @@
 import React from 'react';
-import {Palette} from 'react-palette'
+// import {Palette} from 'react-palette'
+import ImagePalette from 'react-image-palette'
 
 
 // TODO:
@@ -62,31 +63,32 @@ const ShelfBay = (props) => {
 
   const gameBoxList = props.gamesToAddToShelf;
 
+  const getColors = (urlForImage) => {
+    
+  }
+
   const builtShelfList = gameBoxList.map((game, i) => {
     const sortedShapeArray = [game.size_depth, game.size_width, game.size_height].sort((a, b) => a - b);
 
     let idKey = `"${i}"`;
 
-
     const styleset = {
       display: "flex",
       width: sortedShapeArray[0],
       height: sortedShapeArray[1],
-      color:"white",
-      background: "green",
+      // color:"white",
+      // background: "red",
       alignItems: "center",
       justifyContent: "center"
     }
     return (// TODO: handle image loading before executing palette
-      <li key={idKey} style={styleset}><span style={{transform: "rotate(90deg)"}}>{game.name}</span>
-      <Palette src="https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254990668-51CIdEFrKKL.jpg">
-      {({ data, loading, error }) => (
-    <div style={{ color: data.vibrant }}>
-      {console.log(data.vibrant)}Text with the vibrant color{console.log(error)}
-    </div>
-  )}
-</Palette>
-</li>
+      // I'm certainly not doing the styles right either
+      <ImagePalette image={game.image_url} crossOrigin>
+        {({ backgroundColor, color, alternativeColor }) => (
+            <li key={idKey} style={{display: "flex", width: sortedShapeArray[0], height: sortedShapeArray[1],alignItems: "center", justifyContent: "center",background: backgroundColor, borderWidth: "1px", borderStyle: "solid", borderColor: alternativeColor}}><span style={{transform: "rotate(90deg)", color: color}} className="title is-6">{game.name}</span>
+            </li>
+        )}
+      </ImagePalette>
     )
   });
 
