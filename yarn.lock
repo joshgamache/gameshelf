@@ -6364,6 +6364,16 @@ lodash._reinterpolate@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
+lodash.camelcase@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
+
+lodash.invoke@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/lodash.invoke/-/lodash.invoke-4.5.2.tgz#01ca07e470903affa3ffec7ad2ed22723d2f697c"
+  integrity sha1-AcoH5HCQOv+j/+x60u0icj0vaXw=
+
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -6972,7 +6982,7 @@ node-sass@^4.12.0:
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
 
-node-vibrant@^3.1.4, node-vibrant@~3.1.4:
+node-vibrant@^3.1.3:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/node-vibrant/-/node-vibrant-3.1.4.tgz#6d3ec01bb5e3e45f05cd6d81e1ed7da3d429f594"
   integrity sha512-6z33ItA+hKW96kV/qRxxJraHlLacB0vlGW8QKKbYYIiMs0pZxeMNl2iEnR6ZepqD86PnmWCnKGHxzndBaZoc8g==
@@ -8631,6 +8641,15 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
 
+react-palette@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-palette/-/react-palette-1.0.1.tgz#2c3299713e7ecf2f0ffa0308f84929bdffb84c75"
+  integrity sha512-igMi8VpccBUnwcTQAZsIqwg54x1OUJZsv3NBBC2X7NAVn7gG7APXj14KOzo+Kzv4ZyTSmW5Ayq0B2coQyH5urQ==
+  dependencies:
+    lodash.camelcase "^4.3.0"
+    lodash.invoke "^4.5.2"
+    node-vibrant "^3.1.3"
+
 react-scripts@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.1.1.tgz#1796bc92447f3a2d3072c3b71ca99f88d099c48d"
@@ -9566,13 +9585,6 @@ spdy@^4.0.0:
     http-deceiver "^1.2.7"
     select-hose "^2.0.0"
     spdy-transport "^3.0.0"
-
-splashy@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/splashy/-/splashy-5.0.1.tgz#b42a2e9ad2c7d02d7f3ff2d261dd444b86d2b72a"
-  integrity sha512-v7b7CDEDaOH3ZmX1L6O+hppM4qjN8/pDpett6stuGtY3l6uKi0nTcfm67tJkRkrXUmPerJhnf+T8544ltlT9vQ==
-  dependencies:
-    node-vibrant "~3.1.4"
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
