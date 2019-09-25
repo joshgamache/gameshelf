@@ -72,21 +72,12 @@ const ShelfBay = (props) => {
 
     let idKey = `"${i}"`;
 
-    const styleset = {
-      display: "flex",
-      width: sortedShapeArray[0],
-      height: sortedShapeArray[1],
-      // color:"white",
-      // background: "red",
-      alignItems: "center",
-      justifyContent: "center"
-    }
     return (// TODO: handle image loading before executing palette
       // I'm certainly not doing the styles right either
       <ImagePalette image={game.image_url} crossOrigin>
         {({ backgroundColor, color, alternativeColor }) => (
-            <li key={idKey} style={{display: "flex", width: sortedShapeArray[0], height: sortedShapeArray[1],alignItems: "center", justifyContent: "center",background: backgroundColor, borderWidth: "1px", borderStyle: "solid", borderColor: alternativeColor}}><span style={{transform: "rotate(90deg)", color: color}} className="title is-6">{game.name}</span>
-            </li>
+            <li key={idKey} className="individual-board-game-box" style={{ width: sortedShapeArray[0], height: sortedShapeArray[1], background: backgroundColor, borderWidth: "1px", borderStyle: "solid", borderColor: alternativeColor}}><span style={{color: color}} className="gameBoxName title is-4">{game.name}</span>
+            </li> 
         )}
       </ImagePalette>
     )

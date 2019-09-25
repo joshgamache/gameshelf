@@ -10,3 +10,16 @@
 .game-container {
   height: 88px;
 }
+
+.individual-board-game-box {
+  display: "flex";
+  padding: 10px 2px 2px 2px;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+}
+
+.gameBoxName {
+  writing-mode: vertical-rl;
+  text-align: left;
+}
