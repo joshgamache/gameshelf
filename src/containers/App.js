@@ -3,7 +3,6 @@ import './App.css';
 import '../App.sass';
 import Searchbox from '../components/Searchbox.js';
 import GameList from '../components/GameList.js';
-// import ministub from '../assets/ministub.json';
 import games from "../assets/stubData.json"
 import StubList from "../components/selectionTestStub";
 // import SingleShelf from "../components/SingleShelf";
@@ -21,6 +20,7 @@ class App extends Component {
       gameList: [],
       allGames: [],
       newGame: {},
+      searchResults: [],
     }
   }
 
@@ -44,6 +44,12 @@ class App extends Component {
     })
   }
 
+  searchBGAapi = (searchTerm) => {
+    //fetch the search results from BoardGame Atlas, return an array of names and keys. 
+    const searchByName = searchURI + "?name=" + searchTerm;
+    
+  }
+
   render() {
     const {allGames, gameList} = this.state;
     return (
@@ -53,7 +59,8 @@ class App extends Component {
             <Searchbox />
           </div>
           <div className="container">
-            <GameDisplay />
+            <h4>Search results</h4>
+            <StubList games={this.state.searchResults} onClick={(gameKeyId) => this.toAddClick(gameKeyId)} />
           </div>
         </div>
         <div className="container">
