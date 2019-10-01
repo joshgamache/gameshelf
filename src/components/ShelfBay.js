@@ -32,9 +32,15 @@ const ShelfBay = (props) => {
 
     let idKey = `"${i}"`;
 
+    const defaultPalette = {
+      backgroundColor: "hsl(204, 86%, 53%)",
+      color: "#fff",
+      alternativeColor: "hsl(171, 100%, 41%)",
+    }
+
     return (// TODO: handle image loading before executing palette
       // I'm certainly not doing the styles right either
-      <ImagePalette image={game.image_url} crossOrigin>
+      <ImagePalette image={game.image_url} crossOrigin="anonymous" defaults={defaultPalette}>
         {({ backgroundColor, color, alternativeColor }) => (
             <li key={idKey} className="individual-board-game-box" style={{ width: sortedShapeArray[0], height: sortedShapeArray[1], background: backgroundColor, borderWidth: "1px", borderStyle: "solid", borderColor: alternativeColor}}><span style={{color: color}} className="gameBoxName title is-4">{game.name}</span>
             </li> 

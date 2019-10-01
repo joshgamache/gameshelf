@@ -12,6 +12,13 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
     "z" : size_z,
   }
 
+  const defaultPalette = {
+    backgroundColor: "hsl(204, 86%, 53%)",
+    color: "#fff",
+    alternativeColor: "hsl(171, 100%, 41%)",
+  }
+
+
   // const SomeComponent = ({ image }) => (
   //   <ImagePalette image={image} crossOrigin={true}>
   //     {({ backgroundColor, color, alternativeColor }) => (
@@ -43,7 +50,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
               </p>
             </div>
           </div>
-          <ImagePalette image={image} crossOrigin>
+          <ImagePalette image={image} crossOrigin defaults={defaultPalette}>
             {({ backgroundColor, color }) => (
               <svg height="48" viewBox="0 0 100 100">
                 <rect height="1000" width="1000" fill={backgroundColor} />
