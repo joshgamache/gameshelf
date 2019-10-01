@@ -4,6 +4,9 @@ import GameBox from './GameBox';
 // import { usePalette } from 'react-palette'
 import ImagePalette from 'react-image-palette'
 
+import * as Vibrant from 'node-vibrant'
+
+const corsUrl = "https://cors-anywhere.herokuapp.com/"; //Used to allow cross-origin requests. Try and replace this with something sustainable in the future. 
 
 const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
   const dims = {
@@ -17,7 +20,6 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
     color: "#fff",
     alternativeColor: "hsl(171, 100%, 41%)",
   }
-
 
   // const SomeComponent = ({ image }) => (
   //   <ImagePalette image={image} crossOrigin={true}>
@@ -50,7 +52,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
               </p>
             </div>
           </div>
-          <ImagePalette image={image} crossOrigin defaults={defaultPalette}>
+          <ImagePalette image={corsUrl + image} crossOrigin defaults={defaultPalette}>
             {({ backgroundColor, color }) => (
               <svg height="48" viewBox="0 0 100 100">
                 <rect height="1000" width="1000" fill={backgroundColor} />

@@ -12,7 +12,7 @@ import ImagePalette from 'react-image-palette'
 //   let v = new Vibrant(imgURL)
 //   v.getPalette().then((palette) => palette.Vibrant.rgb)
 // }
-
+const corsUrl = "https://cors-anywhere.herokuapp.com/"; //Used to allow cross-origin requests. Try and replace this with something sustainable in the future. 
 
 
 const ShelfBay = (props) => {
@@ -40,7 +40,7 @@ const ShelfBay = (props) => {
 
     return (// TODO: handle image loading before executing palette
       // I'm certainly not doing the styles right either
-      <ImagePalette image={game.image_url} crossOrigin="anonymous" defaults={defaultPalette}>
+      <ImagePalette image={corsUrl + game.image_url} crossOrigin defaults={defaultPalette}>
         {({ backgroundColor, color, alternativeColor }) => (
             <li key={idKey} className="individual-board-game-box" style={{ width: sortedShapeArray[0], height: sortedShapeArray[1], background: backgroundColor, borderWidth: "1px", borderStyle: "solid", borderColor: alternativeColor}}><span style={{color: color}} className="gameBoxName title is-4">{game.name}</span>
             </li> 
