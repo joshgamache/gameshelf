@@ -2,6 +2,7 @@ import React from "react";
 import ShelfBay from "./ShelfBay"
 import ControlStub from "./ControlStub"
 import GameList from "./GameList";
+import BoxSizeFitter from "../components/BoxSizeFitter";
 
 // TODO:
 // Need to pass in props
@@ -55,8 +56,14 @@ class GameShelf extends React.Component {
       
       const shelfArray = [];
 
+      let remainingGames = this.props.games;
+
+
       for (let i=0; i<numberOfShelvesTotal; i++) {
-        shelfArray.push(<li key={i}><ShelfBay individualShelfArea={FullShelfObject} gamesToAddToShelf={this.props.games}/></li>)
+        const weirdGamesObject = BoxSizeFitter(remainingGames, {width: this.state.shelfWidth, height: this.state.shelfHeight})
+        const gamesIntoShelf = weirdGamesObject.gamesThatFit;
+        shelfArray.push(<li key={i}><ShelfBay individualShelfArea={FullShelfObject} gamesToAddToShelf={gamesIntoShelf}/></li>)
+        remainingGames = weirdGamesObject.gamesTooBig;
       }
     
 
@@ -67,9 +74,13 @@ class GameShelf extends React.Component {
       )
     }
 
+    const test = () => {
+      console.log(BoxSizeFitter(this.props.games, {width: this.state.shelfWidth, height: this.state.shelfHeight}))
+    }
+
 
     return (
-      <div>
+      <div>{test()}
         <div className="container">
             <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} />
         </div>

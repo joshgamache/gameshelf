@@ -63,11 +63,6 @@ class App extends Component {
           </div>
         </div>
 
-        {/* <div className="section">
-          <div className="container">
-            <SingleShelf />
-          </div>
-        </div> */}
       </div>
     );
   }
