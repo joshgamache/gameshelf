@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import '../App.sass';
-// import Searchbox from '../components/Searchbox.js';
+import Searchbox from '../components/Searchbox.js';
 import GameList from '../components/GameList.js';
 // import ministub from '../assets/ministub.json';
 import games from "../assets/stubData.json"
@@ -9,7 +9,9 @@ import StubList from "../components/selectionTestStub";
 // import SingleShelf from "../components/SingleShelf";
 // import ShelfBay from "../components/ShelfBay";
 import GameShelf from "../components/GameShelf";
+import GameDisplay from '../components/GameDisplay';
 
+const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
 
 class App extends Component {
   constructor() {
@@ -18,7 +20,7 @@ class App extends Component {
       searchField: '',
       gameList: [],
       allGames: [],
-      newGame: {}
+      newGame: {},
     }
   }
 
@@ -46,6 +48,14 @@ class App extends Component {
     const {allGames, gameList} = this.state;
     return (
       <div className="App">
+        <div className="section">
+          <div className="container">
+            <Searchbox />
+          </div>
+          <div className="container">
+            <GameDisplay />
+          </div>
+        </div>
         <div className="container">
           <StubList games={allGames} onClick={(gameKeyId) => this.toAddClick(gameKeyId)}/>
           {/* <Searchbox searchChange={this.onSearchChange}/> */}
