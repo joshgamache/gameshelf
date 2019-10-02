@@ -53,7 +53,7 @@ class App extends Component {
 
     // Check if there's anything in the input first
     if (newItem != "") {
-      const searchByName = `${searchURI}?name=${newItem}`;
+      const searchByName = `${searchURI}&name=${newItem}`;
       // const searchByName = searchURI; // Used when testing stub ONLY
       console.log(searchByName);
       fetch(searchByName)
@@ -61,8 +61,6 @@ class App extends Component {
         .then(
           json => {
             // console.log(json)
-            // searchList.games = json;
-            // console.log(searchList);
             this.setState({
               searchResults : json.games
             })
@@ -71,7 +69,7 @@ class App extends Component {
         .catch(error=>console.log(error))
       }
 
-    //fetch the search results from BoardGame Atlas, return an array of names and keys. 
+    //fetch the search results from BoardGame Atlas, return an array of names and keys.
 
   }
 
