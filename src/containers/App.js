@@ -47,7 +47,7 @@ class App extends Component {
   searchBGAapi = (searchTerm) => {
     //fetch the search results from BoardGame Atlas, return an array of names and keys. 
     const searchByName = searchURI + "?name=" + searchTerm;
-    
+    console.log("Hi!");
   }
 
   render() {
@@ -55,8 +55,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="section">
-          <div className="container">
-            <Searchbox />
+            <Searchbox onClick={() => this.searchBGAapi()}/>
           </div>
           <div className="container">
             <h4>Search results</h4>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Searchbox = ({ searchField, searchChange}) => {
+const Searchbox = ({ searchField, searchChange}, props) => {
   return ( 
     <div className="columns is-centered">
       <div class="column is-one-third">
@@ -9,9 +9,9 @@ const Searchbox = ({ searchField, searchChange}) => {
             <input className="input" type="search" placeholder="Search games on BoardGameAtlas" onChange={searchChange} />
           </p>
           <p className="control">
-            <a className="button is-info">
+            <button className="button is-info" onClick={() => this.props.onClick()}>
               Search
-            </a>
+            </button>
           </p>
         </div>
       </div>
