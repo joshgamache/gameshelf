@@ -10,6 +10,7 @@ import StubList from "../components/selectionTestStub";
 import GameShelf from "../components/GameShelf";
 import GameDisplay from '../components/GameDisplay';
 
+// const stubSearchURI = "http://localhost:3000/stubData.json"; // Use this as a test ONLY when BGA is unreachable
 const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
 
 class App extends Component {
@@ -44,23 +45,47 @@ class App extends Component {
     })
   }
 
-  searchBGAapi = (searchTerm) => {
+  searchBGAapi = (event) => {
+    event.preventDefault(); // prevents the form from submitting when button is clicked, we don't want a page reload
+
+    // let searchList = [];
+    const newItem = this.state.searchField;
+
+    // Check if there's anything in the input first
+    if (newItem != "") {
+      const searchByName = `${searchURI}?name=${newItem}`;
+      // const searchByName = searchURI; // Used when testing stub ONLY
+      console.log(searchByName);
+      fetch(searchByName)
+        .then(response => response.json())
+        .then(
+          json => {
+            // console.log(json)
+            // searchList.games = json;
+            // console.log(searchList);
+            this.setState({
+              searchResults : json.games
+            })
+          }
+        )
+        .catch(error=>console.log(error))
+      }
+
     //fetch the search results from BoardGame Atlas, return an array of names and keys. 
-    const searchByName = searchURI + "?name=" + searchTerm;
-    
+
   }
 
   render() {
-    const {allGames, gameList} = this.state;
+    const {allGames, gameList, searchResults} = this.state;
     return (
       <div className="App">
         <div className="section">
           <div className="container">
-            <Searchbox />
+            <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
           </div>
           <div className="container">
             <h4>Search results</h4>
-            <StubList games={this.state.searchResults} onClick={(gameKeyId) => this.toAddClick(gameKeyId)} />
+            <StubList games={searchResults} onClick={(gameKeyId) => this.toAddClick(gameKeyId)} />
           </div>
         </div>
         <div className="container">
