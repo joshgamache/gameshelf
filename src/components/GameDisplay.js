@@ -9,11 +9,19 @@ import * as Vibrant from 'node-vibrant'
 const corsUrl = "https://cors-anywhere.herokuapp.com/"; //Used to allow cross-origin requests. Try and replace this with something sustainable in the future. 
 
 const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
-  const dims = {
-    "x" : size_x,
-    "y" : size_y,
-    "z" : size_z,
-  }
+    const dims = {
+      "x" : size_x,
+      "y" : size_y,
+      "z" : size_z,
+      "units" : size_units,
+    }
+
+    if (dims.units == "inches "){
+      dims.x *= 25.4;
+      dims.y *= 25.4;
+      dims.z *= 25.4;
+      dims.units = "mm";
+    }
 
   const defaultPalette = {
     backgroundColor: "hsl(204, 86%, 53%)",
@@ -48,7 +56,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
           <div className="media-content">
             <div className="content is-size-6">
               <p>
-                <strong>{name}</strong> - <small>{size_x} by {size_y} by {size_z} {size_units}</small>
+                <strong>{name}</strong> - <small>{dims.x ? `${dims.x} by ${dims.y} by ${dims.z} ${dims.units}` : "No dimensions available"}</small>
               </p>
             </div>
           </div>

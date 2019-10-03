@@ -55,7 +55,7 @@ class App extends Component {
     if (newItem != "") {
       const searchByName = `${searchURI}&name=${newItem}`;
       // const searchByName = searchURI; // Used when testing stub ONLY
-      console.log(searchByName);
+      // console.log(searchByName);
       fetch(searchByName)
         .then(response => response.json())
         .then(
@@ -81,10 +81,12 @@ class App extends Component {
           <div className="container">
             <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
           </div>
+        {searchResults != "" &&
           <div className="container">
             <h4>Search results</h4>
             <StubList games={searchResults} onClick={(gameKeyId) => this.toAddClick(gameKeyId)} />
           </div>
+        }
         </div>
         <div className="container">
           <StubList games={allGames} onClick={(gameKeyId) => this.toAddClick(gameKeyId)}/>
