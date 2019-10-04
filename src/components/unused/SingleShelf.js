@@ -1,5 +1,5 @@
 import React from 'react'
-import GameBox from './GameBox'
+import GameBox from '../GameBox'
 
 const SingleShelf = (props) => {
   const shelfDimensions = {

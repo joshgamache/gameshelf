@@ -6,10 +6,7 @@ import GameList from '../components/GameList.js';
 import games from "../assets/stubData.json" // for basic testing
 import sGames from "../assets/bgaSearchStub.json" // for search testing
 import StubList from "../components/selectionTestStub";
-// import SingleShelf from "../components/SingleShelf";
-// import ShelfBay from "../components/ShelfBay";
 import GameShelf from "../components/GameShelf";
-import GameDisplay from '../components/GameDisplay';
 
 // const stubSearchURI = "http://localhost:3000/stubData.json"; // Use this as a test ONLY when BGA is unreachable
 const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
@@ -47,6 +44,7 @@ class App extends Component {
   }
 
   // TODO: Dedup this, there shouldn't be two functions doing esentially the same thing!
+
   toAddFromSearchClick = (keyID) => {
     const newGameList = this.state.gameList.slice();
     newGameList.push(this.state.searchResults.find(({id}) => id === keyID));
@@ -55,7 +53,6 @@ class App extends Component {
       gameList: newGameList
     })
   }
-
 
   searchBGAapi = (event) => {
     event.preventDefault(); // prevents the form from submitting when button is clicked, we don't want a page reload
@@ -97,20 +94,20 @@ class App extends Component {
         {searchResults != "" &&
           <div className="container">
             <h4>Search results</h4>
-            {/* <StubList games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} /> */}
-            <GameList games={searchResults} />
+            <StubList games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
+            {/* <GameList games={searchResults} /> */}
           </div>
         }
         </div>
-        <div className="container">
-          <StubList games={allGames} onClick={(gameKeyId) => this.toAddClick(gameKeyId)}/>
+        {/* <div className="container"> */}
+          {/* <StubList games={allGames} onClick={(gameKeyId) => this.toAddClick(gameKeyId)}/> */}
           {/* <Searchbox searchChange={this.onSearchChange}/> */}
           {/* shelf display, contains boxes */}
           {/* Game list, contains single game display */}
-        </div>
+        {/* </div> */}
         <div className="section">
           <div className="container">
-              <GameList games={gameList}/>
+              <GameList games={gameList} />
           </div>
         </div>
         <div className="section">

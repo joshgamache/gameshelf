@@ -8,7 +8,7 @@ import * as Vibrant from 'node-vibrant'
 
 const corsUrl = "https://cors-anywhere.herokuapp.com/"; //Used to allow cross-origin requests. Try and replace this with something sustainable in the future. 
 
-const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
+const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image, deleteClick}) => {
     const dims = {
       "x" : size_x,
       "y" : size_y,
@@ -45,7 +45,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
   // const { data } = usePalette(image);
 // TODO: Streamline colour finding process. Maybe have a helper perform this when games are added to list?
   return(
-    <div className = "column is-one-third-desktop is-half-tablet">
+    <div className = "column is-half-tablet is-one-third-widescreen">
       <div className = "box is-fullwidth is-outlined game-container">
         <article className = "media">
           <div className = "media-left">
@@ -60,18 +60,21 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
               </p>
             </div>
           </div>
+          <div className="media-right">
           {dims.units &&
-            <ImagePalette image={corsUrl + image} crossOrigin defaults={defaultPalette}>
-              {({ backgroundColor, color }) => (
-                <svg height="48" viewBox="0 0 100 100">
-                  <rect height="1000" width="1000" fill={backgroundColor} />
-                  <svg viewBox={"0 0 330 330"} >
-                    <GameBox dimensions = {dims} boxColor = {color} />
+              <ImagePalette image={corsUrl + image} crossOrigin defaults={defaultPalette}>
+                {({ backgroundColor, color }) => (
+                  <svg height="48" viewBox="0 0 100 100" style={{paddingRight:"4px"}} >
+                    <rect height="1000" width="1000" fill={backgroundColor} />
+                    <svg viewBox={"0 0 330 330"} >
+                      <GameBox dimensions = {dims} boxColor = {color} />
+                    </svg>
                   </svg>
-                </svg>
-              )}
-            </ImagePalette>
-          }
+                )}
+              </ImagePalette>
+            }
+            <button className="delete" /> {/* FIX */}
+          </div>
         </article>
         {/* A block containing */}
           {/* Game image */}
