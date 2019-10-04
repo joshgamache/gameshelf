@@ -23,15 +23,27 @@ const ShelfBay = (props) => {
 
   const gameBoxList = props.gamesToAddToShelf;
 
-  const getColors = (urlForImage) => {
-    
-  }
-
   const builtShelfList = gameBoxList.map((game, i) => {
-    const sortedShapeArray = [game.size_depth, game.size_width, game.size_height].sort((a, b) => a - b);
 
-    let idKey = `"${i}"`;
+    //TODO: This code is DEFINITELY not DRY
+    const dims = {
+      "x" : game.size_width,
+      "y" : game.size_height,
+      "z" : game.size_depth,
+      "units" : game.size_units,
+    }
 
+    if (dims.units.trim() == "inches"){
+      dims.x = parseFloat(dims.x).toFixed(2) * 25.4;
+      dims.y = parseFloat(dims.y).toFixed(2) * 25.4;
+      dims.z = parseFloat(dims.z).toFixed(2) * 25.4;
+      dims.units = "mm";
+    }
+
+    const sortedShapeArray = [dims.x, dims.y, dims.z].sort((a, b) => a - b);
+
+    let idKey = `${game.id}${i}`;
+    console.log(idKey)
     const defaultPalette = {
       backgroundColor: "hsl(204, 86%, 53%)",
       color: "#fff",
@@ -54,6 +66,7 @@ const ShelfBay = (props) => {
     width: `${shelfDimensions.w}px`,
     height: `${shelfDimensions.h}px`,
     flexWrap: "wrap-reverse",
+    // flexWrap: "nowrap",
     alignContent: "flex-start",
     alignItems: "flex-start",
     background: "LightGrey"

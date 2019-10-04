@@ -1,5 +1,4 @@
 import React from 'react';
-import { format } from 'path';
 
 const Searchbox = ({ searchField, searchChange, executeSearch}) => {
   return ( 

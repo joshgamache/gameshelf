@@ -16,10 +16,10 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
       "units" : size_units,
     }
 
-    if (dims.units == "inches "){
-      dims.x *= 25.4;
-      dims.y *= 25.4;
-      dims.z *= 25.4;
+    if (dims.units && dims.units.trim() == "inches"){
+      dims.x = (parseFloat(dims.x) * 25.4).toFixed(0);
+      dims.y = (parseFloat(dims.y) * 25.4).toFixed(0);
+      dims.z = (parseFloat(dims.z) * 25.4).toFixed(0);
       dims.units = "mm";
     }
 
@@ -60,16 +60,18 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
               </p>
             </div>
           </div>
-          <ImagePalette image={corsUrl + image} crossOrigin defaults={defaultPalette}>
-            {({ backgroundColor, color }) => (
-              <svg height="48" viewBox="0 0 100 100">
-                <rect height="1000" width="1000" fill={backgroundColor} />
-                <svg viewBox={"0 0 330 330"} >
-                  <GameBox dimensions = {dims} boxColor = {color} />
+          {dims.units &&
+            <ImagePalette image={corsUrl + image} crossOrigin defaults={defaultPalette}>
+              {({ backgroundColor, color }) => (
+                <svg height="48" viewBox="0 0 100 100">
+                  <rect height="1000" width="1000" fill={backgroundColor} />
+                  <svg viewBox={"0 0 330 330"} >
+                    <GameBox dimensions = {dims} boxColor = {color} />
+                  </svg>
                 </svg>
-              </svg>
-            )}
-          </ImagePalette>
+              )}
+            </ImagePalette>
+          }
         </article>
         {/* A block containing */}
           {/* Game image */}

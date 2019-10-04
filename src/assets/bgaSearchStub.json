@@ -1,0 +1,1869 @@
+{
+  "games": [
+    {
+      "id": "kPDxpJZ8PD",
+      "name": "Spirit Island",
+      "year_published": 2016,
+      "min_players": 1,
+      "max_players": 4,
+      "min_playtime": 90,
+      "max_playtime": 120,
+      "min_age": 13,
+      "description": "Powerful Spirits have existed on this isolated island for time immemorial. They are both part of the natural world and - at the same time - something beyond nature. Native Islanders, known as the Dahan, have learned how to co-exist with the spirits, but with a healthy dose of fear and reverence. However, now, the island has been &quot;discovered&quot; by invaders from a far-off land. These would-be colonists are taking over the land and upsetting the natural balance, destroying the presence of Spirits as they go. As Spirits, you must grow in power and work together to drive the invaders from your island... before it's too late!",
+      "description_preview": "Powerful Spirits have existed on this isolated island for time immemorial. They are both part of the natural world and - at the same time - something beyond nature. Native Islanders, known as the Dahan, have learned how to co-exist with the spirits, but with a healthy dose of fear and reverence. However, now, the island has been \"discovered\" by invaders from a far-off land. These would-be colonists are taking over the land and upsetting the natural balance, destroying the presence of Spirits as they go. As Spirits, you must grow in power and work together to drive the invaders from your island... before it's too late!",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254941010-61PJxjjnbfL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254941010-61PJxjjnbfL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254941010-61PJxjjnbfL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254941010-61PJxjjnbfL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254941010-61PJxjjnbfL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254941010-61PJxjjnbfL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254941010-61PJxjjnbfL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/kPDxpJZ8PD/spirit-island",
+      "price": "53.99",
+      "msrp": "79.95",
+      "discount": "0.32",
+      "primary_publisher": "Greater Than Games",
+      "publishers": [
+        "Greater Than Games"
+      ],
+      "mechanics": [
+        {
+          "id": "PGjmKGi26h"
+        },
+        {
+          "id": "05zCZoLvQJ"
+        },
+        {
+          "id": "33UT4gTFqy"
+        },
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "U3zhCQH7Et"
+        },
+        {
+          "id": "lA3KUtVFCy"
+        },
+        {
+          "id": "DEvPj5twid"
+        },
+        {
+          "id": "XM2FYZmBHH"
+        }
+      ],
+      "categories": [
+        {
+          "id": "nWDac9tQzt"
+        },
+        {
+          "id": "gsekjrPJz0"
+        },
+        {
+          "id": "ZTneo8TaIO"
+        },
+        {
+          "id": "upXZ8vNfNO"
+        },
+        {
+          "id": "MHkqIVxwtx"
+        },
+        {
+          "id": "nuHYRFmMjU"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        },
+        {
+          "id": "buDTYyPw4D"
+        }
+      ],
+      "designers": [
+        "R. Eric Reuss"
+      ],
+      "developers": [],
+      "artists": [
+        "Jason Behnke",
+        "Kat G Bermelin",
+        "Loïc Billiau",
+        "Cari Corene",
+        "Lucas Durham",
+        "Rocky Hammer",
+        "Sydni Kruger",
+        "Nolan Nasser",
+        "Jorge Ramos",
+        "Adam Rebottaro",
+        "Moro Rogers",
+        "Graham Sternberg",
+        "Shane Tyree",
+        "Joshua Wright (I)"
+      ],
+      "names": [
+        "Spirit Island (5th Edition) (Ding & Dent)"
+      ],
+      "num_user_ratings": 94,
+      "average_user_rating": 3.9893617021276597,
+      "official_url": "https://store.greaterthangames.com/spirit-island.html?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://drive.google.com/file/d/0B9kp130SgLtdcGxTcTFodlhaWDg/view",
+      "weight_amount": 2,
+      "weight_units": "lbs",
+      "size_height": 11.6,
+      "size_width": 3,
+      "size_depth": 11.6,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 1314,
+      "reddit_week_count": 7,
+      "reddit_day_count": 3,
+      "historical_low_price": 49.97,
+      "historical_low_date": {
+        "$date": "2019-08-03T12:02:49.377Z"
+      }
+    },
+    {
+      "id": "RLlDWHh7hR",
+      "name": "Gloomhaven",
+      "year_published": 2017,
+      "min_players": 1,
+      "max_players": 4,
+      "min_playtime": 60,
+      "max_playtime": 150,
+      "min_age": 12,
+      "description": "Gloomhaven is a game of Euro-inspired tactical combat in a persistent world of shifting motives. Players will take on the role of a wandering adventurer with their own special set of skills and their own reasons for traveling to this dark corner of the world.<br />\r\n<br />\r\nPlayers must work together out of necessity to clear out menacing dungeons and forgotten ruins. In the process they will enhance their abilities with experience and loot, discover new locations to explore and plunder, and expand an ever-branching story fueled by the decisions they make.<br />\r\n<br />\r\nThis is a legacy game with a persistent and changing world that is ideally played over many game sessions. After a scenario, players will make decisions on what to do, which will determine how the story continues, kind of like a &quot;Choose Your Own Adventure&quot; book. Playing through a scenario is a cooperative affair where players will fight against automated monsters using an innovative card system to determine the order of play and what a player does on their turn.",
+      "description_preview": "Gloomhaven is a game of Euro-inspired tactical combat in a persistent world of shifting motives. Players will take on the role of a wandering adventurer with their own special set of skills and their own reasons for traveling to this dark corner of the world. \r\n \r\nPlayers must work together out of necessity to clear out menacing dungeons and forgotten ruins. In the process they will enhance their abilities with experience and loot, discover new locations to explore and plunder, and expand an ever-branching story fueled by the decisions they make. \r\n \r\nThis is a legacy game with a persistent and changing world that is ideally played over many game sessions. After a scenario, players will make decisions on what to do, which will determine how the story continues, kind of like a \"Choose Your Own Adventure\" book. Playing through a scenario is a cooperative affair where players will fight against automated monsters using an innovative card system to determine the order of play and what a player does on their turn.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254920151-51ulRXlJ7LL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254920151-51ulRXlJ7LL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254920151-51ulRXlJ7LL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254920151-51ulRXlJ7LL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254920151-51ulRXlJ7LL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254920151-51ulRXlJ7LL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254920151-51ulRXlJ7LL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/RLlDWHh7hR/gloomhaven",
+      "price": "99.40",
+      "msrp": "139.99",
+      "discount": "0.29",
+      "primary_publisher": "Cephalofair Games",
+      "publishers": [
+        "Cephalofair Games"
+      ],
+      "mechanics": [
+        {
+          "id": "xuphiSlrxI"
+        },
+        {
+          "id": "9mNukNBxfZ"
+        },
+        {
+          "id": "qu5BcGjAzk"
+        },
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "DwmsVEvNVd"
+        },
+        {
+          "id": "U3zhCQH7Et"
+        },
+        {
+          "id": "EVeAdboGUA"
+        },
+        {
+          "id": "za4PP1LH00"
+        },
+        {
+          "id": "GUoWg3Mfh5"
+        },
+        {
+          "id": "XM2FYZmBHH"
+        }
+      ],
+      "categories": [
+        {
+          "id": "KUBCKBkGxV"
+        },
+        {
+          "id": "ZTneo8TaIO"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Isaac Childres"
+      ],
+      "developers": [],
+      "artists": [
+        "Alexandr Elichev",
+        "Josh T. McDowell",
+        "Alvaro Nebot"
+      ],
+      "names": [],
+      "num_user_ratings": 101,
+      "average_user_rating": 4.1485148514851495,
+      "official_url": "http://www.cephalofair.com/gloomhaven?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://online.flippingbook.com/view/598058/",
+      "weight_amount": 21.6,
+      "weight_units": "lbs",
+      "size_height": 16.2,
+      "size_width": 7.5,
+      "size_depth": 11.8,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "kIVSjvh0fG"
+        }
+      ],
+      "reddit_all_time_count": 1227,
+      "reddit_week_count": 9,
+      "reddit_day_count": 17,
+      "historical_low_price": 80.75,
+      "historical_low_date": {
+        "$date": "2019-07-15T05:07:39.057Z"
+      }
+    },
+    {
+      "id": "yqR4PtpO8X",
+      "name": "Scythe",
+      "year_published": 2016,
+      "min_players": 1,
+      "max_players": 5,
+      "min_playtime": 90,
+      "max_playtime": 120,
+      "min_age": 14,
+      "description": "<i>Scythe</i> gives players almost complete control over their fate. Other than each player's individual hidden objective card, the only elements of luck or variability are &quot;Encounter&quot; cards that players will draw as they interact with the citizens of newly explored lands. Each encounter card provides the player with several options, allowing them to mitigate the luck of the draw through their selection. Combat is also driven by choices, not luck or randomness.<br />\r\n<br />\r\n<i>Scythe</i> uses a streamlined action-selection mechanism (no rounds or phases) to keep gameplay moving at a brisk pace and reduce downtime between turns. While there is plenty of direct conflict for players who seek it, there is no player elimination.<br />\r\n<br />\r\nEvery part of <i>Scythe</i> has an aspect of engine-building to it. Players can upgrade actions to become more efficient, build structures that improve their position on the map, enlist new recruits to enhance character abilities, activate mechs to deter opponents from invading, and expand their borders to reap greater types and quantities of resources. These engine-building aspects create a sense of momentum and progress throughout the game. The order in which players improve their engine adds to the unique feel of each game, even when playing one faction multiple times.",
+      "description_preview": " Scythe  gives players almost complete control over their fate. Other than each player's individual hidden objective card, the only elements of luck or variability are \"Encounter\" cards that players will draw as they interact with the citizens of newly explored lands. Each encounter card provides the player with several options, allowing them to mitigate the luck of the draw through their selection. Combat is also driven by choices, not luck or randomness. \r\n \r\n Scythe  uses a streamlined action-selection mechanism (no rounds or phases) to keep gameplay moving at a brisk pace and reduce downtime between turns. While there is plenty of direct conflict for players who seek it, there is no player elimination. \r\n \r\nEvery part of  Scythe  has an aspect of engine-building to it. Players can upgrade actions to become more efficient, build structures that improve their position on the map, enlist new recruits to enhance character abilities, activate mechs to deter opponents from invading, and expand their borders to reap greater types and quantities of resources. These engine-building aspects create a sense of momentum and progress throughout the game. The order in which players improve their engine adds to the unique feel of each game, even when playing one faction multiple times.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254971843-513-lrmjs2L.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254971843-513-lrmjs2L.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254971843-513-lrmjs2L.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254971843-513-lrmjs2L.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254971843-513-lrmjs2L.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254971843-513-lrmjs2L.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254971843-513-lrmjs2L.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/yqR4PtpO8X/scythe",
+      "price": "54.63",
+      "msrp": "79.99",
+      "discount": "0.32",
+      "primary_publisher": "Stonemaier Games",
+      "publishers": [
+        "Stonemaier Games"
+      ],
+      "mechanics": [
+        {
+          "id": "Bc7R8pLoGk"
+        },
+        {
+          "id": "05zCZoLvQJ"
+        },
+        {
+          "id": "yu3eas6v7A"
+        },
+        {
+          "id": "hUn7uJHrYm"
+        },
+        {
+          "id": "kS8npG0jl8"
+        },
+        {
+          "id": "qu5BcGjAzk"
+        },
+        {
+          "id": "XM2FYZmBHH"
+        },
+        {
+          "id": "fBOTEBUAmV"
+        }
+      ],
+      "categories": [
+        {
+          "id": "85OKv8p5Ow"
+        },
+        {
+          "id": "nWDac9tQzt"
+        },
+        {
+          "id": "h8wfZG0j3I"
+        },
+        {
+          "id": "zyj9ZK3mHB"
+        },
+        {
+          "id": "3B3QpKvXD3"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        },
+        {
+          "id": "buDTYyPw4D"
+        }
+      ],
+      "designers": [
+        "Jamey Stegmaier"
+      ],
+      "developers": [],
+      "artists": [
+        "Jakub Różalski"
+      ],
+      "names": [],
+      "num_user_ratings": 166,
+      "average_user_rating": 3.9630789906035617,
+      "official_url": "https://stonemaiergames.com/games/scythe/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://app.box.com/s/rj3jrw0rab2uiz02up89kbant5g8ew1p",
+      "weight_amount": 7.1,
+      "weight_units": "lbs",
+      "size_height": 11.8,
+      "size_width": 4,
+      "size_depth": 14.6,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "DgUgwpJBdB"
+        },
+        {
+          "id": "4t4ckaX5rW"
+        },
+        {
+          "id": "SUAehOp3O5"
+        }
+      ],
+      "reddit_all_time_count": 992,
+      "reddit_week_count": 4,
+      "reddit_day_count": 18,
+      "historical_low_price": 39.99,
+      "historical_low_date": {
+        "$date": "2019-07-15T18:31:02.109Z"
+      }
+    },
+    {
+      "id": "i5Oqu5VZgP",
+      "name": "Azul",
+      "year_published": 2017,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 30,
+      "max_playtime": 60,
+      "min_age": 8,
+      "description": "Azul was designed by the world famous, award winning game author Michael Riesling. Azul captures the beautiful aesthetics of Moorish art in a contemporary board game. Players compete as artisans decorating the walls of the royal Palace of Dvora. By carefully drafting the correct Quantity and style of tiles, the most clever of artisans plan ahead to maximize the beauty of their work (not to mention their scores!) while ensuring they wasted no supplies in the process. Introduced by the moors, &quot;azulejos&quot; (originally white and blue ceramic tiles) were fully embraced by the Portuguese, when their King Manuel I, on a visit to the Alhambra Palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The King, awestruck by the interior beauty of the Alhambra, immediately ordered that his own Palace in Portugal be decorated with similar wall tiles. As a tile-laying artist, you have been challenged to embellish the walls of the royal Palace of Dvora.",
+      "description_preview": "Azul was designed by the world famous, award winning game author Michael Riesling. Azul captures the beautiful aesthetics of Moorish art in a contemporary board game. Players compete as artisans decorating the walls of the royal Palace of Dvora. By carefully drafting the correct Quantity and style of tiles, the most clever of artisans plan ahead to maximize the beauty of their work (not to mention their scores!) while ensuring they wasted no supplies in the process. Introduced by the moors, \"azulejos\" (originally white and blue ceramic tiles) were fully embraced by the Portuguese, when their King Manuel I, on a visit to the Alhambra Palace in Southern Spain, was mesmerized by the stunning beauty of the Moorish decorative tiles. The King, awestruck by the interior beauty of the Alhambra, immediately ordered that his own Palace in Portugal be decorated with similar wall tiles. As a tile-laying artist, you have been challenged to embellish the walls of the royal Palace of Dvora.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254200327-61EFZADvURL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254200327-61EFZADvURL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254200327-61EFZADvURL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254200327-61EFZADvURL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254200327-61EFZADvURL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254200327-61EFZADvURL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254200327-61EFZADvURL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/i5Oqu5VZgP/azul",
+      "price": "24.49",
+      "msrp": "39.99",
+      "discount": "0.39",
+      "primary_publisher": "Next Move Games",
+      "publishers": [
+        "Next Move Games",
+        "Plan B Games"
+      ],
+      "mechanics": [
+        {
+          "id": "8PN2HE86wg"
+        }
+      ],
+      "categories": [
+        {
+          "id": "hBqZ3Ar4RJ"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Michael Kiesling"
+      ],
+      "developers": [],
+      "artists": [
+        "Philippe Guérin",
+        "Chris Quilliams"
+      ],
+      "names": [],
+      "num_user_ratings": 149,
+      "average_user_rating": 3.6442953020134214,
+      "official_url": "https://www.nextmovegames.com/en/home/48-azul.html?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://www.nextmovegames.com/en/index.php?controller=attachment&id_attachment=9",
+      "weight_amount": 3,
+      "weight_units": "lbs",
+      "size_height": 10.2,
+      "size_width": 2.8,
+      "size_depth": 10.2,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "sE1IPv0KDT"
+        },
+        {
+          "id": "ERJvhXgUtZ"
+        },
+        {
+          "id": "yp3JSY6bZv"
+        }
+      ],
+      "reddit_all_time_count": 989,
+      "reddit_week_count": 12,
+      "reddit_day_count": 7,
+      "historical_low_price": 17.99,
+      "historical_low_date": {
+        "$date": "2019-08-03T03:10:26.821Z"
+      }
+    },
+    {
+      "id": "oGVgRSAKwX",
+      "name": "Carcassonne",
+      "year_published": 2000,
+      "min_players": 2,
+      "max_players": 5,
+      "min_playtime": 30,
+      "max_playtime": 45,
+      "min_age": 7,
+      "description": "Each game of <em>Carcassonne</em> reveals a unique environment as tiles form a landscape of cities, roads, fields, and monasteries. Claim these features with your followers to win the game.\r\n\r\n<p><em>Carcassonne</em> is a tile placement game where players collectively construct the area around the medieval French city of Carcassonne while competing to place followers on various features and score the most points. First published in 2000, the game's accessible yet deep design has attracted a wide fan base and led to the development of numerous expansions and standalone titles in the <em>Carcassonne</em> line.</p>",
+      "description_preview": "Each game of  Carcassonne  reveals a unique environment as tiles form a landscape of cities, roads, fields, and monasteries. Claim these features with your followers to win the game.\r\n\r\n  Carcassonne  is a tile placement game where players collectively construct the area around the medieval French city of Carcassonne while competing to place followers on various features and score the most points. First published in 2000, the game's accessible yet deep design has attracted a wide fan base and led to the development of numerous expansions and standalone titles in the  Carcassonne  line. ",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254282618-61HduAZGE7L.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254282618-61HduAZGE7L.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254282618-61HduAZGE7L.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254282618-61HduAZGE7L.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254282618-61HduAZGE7L.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254282618-61HduAZGE7L.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254282618-61HduAZGE7L.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/oGVgRSAKwX/carcassonne",
+      "price": "27.97",
+      "msrp": "34.99",
+      "discount": "0.20",
+      "primary_publisher": "Z-Man Games",
+      "publishers": [
+        "Z-Man Games",
+        "Hans im Gluck (Germany)",
+        "999 Games (Netherlands)",
+        "Фантасмагория (Bulgaria)",
+        "Lautapelit.fi (Finland)",
+        "Κάισσα (Greece)",
+        "メビウスゲームズ (Japan)",
+        "Giochi Uniti (Italy)",
+        "Piatnik Budapest Kft. (Hungary)",
+        "Grow (Brazil)",
+        "Rio Grande Games (Sweden)",
+        "Hobby World (Russia)"
+      ],
+      "mechanics": [
+        {
+          "id": "8PN2HE86wg"
+        },
+        {
+          "id": "fBOTEBUAmV"
+        }
+      ],
+      "categories": [
+        {
+          "id": "7rV11PKqME"
+        }
+      ],
+      "designers": [
+        "Klaus-Jurgen Wrede"
+      ],
+      "developers": [],
+      "artists": [
+        "Doris Matthäus",
+        "Anne Pätzke",
+        "Chris Quilliams",
+        "Klaus-Jürgen Wrede"
+      ],
+      "names": [
+        "carcassone"
+      ],
+      "num_user_ratings": 219,
+      "average_user_rating": 3.337899543378996,
+      "official_url": "https://www.zmangames.com/en/products/carcassonne/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://images-cdn.zmangames.com/us-east-1/filer_public/d5/20/d5208d61-8583-478b-a06d-b49fc9cd7aaa/zm7810_carcassonne_rules.pdf",
+      "weight_amount": 1.55,
+      "weight_units": "lbs",
+      "size_height": 2.6,
+      "size_width": 7.5,
+      "size_depth": 10.8,
+      "size_units": "inches",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 967,
+      "reddit_week_count": 7,
+      "reddit_day_count": 7,
+      "historical_low_price": 19.99,
+      "historical_low_date": {
+        "$date": "2019-07-18T01:37:33.517Z"
+      }
+    },
+    {
+      "id": "6FmFeux5xH",
+      "name": "Pandemic",
+      "year_published": 2008,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 45,
+      "max_playtime": 60,
+      "min_age": 8,
+      "description": "After five years of Pandemic, hundreds of thousands of players have contracted the virus! To celebrate this milestone, Pandemic has been completely re-designed. With new artwork by Chris Quilliams (Clash of Cultures, Merchants &amp; Marauders), Pandemic will now have a more modern look, inside and outside the box. With two new characters (the Contingency Planner and the Quarantine Specialist) face the game in ways you never thought possible as brand-new, virulent challenges await you!",
+      "description_preview": "After five years of Pandemic, hundreds of thousands of players have contracted the virus! To celebrate this milestone, Pandemic has been completely re-designed. With new artwork by Chris Quilliams (Clash of Cultures, Merchants & Marauders), Pandemic will now have a more modern look, inside and outside the box. With two new characters (the Contingency Planner and the Quarantine Specialist) face the game in ways you never thought possible as brand-new, virulent challenges await you!",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254186140-51iNoyxoamL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254186140-51iNoyxoamL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254186140-51iNoyxoamL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254186140-51iNoyxoamL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254186140-51iNoyxoamL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254186140-51iNoyxoamL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254186140-51iNoyxoamL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/6FmFeux5xH/pandemic",
+      "price": "35.99",
+      "msrp": "39.99",
+      "discount": "0.10",
+      "primary_publisher": "Z-Man Games",
+      "publishers": [
+        "Z-Man Games",
+        "Κάισσα (Greece)",
+        "Hobby Japan (Japan)",
+        "Filosofia (France)"
+      ],
+      "mechanics": [
+        {
+          "id": "oeg6wN9Eoc"
+        },
+        {
+          "id": "9mNukNBxfZ"
+        },
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "MEAoOygZsA"
+        },
+        {
+          "id": "lA3KUtVFCy"
+        },
+        {
+          "id": "AVY6EvSQTP"
+        },
+        {
+          "id": "XM2FYZmBHH"
+        }
+      ],
+      "categories": [
+        {
+          "id": "AeWXMxbm91"
+        },
+        {
+          "id": "2Gu62aKdma"
+        }
+      ],
+      "designers": [
+        "Matt Leacock"
+      ],
+      "developers": [],
+      "artists": [
+        "Joshua Cappel (graphics and illustration)",
+        "Régis Moulun (cover painting)",
+        "Chris Quilliams (2013 edition)"
+      ],
+      "names": [
+        "Pandemic Board Game",
+        "Pandemic"
+      ],
+      "num_user_ratings": 224,
+      "average_user_rating": 3.349577067669175,
+      "official_url": "https://www.zmangames.com/en/products/pandemic?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://images-cdn.zmangames.com/us-east-1/filer_public/25/12/251252dd-1338-4f78-b90d-afe073c72363/zm7101_pandemic_rules.pdf",
+      "weight_amount": 2.3,
+      "weight_units": "lbs",
+      "size_height": 12,
+      "size_width": 8.6,
+      "size_depth": 1.7,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 956,
+      "reddit_week_count": 10,
+      "reddit_day_count": 15,
+      "historical_low_price": 23.99,
+      "historical_low_date": {
+        "$date": "2019-01-05T08:00:00.000Z"
+      }
+    },
+    {
+      "id": "fDn9rQjH9O",
+      "name": "Terraforming Mars",
+      "year_published": 2016,
+      "min_players": 1,
+      "max_players": 5,
+      "min_playtime": 90,
+      "max_playtime": 120,
+      "min_age": 12,
+      "description": "In the 2400s, mankind begins to terraform the planet Mars. Giant corporations, sponsored by the World Government on Earth, initiate huge projects to raise the temperature, the oxygen level and the ocean coverage until the environment is habitable. In Terraforming Mars you play one of those corporations and work together in the terraforming process, but compete in doing the best work, with victory points awarded not only for your contribution to the terraforming, but also for advancing human infrastructure throughout the solar systems and other commendable achievements. The players acquire unique project cards, which represent anything from introducing plant life or animals, hurling asteroids at the surface, building cities, and establishing greenhouse gas industries to heat up the atmosphere. You compete for the best places for your city tiles, ocean tiles and greenery tiles. When the terraforming process is complete, the player corporation with the most victory points wins.",
+      "description_preview": "In the 2400s, mankind begins to terraform the planet Mars. Giant corporations, sponsored by the World Government on Earth, initiate huge projects to raise the temperature, the oxygen level and the ocean coverage until the environment is habitable. In Terraforming Mars you play one of those corporations and work together in the terraforming process, but compete in doing the best work, with victory points awarded not only for your contribution to the terraforming, but also for advancing human infrastructure throughout the solar systems and other commendable achievements. The players acquire unique project cards, which represent anything from introducing plant life or animals, hurling asteroids at the surface, building cities, and establishing greenhouse gas industries to heat up the atmosphere. You compete for the best places for your city tiles, ocean tiles and greenery tiles. When the terraforming process is complete, the player corporation with the most victory points wins.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254934477-61ys4u7ejfL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254934477-61ys4u7ejfL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254934477-61ys4u7ejfL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254934477-61ys4u7ejfL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254934477-61ys4u7ejfL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254934477-61ys4u7ejfL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254934477-61ys4u7ejfL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/fDn9rQjH9O/terraforming-mars",
+      "price": "47.99",
+      "msrp": "69.95",
+      "discount": "0.31",
+      "primary_publisher": "Stronghold Games",
+      "publishers": [
+        "Stronghold Games",
+        "\tFryxGames "
+      ],
+      "mechanics": [
+        {
+          "id": "05zCZoLvQJ"
+        },
+        {
+          "id": "33UT4gTFqy"
+        }
+      ],
+      "categories": [
+        {
+          "id": "3B3QpKvXD3"
+        }
+      ],
+      "designers": [
+        "Jacob Fryxelius"
+      ],
+      "developers": [],
+      "artists": [
+        "Isaac Fryxelius"
+      ],
+      "names": [
+        "Terraforming Mars",
+        "Terraforming Mars"
+      ],
+      "num_user_ratings": 134,
+      "average_user_rating": 3.684120381698066,
+      "official_url": "https://strongholdgames.com/store/board-games/terraforming-mars/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "http://www.fryxgames.se/TerraformingMars/TMRULESFINAL.pdf",
+      "weight_amount": 4,
+      "weight_units": "lbs ",
+      "size_height": 2.8,
+      "size_width": 11.6,
+      "size_depth": 11.6,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "8vuqfr7Z0j"
+        }
+      ],
+      "reddit_all_time_count": 921,
+      "reddit_week_count": 13,
+      "reddit_day_count": 10,
+      "historical_low_price": 34.99,
+      "historical_low_date": {
+        "$date": "2019-09-14T10:02:25.433Z"
+      }
+    },
+    {
+      "id": "TAAifFP590",
+      "name": "Root",
+      "year_published": 2018,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 60,
+      "max_playtime": 90,
+      "min_age": 10,
+      "description": "Find adventure in this marvelous asymmetric game. Root provides limitless replay value as you and your friends explore the unique factions all wanting to rule a fantastic forest kingdom. Play as the Marquise de Cat and dominate the woods, extracting its riches and policing its inhabitants, as the Woodland Alliance, gathering supporters and coordinate revolts against the ruling regime, the Eyrie Dynasties, regaining control of the woods while keeping your squabbling court at bay, or as the Vagabond, seeking fame and fortune as you forge alliances and rivalries with the other players. Each faction has its own play style and paths to victory, providing an immersive game experience you will want to play again and again.",
+      "description_preview": "Find adventure in this marvelous asymmetric game. Root provides limitless replay value as you and your friends explore the unique factions all wanting to rule a fantastic forest kingdom. Play as the Marquise de Cat and dominate the woods, extracting its riches and policing its inhabitants, as the Woodland Alliance, gathering supporters and coordinate revolts against the ruling regime, the Eyrie Dynasties, regaining control of the woods while keeping your squabbling court at bay, or as the Vagabond, seeking fame and fortune as you forge alliances and rivalries with the other players. Each faction has its own play style and paths to victory, providing an immersive game experience you will want to play again and again.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540147295104",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540147295104",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1540147295104",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1540147295104",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1540147295104",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1540147295104",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1540147295104"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/TAAifFP590/root",
+      "price": "91.98",
+      "msrp": "60.00",
+      "discount": "-0.53",
+      "primary_publisher": "Leder Games",
+      "publishers": [
+        "Leder Games"
+      ],
+      "mechanics": [
+        {
+          "id": "PGjmKGi26h"
+        },
+        {
+          "id": "05zCZoLvQJ"
+        },
+        {
+          "id": "amcImLdOmD"
+        },
+        {
+          "id": "R0bGq4cAl4"
+        },
+        {
+          "id": "yu3eas6v7A"
+        },
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "MEAoOygZsA"
+        },
+        {
+          "id": "XM2FYZmBHH"
+        }
+      ],
+      "categories": [
+        {
+          "id": "KUBCKBkGxV"
+        },
+        {
+          "id": "ssZjU3HETz"
+        }
+      ],
+      "designers": [
+        "Cole Wehrle",
+        "Patrick Leder"
+      ],
+      "developers": [],
+      "artists": [
+        "Kyle Ferrin"
+      ],
+      "names": [
+        "root ",
+        "Root "
+      ],
+      "num_user_ratings": 70,
+      "average_user_rating": 3.8857142857142866,
+      "official_url": "http://ledergames.com/root/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://drive.google.com/drive/folders/1i9-iCUDzfGMs7HjFHhahwMS6efvvfX5w",
+      "weight_amount": 4,
+      "weight_units": "lbs ",
+      "size_height": 11.4,
+      "size_width": 8.9,
+      "size_depth": 2.9,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 893,
+      "reddit_week_count": 16,
+      "reddit_day_count": 20,
+      "historical_low_price": 12.37,
+      "historical_low_date": {
+        "$date": "2019-02-13T20:33:09.360Z"
+      }
+    },
+    {
+      "id": "FCuXPSfhDR",
+      "name": "Concordia",
+      "year_published": 2013,
+      "min_players": 2,
+      "max_players": 5,
+      "min_playtime": 90,
+      "max_playtime": 120,
+      "min_age": 13,
+      "description": "2,000 years ago, the Roman Empire ruled the lands around the Mediterranean Sea. With peace at the borders, harmony inside the provinces, uniform law, and a common currency, the economy thrived and gave rise to mighty Roman dynasties as they expanded throughout the numerous cities. Guide one of these dynasties and send colonists to the remote realms of the Empire, develop your trade network, and appease the ancient gods to curry their favor - all to gain the chance to emerge victorious in Concordia.",
+      "description_preview": "2,000 years ago, the Roman Empire ruled the lands around the Mediterranean Sea. With peace at the borders, harmony inside the provinces, uniform law, and a common currency, the economy thrived and gave rise to mighty Roman dynasties as they expanded throughout the numerous cities. Guide one of these dynasties and send colonists to the remote realms of the Empire, develop your trade network, and appease the ancient gods to curry their favor - all to gain the chance to emerge victorious in Concordia.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1538065470418",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1538065470418",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1538065470418",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1538065470418",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1538065470418",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1538065470418",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1538065470418"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/FCuXPSfhDR/concordia",
+      "price": "69.99",
+      "msrp": "64.95",
+      "discount": "-0.08",
+      "primary_publisher": "Rio Grande Games",
+      "publishers": [
+        "Rio Grande Games"
+      ],
+      "mechanics": [
+        {
+          "id": "05zCZoLvQJ"
+        },
+        {
+          "id": "iWODHwRGuU"
+        },
+        {
+          "id": "vZsDDAdOoe"
+        },
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "MEAoOygZsA"
+        },
+        {
+          "id": "ea1eaPBQn8"
+        }
+      ],
+      "categories": [
+        {
+          "id": "a8NM5cugJX"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Mac Gerdts"
+      ],
+      "developers": [],
+      "artists": [
+        "Dominik Mayer",
+        "Marina Fahrenbach",
+        "Mac Gerdts"
+      ],
+      "names": [],
+      "num_user_ratings": 97,
+      "average_user_rating": 3.8762886597938153,
+      "official_url": "http://riograndegames.com/Game/1279-Concordia?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "http://riograndegames.com/getFile.php?id=1812",
+      "weight_amount": 3.44,
+      "weight_units": "lbs ",
+      "size_height": 10.8,
+      "size_width": 7.5,
+      "size_depth": 2.8,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 829,
+      "reddit_week_count": 2,
+      "reddit_day_count": 4,
+      "historical_low_price": 42.47,
+      "historical_low_date": {
+        "$date": "2019-02-06T12:37:13.864Z"
+      }
+    },
+    {
+      "id": "6VQXkkC5ql",
+      "name": "Dominion 2nd Edition",
+      "year_published": 2016,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 15,
+      "max_playtime": 60,
+      "min_age": 14,
+      "description": "You are a monarch, like your parents before you, a ruler of a small pleasant kingdom of rivers and evergreens. Unlike your parents, however, you have hopes and dreams! You want a bigger and more pleasant kingdom, with more rivers and a wider variety of trees. You want a Dominion! <br />\r\n<br />\r\nIn all directions lie fiefs, freeholds, and feodums. All are small bits of land, controlled by petty lords and verging on anarchy. You will bring civilization to these people, uniting them under your banner.<br />\r\n<br />\r\nRio Grande Games has updated Dominion in this Second Edition. New cover and replaced a few cards; cleaned up rules and card text. Artwork on the Base cards have been changed to be similar to that found previously in Base Cards.",
+      "description_preview": "You are a monarch, like your parents before you, a ruler of a small pleasant kingdom of rivers and evergreens. Unlike your parents, however, you have hopes and dreams! You want a bigger and more pleasant kingdom, with more rivers and a wider variety of trees. You want a Dominion!  \r\n \r\nIn all directions lie fiefs, freeholds, and feodums. All are small bits of land, controlled by petty lords and verging on anarchy. You will bring civilization to these people, uniting them under your banner. \r\n \r\nRio Grande Games has updated Dominion in this Second Edition. New cover and replaced a few cards; cleaned up rules and card text. Artwork on the Base cards have been changed to be similar to that found previously in Base Cards.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254994298-61H6ZZGTpdL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254994298-61H6ZZGTpdL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254994298-61H6ZZGTpdL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254994298-61H6ZZGTpdL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254994298-61H6ZZGTpdL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254994298-61H6ZZGTpdL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254994298-61H6ZZGTpdL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/6VQXkkC5ql/dominion-2nd-edition",
+      "price": "29.99",
+      "msrp": "44.95",
+      "discount": "0.33",
+      "primary_publisher": "Rio Grande Games",
+      "publishers": [
+        "Rio Grande Games"
+      ],
+      "mechanics": [
+        {
+          "id": "vZsDDAdOoe"
+        },
+        {
+          "id": "yu3eas6v7A"
+        },
+        {
+          "id": "WPytek5P8l"
+        }
+      ],
+      "categories": [
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Donald X. Vaccarino"
+      ],
+      "developers": [],
+      "artists": [
+        "Matthias Catrein",
+        "Julien Delval",
+        "Tomasz Jedruszek"
+      ],
+      "names": [
+        "Dominion"
+      ],
+      "num_user_ratings": 171,
+      "average_user_rating": 3.386847651254874,
+      "official_url": "http://riograndegames.com/Game/1312-Dominion-2nd-edition?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "riograndegames.com/getFile.php?id=348",
+      "weight_amount": 3,
+      "weight_units": "lbs ",
+      "size_height": 11.6,
+      "size_width": 2.9,
+      "size_depth": 11.6,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "3liIBe9Z4z"
+        },
+        {
+          "id": "yeNNtaBC3E"
+        }
+      ],
+      "reddit_all_time_count": 818,
+      "reddit_week_count": 14,
+      "reddit_day_count": 1,
+      "historical_low_price": 26.19,
+      "historical_low_date": {
+        "$date": "2019-04-06T00:38:23.921Z"
+      }
+    },
+    {
+      "id": "M5treAlrHc",
+      "name": "Agricola Revised Edition",
+      "year_published": 2016,
+      "min_players": 1,
+      "max_players": 4,
+      "min_playtime": 30,
+      "max_playtime": 120,
+      "min_age": 10,
+      "description": "In Agricola (Latin for &quot;farmer&quot;), you're a farmer in a wooden shack with your spouse and little else. On a turn, you get to take only two actions, one for you and one for the spouse, from all the possibilities you'll find on a farm: collecting clay, wood or stone; building fences; and so on. You might think about having kids in order to get more work accomplished, but first you need to expand your house. And what are you going to feed all the little rug rats? Agricola is a turn based game. There are 14 game turns plus 6 harvest phases (after turn 4, 7, 9, 11, 13, and 14). Each player starts with two playing tokens (farmer and wife) and thus can take two actions per turn. There are multiple options, and while the game progresses, you'll have more and more: first thing in a turn, a new action card is flipped over. Problem: Each action can be taken just once per turn, so it's important to do some things with high preference. Each player also starts with a hand of 7 Occupation cards (of more than 160 total) and 7 Minor Improvement cards (of more than 140 total) that he may use during the game if they fit in his/her strategy. This amounts to countless strategies, some depending on your card hand. Sometimes it's a good choice to stay on course, sometimes you better react on what your opponents do. Agricola can also be played without cards (family game) and can even be played solo. Designed by Uwe Rosenberg.",
+      "description_preview": "In Agricola (Latin for \"farmer\"), you're a farmer in a wooden shack with your spouse and little else. On a turn, you get to take only two actions, one for you and one for the spouse, from all the possibilities you'll find on a farm: collecting clay, wood or stone; building fences; and so on. You might think about having kids in order to get more work accomplished, but first you need to expand your house. And what are you going to feed all the little rug rats? Agricola is a turn based game. There are 14 game turns plus 6 harvest phases (after turn 4, 7, 9, 11, 13, and 14). Each player starts with two playing tokens (farmer and wife) and thus can take two actions per turn. There are multiple options, and while the game progresses, you'll have more and more: first thing in a turn, a new action card is flipped over. Problem: Each action can be taken just once per turn, so it's important to do some things with high preference. Each player also starts with a hand of 7 Occupation cards (of more than 160 total) and 7 Minor Improvement cards (of more than 140 total) that he may use during the game if they fit in his/her strategy. This amounts to countless strategies, some depending on your card hand. Sometimes it's a good choice to stay on course, sometimes you better react on what your opponents do. Agricola can also be played without cards (family game) and can even be played solo. Designed by Uwe Rosenberg.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254915322-61vm3wX33lL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254915322-61vm3wX33lL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254915322-61vm3wX33lL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254915322-61vm3wX33lL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254915322-61vm3wX33lL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254915322-61vm3wX33lL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254915322-61vm3wX33lL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/M5treAlrHc/agricola-revised-edition",
+      "price": "47.99",
+      "msrp": "50.99",
+      "discount": "0.06",
+      "primary_publisher": "Lookout Games",
+      "publishers": [
+        "Lookout Games",
+        "Mayfair Games",
+        "Z-Man Games (U.S.)",
+        "999 Games (Netherlands)",
+        "Homolúdicus (Spain)"
+      ],
+      "mechanics": [
+        {
+          "id": "wV5peB05xs"
+        },
+        {
+          "id": "WPytek5P8l"
+        }
+      ],
+      "categories": [
+        {
+          "id": "N0TkEGfEsF"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Uwe Rosenberg"
+      ],
+      "developers": [],
+      "artists": [
+        "Klemens Franz"
+      ],
+      "names": [
+        "Agricola"
+      ],
+      "num_user_ratings": 126,
+      "average_user_rating": 3.672771672771673,
+      "rules_url": "http://www.tabladejoc.ro/userfiles/downloads/agricola-rules.pdf",
+      "weight_amount": 5,
+      "weight_units": "lbs ",
+      "size_height": 8.9,
+      "size_width": 2.8,
+      "size_depth": 12.4,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "3liIBe9Z4z"
+        },
+        {
+          "id": "qRmWOyGrea"
+        }
+      ],
+      "reddit_all_time_count": 713,
+      "reddit_week_count": 15,
+      "reddit_day_count": 5,
+      "historical_low_price": 46.99,
+      "historical_low_date": {
+        "$date": "2019-07-01T10:03:58.645Z"
+      }
+    },
+    {
+      "id": "E4ELA8cG85",
+      "name": "Race for the Galaxy",
+      "year_published": 2007,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 30,
+      "max_playtime": 60,
+      "min_age": 14,
+      "description": "In Race for the Galaxy from Rio Grande Games, players build galactic civilizations using game cards that represent worlds or technical and social developments. Each round consists of one or more of five possible phases. In each round, each player secretly and simultaneously chooses one of seven different action cards and then reveals it. Only the selected phases occur. For these phases, every player performs the phasea€s action, while the selecting player(s) also get a bonus for that phase. For example, if at least one player chooses the Develop action, then the Develop phase will occur, otherwise it is skipped. In it, each player may simultaneously select a development from his hand of cards to build. After revealing the cards, each player adds his development to his tableau of cards on the table and then discards cards from his hand equal to its cost. Each player who chose Develop discards one card fewer as his bonus. Explore allows a player to draw cards and select which of them to add to his hand. Settle allows a player to place a world in his tableau. Some worlds produce goods, represented by face down cards, when Produce is selected. These goods can be discarded for victory points or sold to add cards to the player's hand by selecting Consume. With cards, players can settle new worlds and build more developments, gaining both victory points and card powers that provide advantages in certain phases. The player who best manages his cards, phase and bonus selections, and card powers to build the greatest space empire, wins. The winner is the player with the most victory points.",
+      "description_preview": "In Race for the Galaxy from Rio Grande Games, players build galactic civilizations using game cards that represent worlds or technical and social developments. Each round consists of one or more of five possible phases. In each round, each player secretly and simultaneously chooses one of seven different action cards and then reveals it. Only the selected phases occur. For these phases, every player performs the phasea€s action, while the selecting player(s) also get a bonus for that phase. For example, if at least one player chooses the Develop action, then the Develop phase will occur, otherwise it is skipped. In it, each player may simultaneously select a development from his hand of cards to build. After revealing the cards, each player adds his development to his tableau of cards on the table and then discards cards from his hand equal to its cost. Each player who chose Develop discards one card fewer as his bonus. Explore allows a player to draw cards and select which of them to add to his hand. Settle allows a player to place a world in his tableau. Some worlds produce goods, represented by face down cards, when Produce is selected. These goods can be discarded for victory points or sold to add cards to the player's hand by selecting Consume. With cards, players can settle new worlds and build more developments, gaining both victory points and card powers that provide advantages in certain phases. The player who best manages his cards, phase and bonus selections, and card powers to build the greatest space empire, wins. The winner is the player with the most victory points.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254200326-516WSoozIAL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254200326-516WSoozIAL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254200326-516WSoozIAL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254200326-516WSoozIAL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254200326-516WSoozIAL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254200326-516WSoozIAL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254200326-516WSoozIAL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/E4ELA8cG85/race-for-the-galaxy",
+      "price": "23.69",
+      "msrp": "34.99",
+      "discount": "0.32",
+      "primary_publisher": "Rio Grande Games",
+      "publishers": [
+        "Rio Grande Games"
+      ],
+      "mechanics": [
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "DEvPj5twid"
+        }
+      ],
+      "categories": [
+        {
+          "id": "v4SfYtS2Lr"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "\tThomas Lehmann"
+      ],
+      "developers": [],
+      "artists": [
+        "Claus Stephan",
+        "Martin Hoffmann",
+        "Mirko Suzuki"
+      ],
+      "names": [],
+      "num_user_ratings": 97,
+      "average_user_rating": 3.512552659519814,
+      "official_url": "http://riograndegames.com/games.html?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "http://riograndegames.com/getFile.php?id=273",
+      "weight_amount": 1.3,
+      "weight_units": "lbs",
+      "size_height": 7.5,
+      "size_width": 2.8,
+      "size_depth": 10.8,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 685,
+      "reddit_week_count": 13,
+      "reddit_day_count": 3,
+      "historical_low_price": 21.82,
+      "historical_low_date": {
+        "$date": "2019-08-03T10:02:50.286Z"
+      }
+    },
+    {
+      "id": "GP7Y2xOUzj",
+      "name": "Codenames",
+      "year_published": 2015,
+      "min_players": 2,
+      "max_players": 8,
+      "min_playtime": 15,
+      "max_playtime": 20,
+      "min_age": 14,
+      "description": "The two rival spymasters know the secret identities of 25 agents. Their teammates know the agents only by their CODENAMES.<br />\r\n<br />\r\nThe teams compete to see who can make contact with all of their agents first. Spymasters give one-word clues that can point to multiple words on the board. Their teammates try to guess words of the right color while avoiding those that belong to the opposing team. And everyone wants to avoid the assassin.<br />\r\n<br />\r\nCodenames: win or lose, it's fun to figure out the clues.",
+      "description_preview": "The two rival spymasters know the secret identities of 25 agents. Their teammates know the agents only by their CODENAMES. \r\n \r\nThe teams compete to see who can make contact with all of their agents first. Spymasters give one-word clues that can point to multiple words on the board. Their teammates try to guess words of the right color while avoiding those that belong to the opposing team. And everyone wants to avoid the assassin. \r\n \r\nCodenames: win or lose, it's fun to figure out the clues.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254183526-51f6ysXCMmL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254183526-51f6ysXCMmL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254183526-51f6ysXCMmL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254183526-51f6ysXCMmL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254183526-51f6ysXCMmL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254183526-51f6ysXCMmL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254183526-51f6ysXCMmL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/GP7Y2xOUzj/codenames",
+      "price": "12.99",
+      "msrp": "20.00",
+      "discount": "0.35",
+      "primary_publisher": "Czech Games Edition",
+      "publishers": [
+        "Czech Games Edition"
+      ],
+      "mechanics": [
+        {
+          "id": "r6yIFvyXDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": "eX8uuNlQkQ"
+        },
+        {
+          "id": "X8J7RM6dxX"
+        }
+      ],
+      "designers": [
+        "Vlaada Chvátil"
+      ],
+      "developers": [],
+      "artists": [
+        " Stéphane Gantiez",
+        "Tomáš Kučerovský"
+      ],
+      "names": [
+        "שם-קוד "
+      ],
+      "num_user_ratings": 215,
+      "average_user_rating": 3.479069767441864,
+      "official_url": "https://czechgames.com/en/codenames/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://czechgames.com/files/rules/codenames-rules-en.pdf",
+      "weight_amount": 1.25,
+      "weight_units": "lbs ",
+      "size_height": 2.8,
+      "size_width": 6.3,
+      "size_depth": 9,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 637,
+      "reddit_week_count": 8,
+      "reddit_day_count": 30,
+      "historical_low_price": 12.47,
+      "historical_low_date": {
+        "$date": "2019-08-28T12:00:55.587Z"
+      }
+    },
+    {
+      "id": "O0G8z5Wgz1",
+      "name": "Splendor",
+      "year_published": 2014,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 30,
+      "max_playtime": 60,
+      "min_age": 10,
+      "description": "As a wealthy Renaissance merchant, acquire mines and transportation, hire artisans and woo the nobility. Create the most fantastic jewelry to become the best-known merchant of them all! Acquire precious stones to trade them for development cards. Use development cards to acquire more gem stones. Use your gems and gold to create the most fantastic jewelry, and appeal to the nobles to gain the prestige you need to win.<br />\r\n<br />\r\nSplendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige.<br />\r\n <br />\r\nOn your turn, you may (1) collect chips (gems), or (2) buy and build a card, or (3) reserve one card. If you collect chips, you take either three different kinds of chips or two chips of the same kind. If you buy a card, you pay its price in chips and add it to your playing area. To reserve a card, you place it in front of you face down for later building; this costs you a round, but you also get gold in the form of a joker chip, which you can use as any gem.<br />\r\n <br />\r\nAll of the cards you buy increase your wealth as they give you a permanent gem bonus for later buys; some of the cards also give you prestige points. In order to win the game, you must reach 15 prestige points before your opponents do.",
+      "description_preview": "As a wealthy Renaissance merchant, acquire mines and transportation, hire artisans and woo the nobility. Create the most fantastic jewelry to become the best-known merchant of them all! Acquire precious stones to trade them for development cards. Use development cards to acquire more gem stones. Use your gems and gold to create the most fantastic jewelry, and appeal to the nobles to gain the prestige you need to win. \r\n \r\nSplendor is a fast-paced and addictive game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops; all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige. \r\n  \r\nOn your turn, you may (1) collect chips (gems), or (2) buy and build a card, or (3) reserve one card. If you collect chips, you take either three different kinds of chips or two chips of the same kind. If you buy a card, you pay its price in chips and add it to your playing area. To reserve a card, you place it in front of you face down for later building; this costs you a round, but you also get gold in the form of a joker chip, which you can use as any gem. \r\n  \r\nAll of the cards you buy increase your wealth as they give you a permanent gem bonus for later buys; some of the cards also give you prestige points. In order to win the game, you must reach 15 prestige points before your opponents do.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254164722-51AHDwGznvL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254164722-51AHDwGznvL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254164722-51AHDwGznvL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254164722-51AHDwGznvL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254164722-51AHDwGznvL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254164722-51AHDwGznvL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254164722-51AHDwGznvL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/O0G8z5Wgz1/splendor",
+      "price": "27.75",
+      "msrp": "39.99",
+      "discount": "0.31",
+      "primary_publisher": "Asmodee Editions",
+      "publishers": [
+        "Asmodee Editions",
+        "Space Cowboys"
+      ],
+      "mechanics": [
+        {
+          "id": "wV5peB05xs"
+        },
+        {
+          "id": "lA3KUtVFCy"
+        }
+      ],
+      "categories": [
+        {
+          "id": "eX8uuNlQkQ"
+        },
+        {
+          "id": "N0TkEGfEsF"
+        },
+        {
+          "id": "zyj9ZK3mHB"
+        }
+      ],
+      "designers": [
+        "Marc Andre"
+      ],
+      "developers": [],
+      "artists": [
+        "Pascal Quidault"
+      ],
+      "names": [],
+      "num_user_ratings": 173,
+      "average_user_rating": 3.279072272286647,
+      "official_url": "https://www.daysofwonder.com/online/en/splendor/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://www.spacecowboys.fr/img/games/splendor/details/rules/Rules_Splendor_US.pdf",
+      "weight_amount": 3.95,
+      "weight_units": "lbs ",
+      "size_height": 8.5,
+      "size_width": 2.4,
+      "size_depth": 10.8,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 621,
+      "reddit_week_count": 9,
+      "reddit_day_count": 2,
+      "historical_low_price": 19,
+      "historical_low_date": {
+        "$date": "2019-09-03T16:04:56.425Z"
+      }
+    },
+    {
+      "id": "5H5JS0KLzK",
+      "name": "Wingspan",
+      "year_published": 2019,
+      "min_players": 1,
+      "max_players": 5,
+      "min_playtime": 40,
+      "max_playtime": 70,
+      "min_age": 10,
+      "description": "<p><em><strong>Wingspan</strong></em> is a competitive, medium-weight, card-driven, engine-building board game from Stonemaier Games.</p>\r\n\r\n<p>You are bird enthusiasts—researchers, bird watchers, ornithologists, and collectors—seeking to discover and attract the best birds to your aviary. Each bird extends a chain of powerful combinations in one of your habitats (actions). These habitats  focus on several key aspects of growth:</p>\r\n\r\n<ul><li>Gain food tokens via custom dice in a birdfeeder dice tower</li><li>Lay eggs using egg miniatures in a variety of colors</li><li>Draw from hundreds of unique bird cards and play them</li></ul>\r\n\r\n<p>The winner is the player with the most points after 4 rounds.</p>\r\n\r\n<p>If you enjoy Terraforming Mars and Gizmos, we think this game will take flight at your table. The official announcement and pre-orders will be available on January 2, 2019.</p>",
+      "description_preview": "   Wingspan   is a competitive, medium-weight, card-driven, engine-building board game from Stonemaier Games. \r\n\r\n You are bird enthusiasts—researchers, bird watchers, ornithologists, and collectors—seeking to discover and attract the best birds to your aviary. Each bird extends a chain of powerful combinations in one of your habitats (actions). These habitats  focus on several key aspects of growth: \r\n\r\n  Gain food tokens via custom dice in a birdfeeder dice tower  Lay eggs using egg miniatures in a variety of colors  Draw from hundreds of unique bird cards and play them  \r\n\r\n The winner is the player with the most points after 4 rounds. \r\n\r\n If you enjoy Terraforming Mars and Gizmos, we think this game will take flight at your table. The official announcement and pre-orders will be available on January 2, 2019. ",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1545152463996",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1545152463996",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1545152463996",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1545152463996",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1545152463996",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1545152463996",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1545152463996"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/5H5JS0KLzK/wingspan",
+      "price": "44.99",
+      "msrp": "55.00",
+      "discount": "0.18",
+      "primary_publisher": "Stonemaier Games",
+      "publishers": [
+        "Stonemaier Games",
+        "999 Games",
+        "Delta Vision Publishing",
+        "Maldito Games",
+        "Matagot"
+      ],
+      "mechanics": [
+        {
+          "id": "R0bGq4cAl4"
+        },
+        {
+          "id": "yu3eas6v7A"
+        },
+        {
+          "id": "lA3KUtVFCy"
+        }
+      ],
+      "categories": [
+        {
+          "id": "MWoxgHrOJD"
+        },
+        {
+          "id": "eX8uuNlQkQ"
+        },
+        {
+          "id": "mavSOM8vjH"
+        },
+        {
+          "id": "N0TkEGfEsF"
+        },
+        {
+          "id": "zyj9ZK3mHB"
+        }
+      ],
+      "designers": [
+        "Elizabeth Hargrave"
+      ],
+      "developers": [],
+      "artists": [
+        "Ana Maria Martinez Jaramillo",
+        "Natalia Rojas",
+        "Beth Sobel"
+      ],
+      "names": [],
+      "num_user_ratings": 40,
+      "average_user_rating": 3.9249999999999994,
+      "official_url": "https://stonemaiergames.com/games/wingspan/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://stonemaiergames.com/games/wingspan/rules/",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 617,
+      "reddit_week_count": 30,
+      "reddit_day_count": 10,
+      "historical_low_price": 38.47,
+      "historical_low_date": {
+        "$date": "2019-07-04T13:02:17.707Z"
+      }
+    },
+    {
+      "id": "AuBvbISHR6",
+      "name": "Ticket To Ride",
+      "year_published": 2004,
+      "min_players": 2,
+      "max_players": 5,
+      "min_playtime": 45,
+      "max_playtime": 90,
+      "min_age": 8,
+      "description": "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America. The longer the routes, the more points they earn. Additional points come to those who can fulfill their Destination Tickets by connecting two distant cities, and to the player who builds the longest continuous railway. So climb aboard for some railroading fun and adventure. You've got a Ticket to Ride!<br />\r\n<br />\r\nOctober 2, 1900 -- it's 28 years to the day that noted London eccentric, Phileas Fogg accepted and then won a 20,000 bet that he could travel Around the World in 80 Days. Now at the dawn of the century some old friends have gathered to celebrate Fogg's impetuous and lucrative gamble -- and to propose a new wager of their own. The stakes: $1 million in a winner-takes-all competition. The objective: to see the most cities in North America -- in just 7 days. <br />\r\n<br />\r\n-Spiel Des Jahres 2004(German game of the year)<br />\r\n-As d'Or Cannes 2004 (French game of the year)<br />\r\n-Game of the year 2004 - Japan<br />\r\n-Game of the year 2004 - Sweden<br />\r\n-Game of the year 2004 - Finland<br />\r\n-Diana Jones Excellence in Gaming Award 2004<br />\r\n-Origins Award Winner - Best Board Game 2005<br />\r\n-Game of the year 2004 - Spain<br />\r\n-Parent's Choice Foundation Silver Medal 2004",
+      "description_preview": "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America. The longer the routes, the more points they earn. Additional points come to those who can fulfill their Destination Tickets by connecting two distant cities, and to the player who builds the longest continuous railway. So climb aboard for some railroading fun and adventure. You've got a Ticket to Ride! \r\n \r\nOctober 2, 1900 -- it's 28 years to the day that noted London eccentric, Phileas Fogg accepted and then won a 20,000 bet that he could travel Around the World in 80 Days. Now at the dawn of the century some old friends have gathered to celebrate Fogg's impetuous and lucrative gamble -- and to propose a new wager of their own. The stakes: $1 million in a winner-takes-all competition. The objective: to see the most cities in North America -- in just 7 days.  \r\n \r\n-Spiel Des Jahres 2004(German game of the year) \r\n-As d'Or Cannes 2004 (French game of the year) \r\n-Game of the year 2004 - Japan \r\n-Game of the year 2004 - Sweden \r\n-Game of the year 2004 - Finland \r\n-Diana Jones Excellence in Gaming Award 2004 \r\n-Origins Award Winner - Best Board Game 2005 \r\n-Game of the year 2004 - Spain \r\n-Parent's Choice Foundation Silver Medal 2004",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254202421-61wLscAHHSL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254202421-61wLscAHHSL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254202421-61wLscAHHSL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254202421-61wLscAHHSL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254202421-61wLscAHHSL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254202421-61wLscAHHSL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254202421-61wLscAHHSL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/AuBvbISHR6/ticket-to-ride",
+      "price": "33.46",
+      "msrp": "49.99",
+      "discount": "0.33",
+      "primary_publisher": "Days of Wonder",
+      "publishers": [
+        "Days of Wonder"
+      ],
+      "mechanics": [
+        {
+          "id": "wV5peB05xs"
+        },
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "c6gkRM7rSy"
+        },
+        {
+          "id": "lA3KUtVFCy"
+        }
+      ],
+      "categories": [
+        {
+          "id": "h8wfZG0j3I"
+        }
+      ],
+      "designers": [
+        "Alan R. Moon"
+      ],
+      "developers": [],
+      "artists": [
+        "Julien Delval",
+        "Cyrille Daujean"
+      ],
+      "names": [],
+      "num_user_ratings": 171,
+      "average_user_rating": 3.2627315522344995,
+      "official_url": "https://www.daysofwonder.com/tickettoride/en/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf",
+      "weight_amount": 2.8,
+      "weight_units": "lbs ",
+      "size_height": 11.8,
+      "size_width": 11.8,
+      "size_depth": 3,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "FbhyxVWcOu"
+        }
+      ],
+      "reddit_all_time_count": 600,
+      "reddit_week_count": 4,
+      "reddit_day_count": 8,
+      "historical_low_price": 33.46,
+      "historical_low_date": {
+        "$date": "2019-10-04T00:52:05.864Z"
+      }
+    },
+    {
+      "id": "OIXt3DmJU0",
+      "name": "Catan",
+      "year_published": 1995,
+      "min_players": 3,
+      "max_players": 4,
+      "min_playtime": 45,
+      "max_playtime": 90,
+      "min_age": 10,
+      "description": "<p>The women and men of your expedition build the first two settlements. Fortunately, the land is rich in natural resources. You build roads and new settlements that eventually become cities. Will you succeed in gaining supremacy on Catan? Barter trade dominates the scene. Some resources you have in abundance, other resources are scarce. Ore for wool, brick for lumber - you trade according to what is needed for your current building projects. Proceed strategically! If you found your settlements in the right places and skillfully trade your resources, then the odds will be in your favor. But your opponents are smart too.</p>\r\n\r\n<p>To begin the game, we build the game board using hexagonal terrain tiles. Catan is born - a beautiful island with mountains, pastures, hills, fields, and forests, surrounded by the sea.</p>\r\n\r\n<p>Each of us places two small houses on spaces where three terrain hexes meet. They are our starting settlements.</p>\r\n\r\n<p>And so it begins. I roll two dice. An “11”! Each terrain hex is marked with a die roll number. Each player who owns a settlement adjacent to a terrain hex marked with the number rolled receives a resource produced by this hex. Hills produce brick, forests produce lumber, mountains produce ore, fields produce grain, and pastures produce wool.</p>\r\n\r\n<p>We use these resources to expand across Catan: we build roads and new settlements, or we upgrade our existing settlements to cities. For example, a road costs 1 brick and 1 lumber. If we do not have the necessary resources, we can acquire them by trading with our opponents.</p>\r\n\r\n<p>Each settlement is worth 1 victory point and each city is worth 2 victory points. If you expand cleverly, you may be the first player to reach 10 victory points and thus win the game!</p>",
+      "description_preview": " The women and men of your expedition build the first two settlements. Fortunately, the land is rich in natural resources. You build roads and new settlements that eventually become cities. Will you succeed in gaining supremacy on Catan? Barter trade dominates the scene. Some resources you have in abundance, other resources are scarce. Ore for wool, brick for lumber - you trade according to what is needed for your current building projects. Proceed strategically! If you found your settlements in the right places and skillfully trade your resources, then the odds will be in your favor. But your opponents are smart too. \r\n\r\n To begin the game, we build the game board using hexagonal terrain tiles. Catan is born - a beautiful island with mountains, pastures, hills, fields, and forests, surrounded by the sea. \r\n\r\n Each of us places two small houses on spaces where three terrain hexes meet. They are our starting settlements. \r\n\r\n And so it begins. I roll two dice. An “11”! Each terrain hex is marked with a die roll number. Each player who owns a settlement adjacent to a terrain hex marked with the number rolled receives a resource produced by this hex. Hills produce brick, forests produce lumber, mountains produce ore, fields produce grain, and pastures produce wool. \r\n\r\n We use these resources to expand across Catan: we build roads and new settlements, or we upgrade our existing settlements to cities. For example, a road costs 1 brick and 1 lumber. If we do not have the necessary resources, we can acquire them by trading with our opponents. \r\n\r\n Each settlement is worth 1 victory point and each city is worth 2 victory points. If you expand cleverly, you may be the first player to reach 10 victory points and thus win the game! ",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559258096678-51Eiofu9mqL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/OIXt3DmJU0/catan",
+      "price": "41.65",
+      "msrp": "49.00",
+      "discount": "0.15",
+      "primary_publisher": "Catan Studio",
+      "publishers": [
+        "Catan Studio",
+        "Kosmos (Germany)",
+        "Filosofia (France)",
+        "999 Games (Benelux)",
+        "Capcom (Japan)",
+        "Smart (Russia)",
+        "Κάισσα (Greece)",
+        "Devir (Brazil)",
+        "HaKubia (Israel)",
+        "Grow Jogos e Brinquedos (Brazil)",
+        "Galakta (Poland)",
+        "Albi (Czech republic and Slovakia)"
+      ],
+      "mechanics": [
+        {
+          "id": "R0bGq4cAl4"
+        },
+        {
+          "id": "c6gkRM7rSy"
+        },
+        {
+          "id": "AVY6EvSQTP"
+        }
+      ],
+      "categories": [
+        {
+          "id": "7rV11PKqME"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Klaus Teuber"
+      ],
+      "developers": [],
+      "artists": [
+        "Volkan Baga",
+        "Tanja Donner",
+        "Pete Fenlon",
+        "Jason Hawkins",
+        "Michaela Kienle",
+        "Harald Lieske",
+        "Michael Menzel",
+        "Marion Pott",
+        "Matt Schwabel",
+        "Franz Vohwinkel",
+        "Stephen Graham Walsh"
+      ],
+      "names": [
+        "Settlers of Catan",
+        "Settlers",
+        "trade build settle",
+        "Catan 5th Edition",
+        "Catan: 5th Edition",
+        "Die Siedler von Catan ",
+        "Catan - Das Spiel",
+        "Les Colons de Catane"
+      ],
+      "num_user_ratings": 195,
+      "average_user_rating": 2.9179487179487182,
+      "official_url": "https://www.catan.com/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://www.catan.com/game/catan#prof-easy",
+      "weight_amount": 2,
+      "weight_units": "lbs ",
+      "size_height": 11.6,
+      "size_width": 9.5,
+      "size_depth": 3,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "Dxj6IrT1Rn"
+        }
+      ],
+      "reddit_all_time_count": 561,
+      "reddit_week_count": 6,
+      "reddit_day_count": 13,
+      "historical_low_price": 29.96,
+      "historical_low_date": {
+        "$date": "2019-07-20T23:17:20.327Z"
+      }
+    },
+    {
+      "id": "7NYbgH2Z2I",
+      "name": "Viticulture: Essential Edition",
+      "year_published": 2015,
+      "min_players": 1,
+      "max_players": 6,
+      "min_playtime": 90,
+      "max_playtime": 120,
+      "min_age": 13,
+      "description": "Viticulture is a worker-placement game set in the foothills of Tuscany. The Essential Edition includes the second edition of Viticulture along with several elements from the original Tuscany expansion pack, hand-picked by famed designer Uwe Rosenberg.",
+      "description_preview": "Viticulture is a worker-placement game set in the foothills of Tuscany. The Essential Edition includes the second edition of Viticulture along with several elements from the original Tuscany expansion pack, hand-picked by famed designer Uwe Rosenberg.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254894908-61llEAverzL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254894908-61llEAverzL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254894908-61llEAverzL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254894908-61llEAverzL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254894908-61llEAverzL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254894908-61llEAverzL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254894908-61llEAverzL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/7NYbgH2Z2I/viticulture-essential-edition",
+      "price": "40.99",
+      "msrp": "60.00",
+      "discount": "0.32",
+      "primary_publisher": "Stonemaier Games",
+      "publishers": [
+        "Stonemaier Games"
+      ],
+      "mechanics": [
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "fBOTEBUAmV"
+        }
+      ],
+      "categories": [
+        {
+          "id": "N0TkEGfEsF"
+        },
+        {
+          "id": "Wr8uXcoR9p"
+        }
+      ],
+      "designers": [
+        "Morten Monrad Pedersen",
+        "Jamey Stegmaier",
+        "Alan Stone"
+      ],
+      "developers": [],
+      "artists": [
+        "Jacqui Davis",
+        "David Montgomery",
+        "Beth Sobel"
+      ],
+      "names": [
+        "Viticulture",
+        "Viticulture: Essential Edition (Deal of the Day)"
+      ],
+      "num_user_ratings": 120,
+      "average_user_rating": 3.8236111111111115,
+      "official_url": "https://stonemaiergames.com/games/viticulture/essential-edition/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://app.box.com/s/c3u4rk2dg59jf7fp3b47amu97w0sw8qi",
+      "weight_amount": 3.51,
+      "weight_units": "lbs ",
+      "size_height": 8.7,
+      "size_width": 3.9,
+      "size_depth": 10.6,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "2AG2GTfMTR"
+        }
+      ],
+      "reddit_all_time_count": 555,
+      "reddit_week_count": 7,
+      "reddit_day_count": 13,
+      "historical_low_price": 32.97,
+      "historical_low_date": {
+        "$date": "2019-09-11T17:28:50.178Z"
+      }
+    },
+    {
+      "id": "8YYQ8Q3dGv",
+      "name": "Arboretum",
+      "year_published": 2015,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 30,
+      "max_playtime": 45,
+      "min_age": 8,
+      "description": "Arboretum is a strategic card game that challenges players to create the most beautiful path through the garden. Choosing the correct cards and placing them in the most efficient orientation will score you the most points at the end of the game. With elegantly simple rules, Arboretum offers players surprisingly complex choices.",
+      "description_preview": "Arboretum is a strategic card game that challenges players to create the most beautiful path through the garden. Choosing the correct cards and placing them in the most efficient orientation will score you the most points at the end of the game. With elegantly simple rules, Arboretum offers players surprisingly complex choices.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254997948-513u-lZqyZL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254997948-513u-lZqyZL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254997948-513u-lZqyZL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254997948-513u-lZqyZL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254997948-513u-lZqyZL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254997948-513u-lZqyZL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254997948-513u-lZqyZL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/8YYQ8Q3dGv/arboretum",
+      "price": "13.49",
+      "msrp": "14.49",
+      "discount": "0.07",
+      "primary_publisher": "Renegade Game Studios",
+      "publishers": [
+        "Renegade Game Studios",
+        " Filosofia Éditions",
+        "Z-Man Games",
+        "ABACUSSPIELE",
+        "Fractal Juegos",
+        "Rebel",
+        "Vagabund"
+      ],
+      "mechanics": [
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "lA3KUtVFCy"
+        },
+        {
+          "id": "8PN2HE86wg"
+        }
+      ],
+      "categories": [
+        {
+          "id": "eX8uuNlQkQ"
+        }
+      ],
+      "designers": [
+        "Dan Cassar"
+      ],
+      "developers": [],
+      "artists": [
+        "Philippe Guérin",
+        "Chris Quilliams",
+        "Beth Sobel",
+        "Waldo Ramirez"
+      ],
+      "names": [],
+      "num_user_ratings": 47,
+      "average_user_rating": 3.4255319148936176,
+      "official_url": "https://www.renegadegamestudios.com/arboretum/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "weight_amount": 10.6,
+      "weight_units": "oz",
+      "size_height": 10,
+      "size_width": 10,
+      "size_depth": 2,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 543,
+      "reddit_week_count": 3,
+      "reddit_day_count": 3,
+      "historical_low_price": 13.49,
+      "historical_low_date": {
+        "$date": "2019-01-08T00:34:24.216Z"
+      }
+    },
+    {
+      "id": "vBBhuJjFVE",
+      "name": "Food Chain Magnate",
+      "year_published": 2015,
+      "min_players": 2,
+      "max_players": 5,
+      "min_playtime": 120,
+      "max_playtime": 240,
+      "min_age": 14,
+      "description": "&quot;Lemonade? They want lemonade? What is the world coming to? I want commercials for burgers on all channels, every 15 minutes. We are the Home of the Original Burger, not a hippie health haven. And place a billboard next to that new house on the corner. I want them craving beer every second they sit in their posh new garden.&quot; <br />\r\n<br />\r\nThe new management trainee trembles in front of the CEO and tries to politely point out that... &quot;How do you mean, we don't have enough staff? The HR director reports to you. Hire more people! Train them! But whatever you do, don't pay them any real wages. I did not go into business to become poor. And fire that discount manager, she is only costing me money. From now on, we'll sell gourmet burgers. Same crap, double the price. Get my marketing director in here!&quot;<br />\r\n<br />\r\nFood Chain Magnate is a heavy strategy game about building a fast food chain. The focus is on building your company using a card-driven (human) resource management system. Players compete on a variable city map through purchasing, marketing and sales, and on a job market for key staff members.",
+      "description_preview": "\"Lemonade? They want lemonade? What is the world coming to? I want commercials for burgers on all channels, every 15 minutes. We are the Home of the Original Burger, not a hippie health haven. And place a billboard next to that new house on the corner. I want them craving beer every second they sit in their posh new garden.\"  \r\n \r\nThe new management trainee trembles in front of the CEO and tries to politely point out that... \"How do you mean, we don't have enough staff? The HR director reports to you. Hire more people! Train them! But whatever you do, don't pay them any real wages. I did not go into business to become poor. And fire that discount manager, she is only costing me money. From now on, we'll sell gourmet burgers. Same crap, double the price. Get my marketing director in here!\" \r\n \r\nFood Chain Magnate is a heavy strategy game about building a fast food chain. The focus is on building your company using a card-driven (human) resource management system. Players compete on a variable city map through purchasing, marketing and sales, and on a job market for key staff members.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1539447098564",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1539447098564",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1539447098564",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1539447098564",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1539447098564",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1539447098564",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1539447098564"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/vBBhuJjFVE/food-chain-magnate",
+      "price": "99.99",
+      "msrp": "149.99",
+      "discount": "0.33",
+      "primary_publisher": "Splotter Spellen",
+      "publishers": [
+        "Splotter Spellen",
+        "Angry Lion Games",
+        "New Games Order",
+        "LLC",
+        "One Moment Games"
+      ],
+      "mechanics": [
+        {
+          "id": "vZsDDAdOoe"
+        },
+        {
+          "id": "wV5peB05xs"
+        },
+        {
+          "id": "DEvPj5twid"
+        }
+      ],
+      "categories": [
+        {
+          "id": "N0TkEGfEsF"
+        }
+      ],
+      "designers": [
+        "Jeroen Doumen",
+        "Joris Wiersinga"
+      ],
+      "developers": [],
+      "artists": [
+        "Iris de Haan",
+        "Ynze Moedt"
+      ],
+      "names": [
+        "FCM"
+      ],
+      "num_user_ratings": 44,
+      "average_user_rating": 3.837837837837838,
+      "official_url": "https://www.splottershop.com/ProductDetails.asp?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://www.fgbradleys.com/rules/rules4/Food%20Chain%20Magnate%20-%20rules.pdf",
+      "weight_amount": 3.81,
+      "weight_units": "lbs ",
+      "size_height": 12.2,
+      "size_width": 8.7,
+      "size_depth": 2,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 542,
+      "reddit_week_count": 11,
+      "reddit_day_count": 3,
+      "historical_low_price": 89.97,
+      "historical_low_date": {
+        "$date": "2019-06-26T21:58:07.523Z"
+      }
+    },
+    {
+      "id": "BBg2uXXdB8",
+      "name": "Kingdomino",
+      "year_published": 2016,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 15,
+      "max_playtime": 20,
+      "min_age": 8,
+      "description": "Kingdomino is a 2-4 player strategy game that plays like dominoes with a kingdom-building twist. Each turn you will connect a new domino to your existing kingdom, making sure that at least one of its sides connects to a matching element already in play.<br />\r\n<br />\r\nMake sure to include dominoes with crowns on them, because at the end of the game you will score points equal to the total number of  matching elements multiplied by the number of crowns.",
+      "description_preview": "Kingdomino is a 2-4 player strategy game that plays like dominoes with a kingdom-building twist. Each turn you will connect a new domino to your existing kingdom, making sure that at least one of its sides connects to a matching element already in play. \r\n \r\nMake sure to include dominoes with crowns on them, because at the end of the game you will score points equal to the total number of  matching elements multiplied by the number of crowns.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254188772-515tbFJ5C8L.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254188772-515tbFJ5C8L.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254188772-515tbFJ5C8L.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254188772-515tbFJ5C8L.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254188772-515tbFJ5C8L.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254188772-515tbFJ5C8L.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254188772-515tbFJ5C8L.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/BBg2uXXdB8/kingdomino",
+      "price": "13.49",
+      "msrp": "19.99",
+      "discount": "0.33",
+      "primary_publisher": "Blue Orange Games",
+      "publishers": [
+        "Blue Orange Games",
+        "Fantasmagoria",
+        "Feelindigo",
+        "FoxMind Israel",
+        "Games Factory Publishing",
+        "Gém Klub Kft.",
+        "Le Grand Massif",
+        "Happy Baobab",
+        "Kaissa Chess & Games",
+        "Lautapelit.fi",
+        "Lifestyle Boardgames Ltd",
+        "MINDOK",
+        "PaperGames (III)",
+        "Pegasus Spiele",
+        "Pridemage Games",
+        "Swan Panasia Co.",
+        "Ltd.",
+        "テンデイズゲームズ (Ten Days Games)",
+        "White Goblin Games"
+      ],
+      "mechanics": [
+        {
+          "id": "vZsDDAdOoe"
+        },
+        {
+          "id": "wV5peB05xs"
+        },
+        {
+          "id": "8PN2HE86wg"
+        }
+      ],
+      "categories": [
+        {
+          "id": "ODWOjWAJj3"
+        },
+        {
+          "id": "ZTneo8TaIO"
+        },
+        {
+          "id": "QAYkTHK1Dd"
+        },
+        {
+          "id": "buDTYyPw4D"
+        }
+      ],
+      "designers": [
+        "Bruno Cathala"
+      ],
+      "developers": [],
+      "artists": [
+        "Cyril Bouquet"
+      ],
+      "names": [],
+      "num_user_ratings": 126,
+      "average_user_rating": 3.3198260073260086,
+      "official_url": "http://www.blueorangegames.com/index.php/games/king-domino?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "http://www.blueorangegames.com/administrator/components/com_bogames/files/rules/cfa0f38157341a002eab1100aab478ea-Kingdomino-Rules-US-2nd-Edition.pdf",
+      "weight_amount": 1,
+      "weight_units": "lb",
+      "size_height": 2,
+      "size_width": 7.9,
+      "size_depth": 7.9,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [],
+      "reddit_all_time_count": 542,
+      "reddit_week_count": 2,
+      "reddit_day_count": 0,
+      "historical_low_price": 8.99,
+      "historical_low_date": {
+        "$date": "2019-09-14T10:03:22.306Z"
+      }
+		}
+	]
+}

@@ -3,7 +3,8 @@ import './App.css';
 import '../App.sass';
 import Searchbox from '../components/Searchbox.js';
 import GameList from '../components/GameList.js';
-import games from "../assets/stubData.json"
+import games from "../assets/stubData.json" // for basic testing
+import sGames from "../assets/bgaSearchStub.json" // for search testing
 import StubList from "../components/selectionTestStub";
 // import SingleShelf from "../components/SingleShelf";
 // import ShelfBay from "../components/ShelfBay";
@@ -45,6 +46,17 @@ class App extends Component {
     })
   }
 
+  // TODO: Dedup this, there shouldn't be two functions doing esentially the same thing!
+  toAddFromSearchClick = (keyID) => {
+    const newGameList = this.state.gameList.slice();
+    newGameList.push(this.state.searchResults.find(({id}) => id === keyID));
+
+    this.setState({
+      gameList: newGameList
+    })
+  }
+
+
   searchBGAapi = (event) => {
     event.preventDefault(); // prevents the form from submitting when button is clicked, we don't want a page reload
 
@@ -68,7 +80,8 @@ class App extends Component {
         )
         .catch(error=>console.log(error))
       }
-
+      //Do this just to try and load more games into the set for testing.
+      this.setState({searchResults : sGames.games })
     //fetch the search results from BoardGame Atlas, return an array of names and keys.
 
   }
@@ -84,7 +97,8 @@ class App extends Component {
         {searchResults != "" &&
           <div className="container">
             <h4>Search results</h4>
-            <StubList games={searchResults} onClick={(gameKeyId) => this.toAddClick(gameKeyId)} />
+            {/* <StubList games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} /> */}
+            <GameList games={searchResults} />
           </div>
         }
         </div>
