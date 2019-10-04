@@ -45,7 +45,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
   // const { data } = usePalette(image);
 // TODO: Streamline colour finding process. Maybe have a helper perform this when games are added to list?
   return(
-    <div className = "column is-half">
+    <div className = "column is-one-third-desktop is-half-tablet">
       <div className = "box is-fullwidth is-outlined game-container">
         <article className = "media">
           <div className = "media-left">
@@ -56,7 +56,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image}) => {
           <div className="media-content">
             <div className="content is-size-6">
               <p>
-                <strong>{name}</strong> - <small>{dims.x ? `${dims.x} by ${dims.y} by ${dims.z} ${dims.units}` : "No dimensions available"}</small>
+                <strong>{name}</strong><br/><small>{dims.x ? `${dims.x} by ${dims.y} by ${dims.z} ${dims.units}` : "No dimensions available"}</small>
               </p>
             </div>
           </div>

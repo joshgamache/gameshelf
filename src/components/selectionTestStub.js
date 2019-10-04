@@ -8,7 +8,6 @@ class stubList extends React.Component {
         <ul>
           {
             Object.keys(this.props.games).map((keyName, i) => {
-              console.log(this.props.games)
               return(<li key={keyName} style={{display: "inline"}}><button onClick={() => this.props.onClick(this.props.games[keyName].id)} className="button">{this.props.games[keyName].name}</button></li>);
             })
           }

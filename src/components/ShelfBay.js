@@ -43,7 +43,7 @@ const ShelfBay = (props) => {
     const sortedShapeArray = [dims.x, dims.y, dims.z].sort((a, b) => a - b);
 
     let idKey = `${game.id}${i}`;
-    console.log(idKey)
+
     const defaultPalette = {
       backgroundColor: "hsl(204, 86%, 53%)",
       color: "#fff",
