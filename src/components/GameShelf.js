@@ -74,16 +74,16 @@ class GameShelf extends React.Component {
       )
     }
 
-    const test = () => {
-      console.log(BoxSizeFitter(this.props.games, {width: this.state.shelfWidth, height: this.state.shelfHeight}))
-    }
+    // const test = () => {
+    //   console.log(BoxSizeFitter(this.props.games, {width: this.state.shelfWidth, height: this.state.shelfHeight}))
+    // }
 
 
     return (
-      <div>{test()}
+      <div>{/* {test()} */}
         <div className="container">
             <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} />
-        </div>
+          </div>
           {buildEachShelf()}
       </div>
     )

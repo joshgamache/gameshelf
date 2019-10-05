@@ -1,6 +1,11 @@
 import React from 'react';
 import GameDisplay from './GameDisplay.js';
 
+const toRemoveClick = (e) => {
+  console.log(e);
+}
+
+
 const GameList = ({games}) => {
   const gameComponents = games.map((game, i) => {
     return (
@@ -12,6 +17,7 @@ const GameList = ({games}) => {
         size_y = {game.size_width}
         size_z = {game.size_depth}
         size_units = {game.size_units}
+        deleteClick={toRemoveClick}
       />
     )
   });

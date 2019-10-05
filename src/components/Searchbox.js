@@ -1,21 +1,19 @@
 import React from 'react';
 
-const Searchbox = ({ searchField, searchChange}, props) => {
+const Searchbox = ({ searchField, searchChange, executeSearch}) => {
   return ( 
-    <div className="columns is-centered">
-      <div class="column is-one-third">
-        <div className="field is-grouped is-grouped-centered">
-          <p className="control is-expanded">
-            <input className="input" type="search" placeholder="Search games on BoardGameAtlas" onChange={searchChange} />
-          </p>
-          <p className="control">
-            <button className="button is-info" onClick={() => this.props.onClick()}>
-              Search
-            </button>
-          </p>
+
+    <div className="container">
+      <div className="columns is-centered">
+        <div className="column is-one-third">
+          <form className="control field is-grouped is-grouped-centered" id="search-form">
+            <input type="text" className="input" id="searchInput" placeholder="Search on BoardGameAtlas" onChange={searchChange} />
+            <button className="button is-info" onClick={executeSearch}>Search BGA</button>
+          </form>
         </div>
       </div>
     </div>
+
   );
 }
 
