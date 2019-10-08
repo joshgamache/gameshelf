@@ -7,6 +7,9 @@ import games from "../assets/stubData.json" // for basic testing
 import sGames from "../assets/bgaSearchStub.json" // for search testing
 import StubList from "../components/selectionTestStub";
 import GameShelf from "../components/GameShelf";
+import Header from "../containers/Header"
+import SearchColumn from "../containers/SearchColumn"
+import MainColumn from "../containers/MainColumn"
 
 // const stubSearchURI = "http://localhost:3000/stubData.json"; // Use this as a test ONLY when BGA is unreachable
 const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
@@ -87,6 +90,19 @@ class App extends Component {
     const {allGames, gameList, searchResults} = this.state;
     return (
       <div className="App">
+        <Header/>
+
+        <section class="section">
+          <div class="container">
+            <div class="columns">
+            <SearchColumn>
+              <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
+            </SearchColumn>
+            <MainColumn/>
+            </div>
+          </div>
+        </section>
+
         <div className="section">
           <div className="container">
             <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>

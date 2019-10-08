@@ -80,11 +80,13 @@ class GameShelf extends React.Component {
 
 
     return (
-      <div>{/* {test()} */}
-        <div className="container">
-            <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} />
-          </div>
-          {buildEachShelf()}
+      <div className="box">
+        <div>{/* {test()} */}
+          <div className="container">
+              <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} />
+            </div>
+            {buildEachShelf()}
+        </div>
       </div>
     )
   }
