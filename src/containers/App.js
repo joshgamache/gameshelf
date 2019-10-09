@@ -97,35 +97,19 @@ class App extends Component {
             <div class="columns">
             <SearchColumn>
               <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
+              {searchResults != "" &&
+                <div className="container">
+                  <h4>Search results</h4>
+                  <StubList games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
+                </div>
+              }
             </SearchColumn>
-            <MainColumn/>
+            <MainColumn>
+              <GameList games={gameList} />
+            </MainColumn>
             </div>
           </div>
         </section>
-
-        <div className="section">
-          <div className="container">
-            <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
-          </div>
-        {searchResults != "" &&
-          <div className="container">
-            <h4>Search results</h4>
-            <StubList games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
-            {/* <GameList games={searchResults} /> */}
-          </div>
-        }
-        </div>
-        {/* <div className="container"> */}
-          {/* <StubList games={allGames} onClick={(gameKeyId) => this.toAddClick(gameKeyId)}/> */}
-          {/* <Searchbox searchChange={this.onSearchChange}/> */}
-          {/* shelf display, contains boxes */}
-          {/* Game list, contains single game display */}
-        {/* </div> */}
-        <div className="section">
-          <div className="container">
-              <GameList games={gameList} />
-          </div>
-        </div>
         <div className="section">
           <div className="container">
             <GameShelf games={gameList}/>

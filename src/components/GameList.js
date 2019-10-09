@@ -23,7 +23,7 @@ const GameList = ({games}) => {
   });
 
   return (
-    <div className = "columns is-multiline">
+    <div className = "columns is-multiline is-fullwidth">
       {gameComponents}
     </div>
   )

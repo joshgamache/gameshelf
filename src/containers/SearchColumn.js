@@ -4,8 +4,7 @@ const SearchColumn = (props) => {
 	
 	return (
 		<div className="column is-one-quarter">
-			<p>test text here</p>
-			{props.childComponent}
+			{props.children}
 		</div>
 )
 }

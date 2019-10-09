@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainColumn = () => {
+const MainColumn = (props) => {
 	return (
 		<div className="column is-three-quarter">
 		<div className="message">
@@ -16,9 +16,7 @@ const MainColumn = () => {
 			</div>
 		</div>
 		<div>
-			<div className="columns">
-				<div className="box">List of selected games goes here</div>
-			</div>
+			{props.children}
 		</div>
 	</div>
 )
