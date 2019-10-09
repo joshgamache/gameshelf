@@ -1,5 +1,7 @@
 import React from "react"
 
+const refreshPage = () => window.location.reload();
+
 const Header = () => {
 	return (
 
@@ -8,7 +10,7 @@ const Header = () => {
 			<nav className="navbar">
 				<div className="navbar-menu">
 					<div className="navbar-end">
-						<a href="#" className="navbar-item">Reset</a>
+						<a className="navbar-item" onClick={() => refreshPage()}>Reset</a>
 						<span className="navbar-item">
 							<a href="http://www.github.com/Infiniwild/gameshelf" className="button is-primary is-inverted">
 								<span className="icon">

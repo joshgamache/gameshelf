@@ -3,6 +3,8 @@ import ShelfBay from "./ShelfBay"
 import ControlStub from "./ControlStub"
 import GameList from "./GameList";
 import BoxSizeFitter from "../components/BoxSizeFitter";
+import {SizeMe} from 'react-sizeme'
+
 
 // TODO:
 // Need to pass in props
@@ -81,7 +83,8 @@ class GameShelf extends React.Component {
 
     return (
       <div className="box">
-        <div>{/* {test()} */}
+        <div>				<SizeMe render={({ size }) => <div>My width is {size.width}px</div>} />
+
           <div className="container">
               <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} />
             </div>

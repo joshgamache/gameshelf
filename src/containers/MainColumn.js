@@ -1,4 +1,5 @@
 import React from 'react'
+import {SizeMe} from 'react-sizeme'
 
 const MainColumn = (props) => {
 	return (
@@ -13,6 +14,9 @@ const MainColumn = (props) => {
 				</div>
 			</a>
 			<div className="message-body">
+				Size of this box will be the 100% of the shelf.
+				Send SizeMe data down into a component and use that as a scale factor. The width of the shelf will be 100%, unless it is larger than the box. If it is, the shelf will scale down proportionately (and show the scale factor as a decimal). Use a parent/child component to handle the scaling. 
+				<SizeMe>{({ size }) => <div height={`${size.width}px`}>My width is {size.width}px</div>}</SizeMe>
 			</div>
 		</div>
 		<div>
