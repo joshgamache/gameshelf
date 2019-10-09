@@ -28,13 +28,15 @@ const BoxSizeFitter = (incomingGamesArray, shelfBayDimensions) => {
       "z" : game.size_depth,
       "units" : game.size_units,
     }
-
-    if (dims.units.trim() == "inches"){
-      dims.x = parseFloat(dims.x).toFixed(2) * 25.4;
-      dims.y *= 25.4;
-      dims.z *= 25.4;
-      dims.units = "mm";
-    }
+		
+		if(!dims.units){
+			gamesTooBig.push(game);
+		} else if (dims.units.trim() == "inches"){
+				dims.x = parseFloat(dims.x).toFixed(2) * 25.4;
+				dims.y *= 25.4;
+				dims.z *= 25.4;
+				dims.units = "mm";
+		}
 
 		const sortedGameShapeArray = [dims.x, dims.y, dims.z].sort((a, b) => a - b);
 
