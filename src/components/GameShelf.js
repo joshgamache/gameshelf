@@ -1,10 +1,7 @@
 import React from "react";
 import ShelfBay from "./ShelfBay"
 import ControlStub from "./ControlStub"
-import GameList from "./GameList";
 import BoxSizeFitter from "../components/BoxSizeFitter";
-import {SizeMe} from 'react-sizeme'
-
 
 // TODO:
 // Need to pass in props
@@ -15,12 +12,7 @@ class GameShelf extends React.Component {
   // The following is lifted up from ControlStub, to be used in GameShelf:
   constructor(props) {
     super(props);
-    this.state = {
-      shelfWidth : 330,
-      shelfHeight : 330,
-      shelfColumns : 1,
-      shelfRows : 1,
-    };
+    this.state = {...this.props.sizing};
 
     this.handleFormChange = this.handleFormChange.bind(this);
   }
@@ -47,6 +39,7 @@ class GameShelf extends React.Component {
     const FullShelfStylesheet = {
       display:"grid",
       justifyContent:"center",
+      overflowX : 'auto',
       gridTemplateColumns: `repeat(${this.state.shelfColumns}, ${this.state.shelfWidth}px)`,
       gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}px)`,
       gap: "20px 20px",

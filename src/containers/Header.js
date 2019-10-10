@@ -10,7 +10,7 @@ const Header = () => {
 			<nav className="navbar">
 				<div className="navbar-menu">
 					<div className="navbar-end">
-						<a className="navbar-item" onClick={() => refreshPage()}>Reset</a>
+						<p className="navbar-item" onClick={() => refreshPage()}>Reset</p>
 						<span className="navbar-item">
 							<a href="http://www.github.com/Infiniwild/gameshelf" className="button is-primary is-inverted">
 								<span className="icon">
@@ -25,7 +25,7 @@ const Header = () => {
 		</div>
 		<div className="hero-body">
 			<div className="container">
-				<h1 className="title">Board with your shelf</h1>
+				<h1 className="title">Get your shelf together</h1>
 				<h2 className="subtitle">A board game shelf visualizer by <strong><a href="http://www.jgamache.ca">Josh Gamache</a></strong></h2>
 			</div>
 		</div>

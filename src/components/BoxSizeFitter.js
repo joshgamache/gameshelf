@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 /*
 What does this function need to do?
@@ -31,7 +31,7 @@ const BoxSizeFitter = (incomingGamesArray, shelfBayDimensions) => {
 		
 		if(!dims.units){
 			gamesTooBig.push(game);
-		} else if (dims.units.trim() == "inches"){
+		} else if (dims.units.trim() === "inches"){
 				dims.x = parseFloat(dims.x).toFixed(2) * 25.4;
 				dims.y *= 25.4;
 				dims.z *= 25.4;

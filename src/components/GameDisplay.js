@@ -1,10 +1,6 @@
 import React from 'react';
 import GameBox from './GameBox';
-// import {Palette} from 'react-palette'
-// import { usePalette } from 'react-palette'
 import ImagePalette from 'react-image-palette'
-
-import * as Vibrant from 'node-vibrant'
 
 const corsUrl = "https://cors-anywhere.herokuapp.com/"; //Used to allow cross-origin requests. Try and replace this with something sustainable in the future. 
 
@@ -16,7 +12,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image, delet
       "units" : size_units,
     }
 
-    if (dims.units && dims.units.trim() == "inches"){
+    if (dims.units && dims.units.trim() === "inches"){
       dims.x = (parseFloat(dims.x) * 25.4).toFixed(0);
       dims.y = (parseFloat(dims.y) * 25.4).toFixed(0);
       dims.z = (parseFloat(dims.z) * 25.4).toFixed(0);

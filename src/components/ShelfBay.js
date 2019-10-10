@@ -33,7 +33,7 @@ const ShelfBay = (props) => {
       "units" : game.size_units,
     }
 
-    if (dims.units.trim() == "inches"){
+    if (dims.units.trim() === "inches"){
       dims.x = parseFloat(dims.x).toFixed(2) * 25.4;
       dims.y = parseFloat(dims.y).toFixed(2) * 25.4;
       dims.z = parseFloat(dims.z).toFixed(2) * 25.4;

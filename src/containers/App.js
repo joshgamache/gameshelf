@@ -6,11 +6,9 @@ import GameList from '../components/GameList.js';
 import games from "../assets/stubData.json" // for basic testing
 import sGames from "../assets/bgaSearchStub.json" // for search testing
 import StubList from "../components/selectionTestStub";
-import GameShelf from "../components/GameShelf";
 import Header from "../containers/Header"
 import SearchColumn from "../containers/SearchColumn"
 import MainColumn from "../containers/MainColumn"
-import ScaleInside from "../components/ScaleInside"
 
 // const stubSearchURI = "http://localhost:3000/stubData.json"; // Use this as a test ONLY when BGA is unreachable
 const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
@@ -65,7 +63,7 @@ class App extends Component {
     const newItem = this.state.searchField;
 
     // Check if there's anything in the input first
-    if (newItem != "") {
+    if (newItem !== "") {
       const searchByName = `${searchURI}&name=${newItem}`;
       // const searchByName = searchURI; // Used when testing stub ONLY
       // console.log(searchByName);
@@ -88,17 +86,16 @@ class App extends Component {
   }
 
   render() {
-    const {allGames, gameList, searchResults} = this.state;
+    const {gameList, searchResults} = this.state;
     return (
       <div className="App">
         <Header/>
-        <ScaleInside/>
-        <section class="section">
-          <div class="container">
-            <div class="columns">
+        <section className="section">
+          <div className="container">
+            <div className="columns">
             <SearchColumn>
               <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
-              {searchResults != "" &&
+              {searchResults !== "" &&
                 <div className="container">
                   <h4>Search results</h4>
                   <StubList games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
