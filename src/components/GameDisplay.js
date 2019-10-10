@@ -56,7 +56,7 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image, delet
           <div className="media-content">
             <div className="content is-size-6">
               <p>
-                <strong>{name}</strong><br/><small>{dims.x ? `${dims.x} by ${dims.y} by ${dims.z} ${dims.units}` : "No dimensions available, game has not been added to shelf."}</small>
+                <strong>{name}</strong><br/><small>{dims.x ? `${dims.x} by ${dims.y} by ${dims.z} ${dims.units}` : "No dimensions available, not added shelf."}</small>
               </p>
             </div>
           </div>

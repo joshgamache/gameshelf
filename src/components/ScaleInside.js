@@ -5,9 +5,16 @@ const scaleFactor = (shelfWidth, containerWidth) =>{
 }
 
 const ScaleInside = (props) => {
+	
+	const insideBlockSize = {
+		width: `${props.xW}px`,
+		maxWidth: `${props.xW}px`,
+		height: `${props.xW}px`,
+		maxHeight: `${props.xW}px`,
+		display: "block",
+ 	}
 	return (
-		<div>
-			{scaleFactor(10, 100)} or {scaleFactor(1000, 100)}
+		<div style={insideBlockSize}>
 			{props.children}
 		</div>
 	)
