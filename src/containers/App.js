@@ -105,7 +105,7 @@ class App extends Component {
                 </div>
               }
             </SearchColumn>
-            <MainColumn>
+            <MainColumn passThru={gameList}>
               <GameList games={gameList} />
             </MainColumn>
             </div>
@@ -113,7 +113,7 @@ class App extends Component {
         </section>
         <div className="section">
           <div className="container">
-            <GameShelf games={gameList}/>
+            {/* <GameShelf games={gameList}/> */}
           </div>
         </div>
 

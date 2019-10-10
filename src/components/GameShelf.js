@@ -8,7 +8,7 @@ import {SizeMe} from 'react-sizeme'
 
 // TODO:
 // Need to pass in props
-// Need to determine logic to decide where games go (ie. alphabetical) and when they go into each individual shelf 
+// Need to determine logic to decide where games go (ie. alphabetical) and when they go into each individual shelf
 // - include logic in this function
 
 class GameShelf extends React.Component {
@@ -24,7 +24,7 @@ class GameShelf extends React.Component {
 
     this.handleFormChange = this.handleFormChange.bind(this);
   }
-  
+
   handleFormChange(event) {
     const value = event.value;
     const name = event.name;
@@ -43,7 +43,7 @@ class GameShelf extends React.Component {
       "individualShelfHeight" : this.state.shelfHeight,
       "fullShelfColor" : "DarkGrey",
     }
-    
+
     const FullShelfStylesheet = {
       display:"grid",
       justifyContent:"center",
@@ -52,10 +52,10 @@ class GameShelf extends React.Component {
       gap: "20px 20px",
       background: FullShelfObject.fullShelfColor,
     }
-    
+
     const buildEachShelf = () => {
       const numberOfShelvesTotal = FullShelfObject.numShelvesWide * FullShelfObject.numShelvesTall;
-      
+
       const shelfArray = [];
 
       let remainingGames = this.props.games;
@@ -67,7 +67,7 @@ class GameShelf extends React.Component {
         shelfArray.push(<li key={i}><ShelfBay individualShelfArea={FullShelfObject} gamesToAddToShelf={gamesIntoShelf}/></li>)
         remainingGames = weirdGamesObject.gamesTooBig;
       }
-    
+
 
       return (
         <ul style={FullShelfStylesheet}>
@@ -83,13 +83,10 @@ class GameShelf extends React.Component {
 
     return (
       <div className="box">
-        <div>				<SizeMe render={({ size }) => <div>My width is {size.width}px</div>} />
-
           <div className="container">
               <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} />
             </div>
             {buildEachShelf()}
-        </div>
       </div>
     )
   }
