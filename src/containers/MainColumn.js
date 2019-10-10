@@ -6,11 +6,13 @@ import GameShelf from '../components/GameShelf'
 class MainColumn extends React.Component{
 	constructor(props) {
 		super(props);
-		this.sizing = {
-      shelfWidth : 330,
-      shelfHeight : 330,
-      shelfColumns : 1,
-			shelfRows : 1,
+        this.state = {
+            sizing : {
+                shelfWidth : 330,
+                shelfHeight : 330,
+                shelfColumns : 1,
+                shelfRows : 1,
+            },
 		};
 	}
 
@@ -32,8 +34,8 @@ class MainColumn extends React.Component{
 						<SizeMe>{
 							({ size }) => (
 								<div height={`${size.width}px`}>
-									<ScaleInside xW={size.width} shefW={this.sizing}>
-										<GameShelf games={this.props.passThru} sizing={this.sizing}/>
+									<ScaleInside xW={size.width} shefW={this.state.sizing}>
+										<GameShelf games={this.props.passThru} sizing={this.state.sizing}/>
 									</ScaleInside>
 								</div>
 							)}
