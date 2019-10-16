@@ -2,11 +2,16 @@ import React from "react";
 import ShelfBay from "./ShelfBay"
 import ControlStub from "./ControlStub"
 import BoxSizeFitter from "../components/BoxSizeFitter";
+import ScaleInside from '../components/ScaleInside'
+
 
 // TODO:
 // Need to pass in props
 // Need to determine logic to decide where games go (ie. alphabetical) and when they go into each individual shelf
 // - include logic in this function
+const scaleFactor = (shelfWidth = 330, containerWidth = 330) =>{
+	return shelfWidth <= containerWidth ? 1 : containerWidth / shelfWidth
+}
 
 class GameShelf extends React.Component {
   // The following is lifted up from ControlStub, to be used in GameShelf:
@@ -28,6 +33,16 @@ class GameShelf extends React.Component {
 
 
   render() {
+
+    // Ignore the actual size of the column, use breakpoints instead -- simpler but less responsive
+    const bulmaBreakpoints = {
+      mobile: 768,
+      tablet: 769,
+      desktop: 1024,
+      widescreen: 1216,
+      fullhd: 1408,
+    }
+
     const FullShelfObject = {
       "numShelvesWide" : this.state.shelfColumns,
       "numShelvesTall" : this.state.shelfRows,
@@ -35,8 +50,11 @@ class GameShelf extends React.Component {
       "individualShelfHeight" : this.state.shelfHeight,
       "fullShelfColor" : "DarkGrey",
     }
+    
+    // TODO: Make the size of the shelves themselves variable. This may prevent the shelf from overflowing the container. 
 
     const FullShelfStylesheet = {
+      padding: "30px",
       display:"grid",
       justifyContent:"center",
       overflowX : 'auto',
@@ -46,6 +64,21 @@ class GameShelf extends React.Component {
       background: FullShelfObject.fullShelfColor,
     }
 
+    // For scaling the shelf within the container
+    let scaleValue = 1;
+
+    const shelfTotalWidth = (parseInt(FullShelfObject.individualShelfWidth) + 20) * FullShelfObject.numShelvesWide;
+      if(shelfTotalWidth >= 1000){
+        scaleValue = scaleFactor(shelfTotalWidth, 1000);
+        console.log(`${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
+      } else {
+        scaleValue = scaleFactor(shelfTotalWidth, this.props.sizeMeSize);
+        console.log(`${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
+      }
+
+    let scaleString = `scale(${scaleValue})`
+      // End of scaling section
+    
     const buildEachShelf = () => {
       const numberOfShelvesTotal = FullShelfObject.numShelvesWide * FullShelfObject.numShelvesTall;
 
@@ -63,7 +96,7 @@ class GameShelf extends React.Component {
 
 
       return (
-        <ul style={FullShelfStylesheet}>
+        <ul style={FullShelfStylesheet} overflowX="auto">
           {shelfArray}
         </ul>
       )
@@ -77,9 +110,12 @@ class GameShelf extends React.Component {
     return (
       <div className="box">
           <div className="container">
-              <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} />
-            </div>
+              <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} style={{transform: scaleString}}/>
+          </div>
+          {scaleValue}
+          <div id="scaler" >
             {buildEachShelf()}
+          </div>
       </div>
     )
   }
