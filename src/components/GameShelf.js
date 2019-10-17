@@ -54,14 +54,16 @@ class GameShelf extends React.Component {
     // TODO: Make the size of the shelves themselves variable. This may prevent the shelf from overflowing the container. 
 
     const FullShelfStylesheet = {
-      padding: "30px",
+      padding: "10px",
       display:"grid",
       justifyContent:"center",
       overflowX : 'auto',
-      gridTemplateColumns: `repeat(${this.state.shelfColumns}, ${this.state.shelfWidth}px)`,
-      gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}px)`,
+      gridTemplateColumns: `repeat(${this.state.shelfColumns}, ${this.state.shelfWidth}fr)`,
+      gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}fr)`,
       gap: "20px 20px",
       background: FullShelfObject.fullShelfColor,
+      width: "",
+      height: "",
     }
 
     // For scaling the shelf within the container
@@ -75,7 +77,9 @@ class GameShelf extends React.Component {
         scaleValue = scaleFactor(shelfTotalWidth, this.props.sizeMeSize);
         console.log(`${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
       }
-
+      
+    FullShelfStylesheet.width = `${shelfTotalWidth * scaleValue}px`;
+      console.log(FullShelfStylesheet.width)
     let scaleString = `scale(${scaleValue})`
       // End of scaling section
     

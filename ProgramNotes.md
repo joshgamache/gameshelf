@@ -149,3 +149,120 @@ class ScaleInside extends React.Component {
 
 export default ScaleInside;
 ```
+
+
+
+Remaking the grid itself:
+```html
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout -->
+
+<div class="wrapper">
+  <div>
+    <div class="gbox" id="gb1">Inside 1</div>
+    <div class="gbox" id="gb2">Inside 2</div>
+    <div class="gbox" id="gb3">Inside 3</div>
+    <div class="gbox" id="gb4">Inside 4</div>
+    <div class="gbox" id="gb5">Inside 4</div>
+    <div class="gbox" id="gb6">Inside 4</div>
+    <div class="gbox" id="gb7">Inside 4</div>
+  </div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+```
+
+```scss
+$scalefactor: 1;
+$xsize: 330;
+$ysize: 330;
+
+$xRatio: $xsize / $ysize * 330px;
+$yRatio: $ysize / $xsize * 330px;
+
+
+.wrapper {
+  width: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, $xRatio);
+  grid-template-rows: repeat(2, $yRatio);
+  gap: 10px 10px;
+  background: grey;
+}
+
+.wrapper > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap-reverse;
+  align-content: flex-start;
+  align-items: flex-start;
+  background: LightGrey;
+
+}
+
+.gbox {
+  font-size: $scalefactor * 1.2em;
+  color: white;
+  display: "flex";
+  padding: 10px 2px 2px 2px;
+  justify-content: center;
+  align-content: center;
+}
+
+#gb1 {
+  writing-mode: vertical-rl;
+  text-align: left;
+  width: percentage(40 / $xsize);
+  height: percentage(300 / $ysize);
+  background: red;
+}
+#gb2 {
+  writing-mode: vertical-rl;
+  text-align: left;
+  width: percentage(25 / $xsize);
+  height: percentage(122 / $ysize);
+  background: green;
+}
+#gb3 {
+  writing-mode: vertical-rl;
+  text-align: left;
+  width: percentage(22 / $xsize);
+  height: percentage(91 / $ysize);
+  background: blue;
+}
+#gb4 {
+  margin: 0;
+  writing-mode: vertical-rl;
+  text-align: left;
+  width: percentage(66 / $xsize);
+  height: percentage(135 / $ysize);
+  background: yellow;
+}
+#gb5 {
+  writing-mode: vertical-rl;
+  text-align: left;
+  width: percentage(20 / $xsize);
+  height: percentage(101 / $ysize);
+  background: red;
+}
+#gb6 {
+  writing-mode: vertical-rl;
+  text-align: left;
+  width: percentage(25 / $xsize);
+  height: percentage(150 / $ysize);
+  background: green;
+}
+#gb7 {
+  writing-mode: vertical-rl;
+  text-align: left;
+  width: percentage(22 / $xsize);
+  height: percentage(91 / $ysize);
+  background: blue;
+}
+```
