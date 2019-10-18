@@ -62,8 +62,9 @@ class GameShelf extends React.Component {
       gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}fr)`,
       gap: "20px 20px",
       background: FullShelfObject.fullShelfColor,
-      width: "",
-      height: "",
+      boxSizing: "border-box",
+      width: "50%",
+      height: "100%",
     }
 
     // For scaling the shelf within the container
@@ -117,7 +118,7 @@ class GameShelf extends React.Component {
               <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} style={{transform: scaleString}}/>
           </div>
           {scaleValue}
-          <div id="scaler" >
+          <div id="scaler">
             {buildEachShelf()}
           </div>
       </div>

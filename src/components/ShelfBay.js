@@ -63,6 +63,7 @@ const ShelfBay = (props) => {
 
   const shelfstyleset = {
     display: "flex",
+    boxSizing: "border-box",
     width: `${shelfDimensions.w}px`,
     height: `${shelfDimensions.h}px`,
     flexWrap: "wrap-reverse",
