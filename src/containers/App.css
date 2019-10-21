@@ -24,6 +24,10 @@
   text-align: left;
 }
 
-#scalar {
-  width: 90%;
+#scaler {
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+  background: DarkGrey;
+  margin-block-start: 0px;
 }

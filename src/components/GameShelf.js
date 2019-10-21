@@ -54,17 +54,23 @@ class GameShelf extends React.Component {
     // TODO: Make the size of the shelves themselves variable. This may prevent the shelf from overflowing the container. 
 
     const FullShelfStylesheet = {
-      padding: "10px",
       display:"grid",
-      justifyContent:"center",
-      overflowX : 'auto',
-      gridTemplateColumns: `repeat(${this.state.shelfColumns}, ${this.state.shelfWidth}fr)`,
-      gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}fr)`,
-      gap: "20px 20px",
-      background: FullShelfObject.fullShelfColor,
-      boxSizing: "border-box",
+      // justifyContent:"center",
+      overflowX : "auto",
+      gridTemplateColumns: `repeat(${this.state.shelfColumns}, ${this.state.shelfWidth}px)`,
+      gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}px)`,
+      gap: "0px 0px",
+      // background: FullShelfObject.fullShelfColor,
+      // boxSizing: "border-box",
       width: "50%",
-      height: "100%",
+      // height: "100%",
+    }
+
+    const eachShelfStylesheet = {
+      boxSizing: "border-box",
+      margin: "0",
+      padding: "0",
+      width: "100%"
     }
 
     // For scaling the shelf within the container
@@ -95,7 +101,7 @@ class GameShelf extends React.Component {
       for (let i=0; i<numberOfShelvesTotal; i++) {
         const weirdGamesObject = BoxSizeFitter(remainingGames, {width: this.state.shelfWidth, height: this.state.shelfHeight})
         const gamesIntoShelf = weirdGamesObject.gamesThatFit;
-        shelfArray.push(<li key={i}><ShelfBay individualShelfArea={FullShelfObject} gamesToAddToShelf={gamesIntoShelf}/></li>)
+        shelfArray.push(<li key={i} style={eachShelfStylesheet}><ShelfBay individualShelfArea={FullShelfObject} gamesToAddToShelf={gamesIntoShelf}/></li>)
         remainingGames = weirdGamesObject.gamesTooBig;
       }
 

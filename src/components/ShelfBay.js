@@ -70,7 +70,9 @@ const ShelfBay = (props) => {
     // flexWrap: "nowrap",
     alignContent: "flex-start",
     alignItems: "flex-start",
-    background: "LightGrey"
+    background: "LightGrey",
+    padding: "0px",
+    margin: "0px",
   }
 
   return (

@@ -1,6 +1,7 @@
 import React from 'react'
 import {SizeMe} from 'react-sizeme'
 import GameShelf from '../components/GameShelf'
+import ShelfGrid from '../components/ShelfGridTestingStub'
 
 class MainColumn extends React.Component{
 	constructor(props) {
@@ -32,9 +33,7 @@ class MainColumn extends React.Component{
 						Send SizeMe data down into a component and use that as a scale factor. The width of the shelf will be 100%, unless it is larger than the box. If it is, the shelf will scale down proportionately (and show the scale factor as a decimal). Use a parent/child component to handle the scaling.
 						<SizeMe>{
 							({ size }) => (
-								<div maxHeight={`${size.width}px`}>
-										<GameShelf games={this.props.passThru} sizing={this.state.sizing} sizeMeSize={size.width}/>
-								</div>
+								<ShelfGrid/>
 							)}
 						</SizeMe>
 					</div>
