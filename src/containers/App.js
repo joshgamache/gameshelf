@@ -9,6 +9,7 @@ import StubList from "../components/selectionTestStub";
 import Header from "../containers/Header"
 import SearchColumn from "../containers/SearchColumn"
 import MainColumn from "../containers/MainColumn"
+import SearchResults from '../components/SearchResults';
 
 // const stubSearchURI = "http://localhost:3000/stubData.json"; // Use this as a test ONLY when BGA is unreachable
 const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
@@ -97,8 +98,7 @@ class App extends Component {
               <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
               {searchResults !== "" &&
                 <div className="container">
-                  <h4>Search results</h4>
-                  <StubList games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
+                  <SearchResults games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
                 </div>
               }
             </SearchColumn>

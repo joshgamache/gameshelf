@@ -29,8 +29,8 @@ class MainColumn extends React.Component{
 						</div>
 					{/* </a> */}
 					<div className="message-body">
-							<div style={{width: "964px", maxWidth: "964px"}}>
-									<GameShelf games={this.props.passThru} sizing={this.state.sizing}  />
+							<div style={{width: "100%", maxWidth: "964px"}}>
+									<GameShelf games={this.props.passThru} sizing={this.state.sizing} style={{margin: "0 auto"}} />
 							</div>
 						<hr />
 					</div>

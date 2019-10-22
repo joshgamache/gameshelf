@@ -59,12 +59,11 @@ class GameShelf extends React.Component {
       overflowX : "auto",
       gridTemplateColumns: `repeat(${this.state.shelfColumns}, ${this.state.shelfWidth}px)`,
       gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}px)`,
-      gap: "1px 1px",
+      gap: "5px 5px",
       // background: FullShelfObject.fullShelfColor,
       boxSizing: "border-box",
-      width: "964px",
-      maxWidth: "100%",
-      height: "100%",
+      width: "100%",
+      maxWidth: "914px",
     }
 
     const eachShelfStylesheet = {
@@ -78,12 +77,12 @@ class GameShelf extends React.Component {
     let scaleValue = 1;
 
     const shelfTotalWidth = (parseInt(FullShelfObject.individualShelfWidth) + 20) * FullShelfObject.numShelvesWide;
-      if(shelfTotalWidth >= 1000){
-        scaleValue = scaleFactor(shelfTotalWidth, 1000);
-        console.log(`${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
+      if(shelfTotalWidth >= 914){
+        scaleValue = scaleFactor(shelfTotalWidth, 914);
+        console.log(`Blarg UP ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
       } else {
-        scaleValue = scaleFactor(shelfTotalWidth, this.props.sizeMeSize);
-        console.log(`${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
+        scaleValue = scaleFactor(shelfTotalWidth, 914);
+        console.log(`Blarg Down ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
       }
       
     FullShelfStylesheet.width = `${shelfTotalWidth * scaleValue}px`;
@@ -108,7 +107,7 @@ class GameShelf extends React.Component {
 
 
       return (
-        <ul style={FullShelfStylesheet} overflow="auto">
+        <ul style={FullShelfStylesheet}>
           {shelfArray}
         </ul>
       )
