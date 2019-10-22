@@ -59,11 +59,12 @@ class GameShelf extends React.Component {
       overflowX : "auto",
       gridTemplateColumns: `repeat(${this.state.shelfColumns}, ${this.state.shelfWidth}px)`,
       gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}px)`,
-      gap: "0px 0px",
+      gap: "1px 1px",
       // background: FullShelfObject.fullShelfColor,
-      // boxSizing: "border-box",
-      width: "50%",
-      // height: "100%",
+      boxSizing: "border-box",
+      width: "964px",
+      maxWidth: "100%",
+      height: "100%",
     }
 
     const eachShelfStylesheet = {
@@ -107,7 +108,7 @@ class GameShelf extends React.Component {
 
 
       return (
-        <ul style={FullShelfStylesheet} overflowX="auto">
+        <ul style={FullShelfStylesheet} overflow="auto">
           {shelfArray}
         </ul>
       )
@@ -123,7 +124,6 @@ class GameShelf extends React.Component {
           <div className="container">
               <ControlStub shelf={FullShelfObject} onFormChange={this.handleFormChange} style={{transform: scaleString}}/>
           </div>
-          {scaleValue}
           <div id="scaler">
             {buildEachShelf()}
           </div>

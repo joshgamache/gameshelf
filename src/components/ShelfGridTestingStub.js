@@ -16,7 +16,7 @@ const GridTest = {
 const ShelfGrid = () => {
 	return (
 		<div style={GridTest}>
-			<div bg="blue">Grid goes here.</div>	
+			<div bgcolor="blue">Grid goes here.</div>	
 			<div>Grid goes here.</div>	
 			<div>Grid goes here.</div>	
 			<div>Grid goes here.</div>	

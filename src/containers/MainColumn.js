@@ -29,13 +29,10 @@ class MainColumn extends React.Component{
 						</div>
 					{/* </a> */}
 					<div className="message-body">
-						Size of this box will be the 100% of the shelf.
-						Send SizeMe data down into a component and use that as a scale factor. The width of the shelf will be 100%, unless it is larger than the box. If it is, the shelf will scale down proportionately (and show the scale factor as a decimal). Use a parent/child component to handle the scaling.
-						<SizeMe>{
-							({ size }) => (
-								<ShelfGrid/>
-							)}
-						</SizeMe>
+							<div style={{width: "964px", maxWidth: "964px"}}>
+									<GameShelf games={this.props.passThru} sizing={this.state.sizing}  />
+							</div>
+						<hr />
 					</div>
 				</div>
 				<div>
