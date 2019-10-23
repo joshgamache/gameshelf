@@ -4,7 +4,8 @@ import ImagePalette from 'react-image-palette'
 
 const corsUrl = "https://cors-anywhere.herokuapp.com/"; //Used to allow cross-origin requests. Try and replace this with something sustainable in the future. 
 
-const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image, deleteClick}) => {
+const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image, onClick}) => {
+
     const dims = {
       "x" : size_x,
       "y" : size_y,
@@ -25,21 +26,6 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image, delet
     alternativeColor: "hsl(171, 100%, 41%)",
   }
 
-  // const SomeComponent = ({ image }) => (
-  //   <ImagePalette image={image} crossOrigin={true}>
-  //     {({ backgroundColor, color, alternativeColor }) => (
-  //       <div style={{ backgroundColor, color }}>
-  //         This div has been themed based on
-  //         <span style={{ color: alternativeColor }}>a box image</span>
-  //       </div>
-  //     )}
-  //   </ImagePalette>
-  // )
-  
-
-// Pulls data from image to determine vibrant color. Gives CORS errors, need to fix.
-  // const { data } = usePalette(image);
-// TODO: Streamline colour finding process. Maybe have a helper perform this when games are added to list?
   return(
     <div className = "column is-half">
       <div className = "box is-fullwidth is-outlined game-container">
@@ -69,14 +55,9 @@ const GameDisplay = ({name, id, size_x, size_y, size_z, size_units, image, delet
                 )}
               </ImagePalette>
             }
-            <button className="delete" /> {/* FIX */}
+            <button className="delete" onClick={() => onClick(id)}/> 
           </div>
         </article>
-        {/* A block containing */}
-          {/* Game image */}
-          {/* Game name */}
-          {/* Game dimensions */}
-          {/* Add to shelf checkbox */}
       </div>
     </div>
   );

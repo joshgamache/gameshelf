@@ -10,6 +10,7 @@ import Header from "../containers/Header"
 import SearchColumn from "../containers/SearchColumn"
 import MainColumn from "../containers/MainColumn"
 import SearchResults from '../components/SearchResults';
+import { arrayExpression } from '@babel/types';
 
 // const stubSearchURI = "http://localhost:3000/stubData.json"; // Use this as a test ONLY when BGA is unreachable
 const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
@@ -49,13 +50,28 @@ class App extends Component {
   // TODO: Dedup this, there shouldn't be two functions doing esentially the same thing!
 
   toAddFromSearchClick = (keyID) => {
+    const newGame = this.state.searchResults.find(({id}) => id === keyID);
     const newGameList = this.state.gameList.slice();
-    newGameList.push(this.state.searchResults.find(({id}) => id === keyID));
+    newGameList.push(newGame);
 
+
+    // const updatedList = this.state.list.concat(response.result);
     this.setState({
       gameList: newGameList
     })
   }
+
+  toDeleteFromList = (gameListKey) => {
+    let updateGameList = this.state.gameList.filter(element => element.id !== gameListKey)
+
+    if(updateGameList !== -1) {
+      this.setState({gameList : updateGameList});
+    }
+  }
+
+  // this.todos = this.todos.filter(function (candidate) {
+  //   return candidate !== todo;
+  // });
 
   searchBGAapi = (event) => {
     event.preventDefault(); // prevents the form from submitting when button is clicked, we don't want a page reload
@@ -103,17 +119,11 @@ class App extends Component {
               }
             </SearchColumn>
             <MainColumn passThru={gameList}>
-              <GameList games={gameList} />
+              <GameList games={gameList} onClick={(gameListKey) => this.toDeleteFromList(gameListKey)} />
             </MainColumn>
             </div>
           </div>
         </section>
-        <div className="section">
-          <div className="container">
-            {/* <GameShelf games={gameList}/> */}
-          </div>
-        </div>
-
       </div>
     );
   }
