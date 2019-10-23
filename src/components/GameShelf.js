@@ -50,8 +50,8 @@ class GameShelf extends React.Component {
       "individualShelfHeight" : this.state.shelfHeight,
       "fullShelfColor" : "DarkGrey",
     }
-    
-    // TODO: Make the size of the shelves themselves variable. This may prevent the shelf from overflowing the container. 
+
+    // TODO: Make the size of the shelves themselves variable. This may prevent the shelf from overflowing the container.
 
     const FullShelfStylesheet = {
       display:"grid",
@@ -84,12 +84,12 @@ class GameShelf extends React.Component {
         scaleValue = scaleFactor(shelfTotalWidth, 914);
         console.log(`Blarg Down ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
       }
-      
+
     FullShelfStylesheet.width = `${shelfTotalWidth * scaleValue}px`;
       console.log(FullShelfStylesheet.width)
     let scaleString = `scale(${scaleValue})`
       // End of scaling section
-    
+
     const buildEachShelf = () => {
       const numberOfShelvesTotal = FullShelfObject.numShelvesWide * FullShelfObject.numShelvesTall;
 

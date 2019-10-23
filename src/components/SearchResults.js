@@ -11,7 +11,12 @@ const SearchResults = (props) => {
 			<div className="buttons">
 				{
 					Object.keys(props.games).map((keyName, i) => {
-						return(<button key={keyName} className="button is-fullwidth" onClick={() => props.onClick(props.games[keyName].id)}>{props.games[keyName].name}</button>);
+						return(<button key={keyName} className="button" onClick={() => props.onClick(props.games[keyName].id)}>
+                            <span class="icon is-small">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            <span>{props.games[keyName].name}</span>
+                        </button>);
 					})
 				}
 			</div>

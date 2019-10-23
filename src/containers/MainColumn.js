@@ -10,8 +10,8 @@ class MainColumn extends React.Component{
             sizing : {
                 shelfWidth : 330,
                 shelfHeight : 330,
-                shelfColumns : 1,
-                shelfRows : 1,
+                shelfColumns : 2,
+                shelfRows : 2,
             },
 		};
 	}
