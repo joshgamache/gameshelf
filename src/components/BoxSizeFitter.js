@@ -19,8 +19,8 @@ const BoxSizeFitter = (incomingGamesArray, shelfBayDimensions) => {
 	const shelfHeight = shelfBayDimensions.height;
 	let totalSize = shelfBayDimensions.width;
 	
+	// eslint-disable-next-line
 	for (const game of incomingGamesArray){
-
 		//TODO: Fix even MORE not-DRY code!
     const dims = {
       "x" : game.size_width,

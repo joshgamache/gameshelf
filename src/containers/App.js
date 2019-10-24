@@ -5,12 +5,11 @@ import Searchbox from '../components/Searchbox.js';
 import GameList from '../components/GameList.js';
 import games from "../assets/stubData.json" // for basic testing
 import sGames from "../assets/bgaSearchStub.json" // for search testing
-import StubList from "../components/selectionTestStub";
+// import StubList from "../components/selectionTestStub";
 import Header from "../containers/Header"
 import SearchColumn from "../containers/SearchColumn"
 import MainColumn from "../containers/MainColumn"
 import SearchResults from '../components/SearchResults';
-import { arrayExpression } from '@babel/types';
 
 // const stubSearchURI = "http://localhost:3000/stubData.json"; // Use this as a test ONLY when BGA is unreachable
 const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
@@ -24,6 +23,7 @@ class App extends Component {
       allGames: [],
       newGame: {},
       searchResults: [],
+      loadingList: [],
     }
   }
 
@@ -52,18 +52,29 @@ class App extends Component {
   toAddFromSearchClick = (keyID) => {
     const newGame = this.state.searchResults.find(({id}) => id === keyID);
     const newGameList = this.state.gameList.slice();
-    
-    if(!newGameList.some((element) => element.id == newGame.id)) {
+
+    const updateLoadingList = this.state.loadingList.slice();
+
+    if(!newGameList.some((element) => element.id === newGame.id)) {
       newGameList.push(newGame);
+      updateLoadingList.push(keyID);
       this.setState({
-        gameList: newGameList
+        loadingList: updateLoadingList,
+        gameList: newGameList,
       })
-
     }
-
-    // const updatedList = this.state.list.concat(response.result);
   }
 
+  removeGameFromLoadingList = (keyID) => {
+    let updateLoadingList = this.state.loadingList.slice();
+    updateLoadingList = updateLoadingList.filter((element) => element === keyID);
+    setTimeout(()=> {
+      this.setState({
+        loadingList: updateLoadingList,
+      })
+    }, 250);
+  }
+  
   toDeleteFromList = (gameListKey) => {
     let updateGameList = this.state.gameList.filter(element => element.id !== gameListKey)
 
@@ -106,7 +117,7 @@ class App extends Component {
   }
 
   render() {
-    const {gameList, searchResults} = this.state;
+    const {gameList, searchResults, loadingList} = this.state;
     return (
       <div className="App">
         <Header/>
@@ -117,12 +128,12 @@ class App extends Component {
               <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
               {searchResults !== "" &&
                 <div className="container">
-                  <SearchResults games={searchResults} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
+                  <SearchResults games={searchResults} loadingList={loadingList} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
                 </div>
               }
             </SearchColumn>
-            <MainColumn passThru={gameList}>
-              <GameList games={gameList} onClick={(gameListKey) => this.toDeleteFromList(gameListKey)} />
+            <MainColumn passThru={gameList} removeFromLoading={this.removeGameFromLoadingList}>
+              <GameList games={gameList} loadingList={loadingList} onClick={(gameListKey) => this.toDeleteFromList(gameListKey)} />
             </MainColumn>
             </div>
           </div>

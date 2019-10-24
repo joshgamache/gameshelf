@@ -2,7 +2,6 @@ import React from "react";
 import ShelfBay from "./ShelfBay"
 import ControlStub from "./ControlStub"
 import BoxSizeFitter from "../components/BoxSizeFitter";
-import ScaleInside from '../components/ScaleInside'
 
 
 // TODO:
@@ -18,7 +17,6 @@ class GameShelf extends React.Component {
   constructor(props) {
     super(props);
     this.state = {...this.props.sizing};
-
     this.handleFormChange = this.handleFormChange.bind(this);
   }
 
@@ -35,12 +33,12 @@ class GameShelf extends React.Component {
   render() {
 
     // Ignore the actual size of the column, use breakpoints instead -- simpler but less responsive
-    const bulmaBreakpoints = {
-      mobile: 768,
-      tablet: 769,
-      desktop: 1024,
-      widescreen: 1216,
-      fullhd: 1408,
+    const shelfBreakpoints = {
+      mobile: 768, // 632 for shelf
+      tablet: 769, // 632 
+      desktop: 1024, // 626 
+      widescreen: 1216, // 770
+      fullhd: 1408, // 914
     }
 
     const FullShelfObject = {
@@ -52,6 +50,8 @@ class GameShelf extends React.Component {
     }
 
     // TODO: Make the size of the shelves themselves variable. This may prevent the shelf from overflowing the container.
+
+    // console.log("window is " + window.innerWidth)
 
     const FullShelfStylesheet = {
       display:"grid",
@@ -66,6 +66,22 @@ class GameShelf extends React.Component {
       maxWidth: "914px",
     }
 
+    // Not particularly reactive, but will work for now
+    if(window.innerWidth <= shelfBreakpoints.mobile){
+      FullShelfStylesheet.maxWidth = "632px"
+    } else if(window.innerWidth >= shelfBreakpoints.tablet && window.innerWidth <= shelfBreakpoints.desktop){
+      FullShelfStylesheet.maxWidth = "632px"
+    } else if(window.innerWidth > shelfBreakpoints.desktop && window.innerWidth <= shelfBreakpoints.widescreen){
+      FullShelfStylesheet.maxWidth = "626px"
+    } else if(window.innerWidth > shelfBreakpoints.widescreen && window.innerWidth >= shelfBreakpoints.fullhd){
+      FullShelfStylesheet.maxWidth = "770px"
+    } else if(window.inneWidth > shelfBreakpoints.fullhd){
+      FullShelfStylesheet.maxWidth = "914px"
+    }
+
+    // console.log("maxWidth is " + FullShelfStylesheet.maxWidth)
+
+
     const eachShelfStylesheet = {
       boxSizing: "border-box",
       margin: "0",
@@ -79,14 +95,14 @@ class GameShelf extends React.Component {
     const shelfTotalWidth = (parseInt(FullShelfObject.individualShelfWidth) + 20) * FullShelfObject.numShelvesWide;
       if(shelfTotalWidth >= 914){
         scaleValue = scaleFactor(shelfTotalWidth, 914);
-        console.log(`Blarg UP ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
+        // console.log(`Blarg UP ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
       } else {
         scaleValue = scaleFactor(shelfTotalWidth, 914);
-        console.log(`Blarg Down ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
+        // console.log(`Blarg Down ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
       }
 
     FullShelfStylesheet.width = `${shelfTotalWidth * scaleValue}px`;
-      console.log(FullShelfStylesheet.width)
+      // console.log(FullShelfStylesheet.width)
     let scaleString = `scale(${scaleValue})`
       // End of scaling section
 
@@ -101,7 +117,7 @@ class GameShelf extends React.Component {
       for (let i=0; i<numberOfShelvesTotal; i++) {
         const weirdGamesObject = BoxSizeFitter(remainingGames, {width: this.state.shelfWidth, height: this.state.shelfHeight})
         const gamesIntoShelf = weirdGamesObject.gamesThatFit;
-        shelfArray.push(<li key={i} style={eachShelfStylesheet}><ShelfBay individualShelfArea={FullShelfObject} gamesToAddToShelf={gamesIntoShelf}/></li>)
+        shelfArray.push(<li key={i} style={eachShelfStylesheet}><ShelfBay individualShelfArea={FullShelfObject} gamesToAddToShelf={gamesIntoShelf} removeFromLoading={this.props.removeFromLoading}/></li>)
         remainingGames = weirdGamesObject.gamesTooBig;
       }
 

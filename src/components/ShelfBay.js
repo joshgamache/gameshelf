@@ -1,7 +1,7 @@
 import React from 'react';
 // import {Palette} from 'react-palette'
 import ImagePalette from 'react-image-palette'
-
+import GameBoxInShelfBay from '../components/GameboxInShelfBay'
 
 // TODO:
 // Replace local variables with incoming props.
@@ -54,8 +54,9 @@ const ShelfBay = (props) => {
       // I'm certainly not doing the styles right either
       <ImagePalette key={idKey} image={corsUrl + game.image_url} crossOrigin defaults={defaultPalette}>
         {({ backgroundColor, color, alternativeColor }) => (
-            <li className="individual-board-game-box" style={{ width: sortedShapeArray[0], height: sortedShapeArray[1], background: backgroundColor, borderWidth: "1px", borderStyle: "solid", borderColor: alternativeColor}}><span style={{color: color}} className="gameBoxName title is-4">{game.name}</span>
-            </li> 
+            <GameBoxInShelfBay shape={sortedShapeArray} removeFromLoading={() => props.removeFromLoading(idKey)} colorSet={{backgroundColor, color, alternativeColor}}>
+              {game.name}
+            </GameBoxInShelfBay>
         )}
       </ImagePalette>
     )

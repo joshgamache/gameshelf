@@ -17,7 +17,7 @@ class ScaleInside extends React.Component {
 		if(this.props.shefW && this.props.shefW.shelfColumns && this.props.shefW.shelfWidth){
 			const shelfTotalWidth = (this.props.shefW.shelfWidth + 20) * this.props.shefW.shelfColumns
 			scaleThis = scaleFactor(shelfTotalWidth, this.props.xW);
-			console.log(`${scaleThis}, ${shelfTotalWidth}, ${this.props.xW}, ${this.props.shefW.shelfColumns}`)
+			// console.log(`${scaleThis}, ${shelfTotalWidth}, ${this.props.xW}, ${this.props.shefW.shelfColumns}`)
 		}
 
 		const insideBlockSize = {

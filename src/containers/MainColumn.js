@@ -1,7 +1,5 @@
 import React from 'react'
-import {SizeMe} from 'react-sizeme'
 import GameShelf from '../components/GameShelf'
-import ShelfGrid from '../components/ShelfGridTestingStub'
 
 class MainColumn extends React.Component{
 	constructor(props) {
@@ -30,7 +28,7 @@ class MainColumn extends React.Component{
 					{/* </a> */}
 					<div className="message-body">
 							<div style={{width: "100%", maxWidth: "964px"}}>
-									<GameShelf games={this.props.passThru} sizing={this.state.sizing} style={{margin: "0 auto"}} />
+									<GameShelf games={this.props.passThru} removeFromLoading={this.props.removeFromLoading} sizing={this.state.sizing} style={{margin: "0 auto"}} />
 							</div>
 						<hr />
 					</div>
