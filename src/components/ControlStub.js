@@ -24,9 +24,9 @@ class ControlStub extends React.Component {
     
     return (
       <div>
-        <h1 className="title">Full shelf</h1>
+        <h3 className="title">Full shelf</h3>
         <form>
-          <div className="field is-grouped is-grouped-centered">
+          <div className="field is-grouped is-grouped-centered is-horizontal">
             <label className="label">
               Width:
               <input className="input" name="shelfWidth" type="number" value={shelfWidth} onChange={this.handleChange} />
@@ -54,3 +54,52 @@ class ControlStub extends React.Component {
 }
 
 export default ControlStub;
+
+{/* <div class="field is-horizontal">
+  <div class="field-label is-normal">
+    <label class="label">Dimensions</label>
+  </div>
+  <div class="field-body">
+    <div class="field">
+      <p class="control is-expanded has-icons-left">
+        <input class="input" type="text" placeholder="Name">
+        <span class="icon is-small is-left">
+          <i class="fas fa-arrows-alt-h"></i></i>
+        </span>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control is-expanded has-icons-left">
+        <input class="input" type="text" placeholder="Name">
+        <span class="icon is-small is-left">
+          <i class="fas fa-arrows-alt-v"></i></i>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="field is-horizontal">
+  <div class="field-label is-normal">
+    <label class="label">Number of shelves</label>
+  </div>
+  <div class="field-body">
+    <div class="field">
+      <p class="control is-expanded has-icons-left">
+        <input class="input" type="text" placeholder="Name">
+        <span class="icon is-small is-left">
+          <i class="fas fa-arrows-alt-h"></i></i>
+        </span>
+      </p>
+        <p class="help">Columns</p>
+    </div>
+    <div class="field">
+      <p class="control is-expanded has-icons-left">
+        <input class="input" type="text" placeholder="Name">
+        <span class="icon is-small is-left">
+          <i class="fas fa-arrows-alt-v"></i></i>
+        </span>
+      </p>
+      <p class="help">Rows</p>
+    </div>
+  </div>
+</div> */}
