@@ -8,6 +8,27 @@ import BoxSizeFitter from "../components/BoxSizeFitter";
 // Need to pass in props
 // Need to determine logic to decide where games go (ie. alphabetical) and when they go into each individual shelf
 // - include logic in this function
+
+//Use the following code to better handle window sizing, replacing window.innerHeight
+//constructor(props) {
+//  super(props);
+//  this.state = { width: 0, height: 0 };
+//  this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+//}
+//
+//componentDidMount() {
+//  this.updateWindowDimensions();
+//  window.addEventListener('resize', this.updateWindowDimensions);
+//}
+//
+//componentWillUnmount() {
+//  window.removeEventListener('resize', this.updateWindowDimensions);
+//}
+//
+//updateWindowDimensions() {
+//  this.setState({ width: window.innerWidth, height: window.innerHeight });
+//}
+
 const scaleFactor = (shelfWidth = 330, containerWidth = 330) =>{
 	return shelfWidth <= containerWidth ? 1 : containerWidth / shelfWidth
 }
