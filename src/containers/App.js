@@ -53,7 +53,7 @@ class App extends Component {
     const newGame = this.state.searchResults.find(({id}) => id === keyID);
     const newGameList = this.state.gameList.slice();
 
-    const updateLoadingList = this.state.loadingList.slice();
+    let updateLoadingList = this.state.loadingList.slice();
 
     if(!newGameList.some((element) => element.id === newGame.id)) {
       newGameList.push(newGame);
