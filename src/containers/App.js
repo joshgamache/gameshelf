@@ -63,6 +63,12 @@ class App extends Component {
         gameList: newGameList,
       })
     }
+    setTimeout(() => {
+      updateLoadingList = updateLoadingList.filter((element) => element === keyID);
+      this.setState({
+        loadingList: updateLoadingList,
+      })
+    }, 5000)           
   }
 
   removeGameFromLoadingList = (keyID) => {
