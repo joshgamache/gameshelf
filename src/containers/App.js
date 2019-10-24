@@ -52,13 +52,16 @@ class App extends Component {
   toAddFromSearchClick = (keyID) => {
     const newGame = this.state.searchResults.find(({id}) => id === keyID);
     const newGameList = this.state.gameList.slice();
-    newGameList.push(newGame);
+    
+    if(!newGameList.some((element) => element.id == newGame.id)) {
+      newGameList.push(newGame);
+      this.setState({
+        gameList: newGameList
+      })
 
+    }
 
     // const updatedList = this.state.list.concat(response.result);
-    this.setState({
-      gameList: newGameList
-    })
   }
 
   toDeleteFromList = (gameListKey) => {
