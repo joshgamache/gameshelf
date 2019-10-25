@@ -14,7 +14,7 @@ const Header = () => {
 					<div className="navbar-end">
 						<p className="navbar-item" onClick={() => refreshPage()}>Reset</p>
 						<span className="navbar-item">
-							<a href="http://www.github.com/Infiniwild/gameshelf" className="button is-primary is-inverted">
+							<a href="http://www.github.com/Infiniwild/gameshelf" className="button is-dark is-inverted">
 								<span className="icon">
 									<i className="fab fa-github"></i>
 								</span>
@@ -27,7 +27,7 @@ const Header = () => {
 		</div>
 		<div className="hero-body">
 			<div className="container">
-				<h1 className="title">Get your shelf together</h1>
+				<h1 className="title">Get your shelf together!</h1>
 				<h2 className="subtitle">A board game shelf visualizer by <strong><a href="http://www.jgamache.ca">Josh Gamache</a></strong></h2>
 			</div>
 		</div>

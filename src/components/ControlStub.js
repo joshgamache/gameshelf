@@ -24,7 +24,7 @@ class ControlStub extends React.Component {
     
     return (
       <div>
-        <h3 className="title">Full shelf</h3>
+        <h4 className="title">Full shelf</h4>
         <form>
           <div className="field is-grouped is-grouped-centered is-horizontal">
             <label className="label">

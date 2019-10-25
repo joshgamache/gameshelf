@@ -8,7 +8,7 @@ const SearchResults = (props) => {
 			<div className="buttons">
 				{
 					Object.keys(props.games).map((keyName, i) => {
-						return(<LoaderButton key={props.games[keyName].id} isLoading={props.loadingList.some((element) => element === props.games[keyName].id)} onClick={() => props.onClick(props.games[keyName].id)}>
+						return(<LoaderButton key={props.games[keyName].id} disable={!props.games[keyName].size_depth} isLoading={props.loadingList.some((element) => element === props.games[keyName].id)} onClick={() => props.onClick(props.games[keyName].id)}>
 														<span>{props.games[keyName].name}</span>
                         </LoaderButton>);
 					})

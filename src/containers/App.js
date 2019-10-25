@@ -5,7 +5,6 @@ import Searchbox from '../components/Searchbox.js';
 import GameList from '../components/GameList.js';
 import games from "../assets/stubData.json" // for basic testing
 import sGames from "../assets/bgaSearchStub.json" // for search testing
-// import StubList from "../components/selectionTestStub";
 import Header from "../containers/Header"
 import SearchColumn from "../containers/SearchColumn"
 import MainColumn from "../containers/MainColumn"
@@ -24,6 +23,7 @@ class App extends Component {
       newGame: {},
       searchResults: [],
       loadingList: [],
+      unableToAddToShelf: [],
     }
   }
 
@@ -37,38 +37,31 @@ class App extends Component {
     });
   }
 
-//TODO: I'm pretty sure this is the wrong way to do this...but it works for now. FIX IT!
-  toAddClick = (keyID) => {
-    const newGameList = this.state.gameList.slice();
-    newGameList.push(this.state.allGames.find(({id}) => id === keyID));
-
-    this.setState({
-      gameList: newGameList
-    })
-  }
-
-  // TODO: Dedup this, there shouldn't be two functions doing esentially the same thing!
-
   toAddFromSearchClick = (keyID) => {
     const newGame = this.state.searchResults.find(({id}) => id === keyID);
     const newGameList = this.state.gameList.slice();
-
     let updateLoadingList = this.state.loadingList.slice();
+    let updateUnableToAddToShelf = this.state.unableToAddToShelf.slice();
 
     if(!newGameList.some((element) => element.id === newGame.id)) {
       newGameList.push(newGame);
-      updateLoadingList.push(keyID);
+      if(newGame.size_depth || newGame.size_height || newGame.size_height){
+        updateLoadingList.push(keyID)
+      } else {
+        updateUnableToAddToShelf.push(keyID)
+      }
       this.setState({
         loadingList: updateLoadingList,
         gameList: newGameList,
+        unableToAddToShelf: updateUnableToAddToShelf,
       })
     }
-    setTimeout(() => {
-      updateLoadingList = updateLoadingList.filter((element) => element === keyID);
-      this.setState({
-        loadingList: updateLoadingList,
-      })
-    }, 5000)           
+    // setTimeout(() => {
+    //   updateLoadingList = updateLoadingList.filter((element) => element === keyID);
+    //   this.setState({
+    //     loadingList: updateLoadingList,
+    //   })
+    // }, 5000)           
   }
 
   removeGameFromLoadingList = (keyID) => {
@@ -123,7 +116,7 @@ class App extends Component {
   }
 
   render() {
-    const {gameList, searchResults, loadingList} = this.state;
+    const {gameList, searchResults, loadingList, unableToAddToShelf} = this.state;
     return (
       <div className="App">
         <Header/>
@@ -134,7 +127,7 @@ class App extends Component {
               <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
               {searchResults !== "" &&
                 <div className="container">
-                  <SearchResults games={searchResults} loadingList={loadingList} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
+                  <SearchResults games={searchResults} loadingList={loadingList} canNotAdd={unableToAddToShelf} onClick={(gameKeyId) => this.toAddFromSearchClick(gameKeyId)} />
                 </div>
               }
             </SearchColumn>

@@ -8,6 +8,7 @@ const Searchbox = ({ searchField, searchChange, executeSearch}) => {
       <div className="field has-addons">
         <div className="control">
           <input className="input" type="text" id="searchInput" placeholder="e.g Scythe" onChange={searchChange}/>
+          <p class="help">Leave blank to see popular games</p>
         </div>
         <div className="control">
           <button className="button is-info" onClick={executeSearch}>Search BGA</button>
