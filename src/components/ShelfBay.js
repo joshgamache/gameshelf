@@ -3,15 +3,6 @@ import React from 'react';
 import ImagePalette from 'react-image-palette'
 import GameBoxInShelfBay from '../components/GameboxInShelfBay'
 
-// TODO:
-// Replace local variables with incoming props.
-// Will need:
-// - Dimensions of the individual shelf (w, h)
-// - An array of games to put on that shelf (name, x, y, z, color)
-// const determineBoxColour = (imgURL) => {
-//   let v = new Vibrant(imgURL)
-//   v.getPalette().then((palette) => palette.Vibrant.rgb)
-// }
 const corsUrl = "https://cors-anywhere.herokuapp.com/"; //Used to allow cross-origin requests. Try and replace this with something sustainable in the future. 
 
 
@@ -68,7 +59,6 @@ const ShelfBay = (props) => {
     width: `${shelfDimensions.w}px`,
     height: `${shelfDimensions.h}px`,
     flexWrap: "wrap-reverse",
-    // flexWrap: "nowrap",
     alignContent: "flex-start",
     alignItems: "flex-start",
     background: "LightGrey",

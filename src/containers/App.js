@@ -56,12 +56,6 @@ class App extends Component {
         unableToAddToShelf: updateUnableToAddToShelf,
       })
     }
-    // setTimeout(() => {
-    //   updateLoadingList = updateLoadingList.filter((element) => element === keyID);
-    //   this.setState({
-    //     loadingList: updateLoadingList,
-    //   })
-    // }, 5000)           
   }
 
   removeGameFromLoadingList = (keyID) => {
@@ -82,14 +76,10 @@ class App extends Component {
     }
   }
 
-  // this.todos = this.todos.filter(function (candidate) {
-  //   return candidate !== todo;
-  // });
 
   searchBGAapi = (event) => {
     event.preventDefault(); // prevents the form from submitting when button is clicked, we don't want a page reload
 
-    // let searchList = [];
     const newItem = this.state.searchField;
 
     // Check if there's anything in the input first

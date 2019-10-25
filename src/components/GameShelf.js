@@ -72,8 +72,6 @@ class GameShelf extends React.Component {
 
     // TODO: Make the size of the shelves themselves variable. This may prevent the shelf from overflowing the container.
 
-    // console.log("window is " + window.innerWidth)
-
     const FullShelfStylesheet = {
       display:"grid",
       // justifyContent:"center",
@@ -81,7 +79,6 @@ class GameShelf extends React.Component {
       gridTemplateColumns: `repeat(${this.state.shelfColumns}, ${this.state.shelfWidth}px)`,
       gridTemplateRows: `repeat(${this.state.shelfRows}, ${this.state.shelfHeight}px)`,
       gap: "5px 5px",
-      // background: FullShelfObject.fullShelfColor,
       boxSizing: "border-box",
       width: "100%",
       maxWidth: "914px",
@@ -116,14 +113,11 @@ class GameShelf extends React.Component {
     const shelfTotalWidth = (parseInt(FullShelfObject.individualShelfWidth) + 20) * FullShelfObject.numShelvesWide;
       if(shelfTotalWidth >= 914){
         scaleValue = scaleFactor(shelfTotalWidth, 914);
-        // console.log(`Blarg UP ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
       } else {
         scaleValue = scaleFactor(shelfTotalWidth, 914);
-        // console.log(`Blarg Down ${shelfTotalWidth}, ${parseInt(FullShelfObject.individualShelfWidth) + 20}, ${this.props.sizeMeSize} ${scaleValue}`);
       }
 
     FullShelfStylesheet.width = `${shelfTotalWidth * scaleValue}px`;
-      // console.log(FullShelfStylesheet.width)
     let scaleString = `scale(${scaleValue})`
       // End of scaling section
 
@@ -149,11 +143,6 @@ class GameShelf extends React.Component {
         </ul>
       )
     }
-
-    // const test = () => {
-    //   console.log(BoxSizeFitter(this.props.games, {width: this.state.shelfWidth, height: this.state.shelfHeight}))
-    // }
-
 
     return (
       <div className="box">

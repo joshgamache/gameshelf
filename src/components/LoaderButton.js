@@ -3,7 +3,6 @@ import React from 'react';
 class LoaderButton extends React.Component {
 
 	render() {
-		// const { isLoading } = this.props.isLoading;
 
 		return(
 			<button className={this.props.isLoading ? 'button is-loading is-warning' : 'button'} disabled={this.props.disable} onClick={() => this.props.onClick()} title={this.props.disable ? "Can't add a game without dimensions" : "Add the game to your shelf"}>
