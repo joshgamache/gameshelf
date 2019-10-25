@@ -1,11 +1,13 @@
 import React from "react"
+import headImage from '../assets/christopher-paul-high-Ky-yCucr8cY-unsplash.jpg'
 
 const refreshPage = () => window.location.reload();
 
 const Header = () => {
 	return (
 
-	<header className="hero is-small is-primary is-bold">
+	<header className="hero is-dark is-bold has-background">
+	<img className="hero-background is-transparent" src={headImage} alt="Header of a board game scene" />
 		<div className="hero-head">
 			<nav className="navbar">
 				<div className="navbar-menu">
