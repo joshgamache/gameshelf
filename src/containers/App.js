@@ -112,7 +112,7 @@ class App extends Component {
         <Header/>
         <section className="section">
           <div className="container">
-            <div className="columns">
+            <div className="columns is-desktop">
             <SearchColumn>
               <Searchbox searchChange={this.onSearchChange} executeSearch={this.searchBGAapi}/>
               {searchResults !== "" &&

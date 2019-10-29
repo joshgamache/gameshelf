@@ -4,15 +4,10 @@ import ControlStub from "./ControlStub"
 import BoxSizeFitter from "../components/BoxSizeFitter";
 
 
-// TODO:
-// Need to pass in props
-// Need to determine logic to decide where games go (ie. alphabetical) and when they go into each individual shelf
-// - include logic in this function
-
 //Use the following code to better handle window sizing, replacing window.innerHeight
 //constructor(props) {
 //  super(props);
-//  this.state = { width: 0, height: 0 };
+//  this.state = { };
 //  this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 //}
 //
@@ -37,8 +32,12 @@ class GameShelf extends React.Component {
   // The following is lifted up from ControlStub, to be used in GameShelf:
   constructor(props) {
     super(props);
-    this.state = {...this.props.sizing};
+    this.state = {...this.props.sizing, 
+      windowWidth: 0, 
+      windowHeight: 0,
+    };
     this.handleFormChange = this.handleFormChange.bind(this);
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   handleFormChange(event) {
@@ -48,6 +47,19 @@ class GameShelf extends React.Component {
     this.setState({
       [name] : value
     });
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight });
   }
 
 
@@ -85,20 +97,24 @@ class GameShelf extends React.Component {
     }
 
     // Not particularly reactive, but will work for now
-    if(window.innerWidth <= shelfBreakpoints.mobile){
-      FullShelfStylesheet.maxWidth = "632px"
-    } else if(window.innerWidth >= shelfBreakpoints.tablet && window.innerWidth <= shelfBreakpoints.desktop){
-      FullShelfStylesheet.maxWidth = "632px"
-    } else if(window.innerWidth > shelfBreakpoints.desktop && window.innerWidth <= shelfBreakpoints.widescreen){
-      FullShelfStylesheet.maxWidth = "626px"
-    } else if(window.innerWidth > shelfBreakpoints.widescreen && window.innerWidth >= shelfBreakpoints.fullhd){
-      FullShelfStylesheet.maxWidth = "770px"
-    } else if(window.inneWidth > shelfBreakpoints.fullhd){
-      FullShelfStylesheet.maxWidth = "914px"
+    if(this.state.windowWidth < shelfBreakpoints.mobile){
+      FullShelfStylesheet.maxWidth = "100%";
+      FullShelfStylesheet.width = "632px"
+    } else if(this.state.windowWidth >= shelfBreakpoints.tablet && this.state.windowWidth < shelfBreakpoints.desktop){
+      FullShelfStylesheet.maxWidth = "100%";
+      FullShelfStylesheet.width = "632px"
+    } else if(this.state.windowWidth >= shelfBreakpoints.desktop && this.state.windowWidth < shelfBreakpoints.widescreen){
+      FullShelfStylesheet.maxWidth = "100%";
+      FullShelfStylesheet.width = "770px"
+    } else if(this.state.windowWidth >= shelfBreakpoints.widescreen && this.state.windowWidth < shelfBreakpoints.fullhd){
+      FullShelfStylesheet.maxWidth = "770px";
+      FullShelfStylesheet.width = "100%"
+    } else if(this.state.windowWidth >= shelfBreakpoints.fullhd){
+      FullShelfStylesheet.maxWidth = "914px";
+      FullShelfStylesheet.width = "100%"
     }
 
-    // console.log("maxWidth is " + FullShelfStylesheet.maxWidth)
-
+    console.log(`${this.state.windowWidth}, ${FullShelfStylesheet.maxWidth}, ${FullShelfStylesheet.width}`)
 
     const eachShelfStylesheet = {
       boxSizing: "border-box",

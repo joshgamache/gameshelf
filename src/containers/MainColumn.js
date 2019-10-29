@@ -16,7 +16,7 @@ class MainColumn extends React.Component{
 
 	render() {
 		return (
-			<div className="column is-three-quarter">
+			<div className="column is-three-quarters-desktop">
 				<div className="message">
 					{/* <a href="#"> */}
 						<div className="message-header">
@@ -28,7 +28,7 @@ class MainColumn extends React.Component{
 					{/* </a> */}
 					<div className="message-body">
 							<div style={{width: "100%", maxWidth: "964px"}}>
-									<GameShelf games={this.props.passThru} removeFromLoading={this.props.removeFromLoading} sizing={this.state.sizing} style={{margin: "0 auto"}} />
+									<GameShelf games={this.props.passThru} removeFromLoading={this.props.removeFromLoading} sizing={this.state.sizing} />
 							</div>
 						<hr />
 					</div>
