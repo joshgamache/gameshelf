@@ -114,8 +114,6 @@ class GameShelf extends React.Component {
       FullShelfStylesheet.width = "100%"
     }
 
-    console.log(`${this.state.windowWidth}, ${FullShelfStylesheet.maxWidth}, ${FullShelfStylesheet.width}`)
-
     const eachShelfStylesheet = {
       boxSizing: "border-box",
       margin: "0",
