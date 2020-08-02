@@ -11,7 +11,7 @@ import MainColumn from "../containers/MainColumn"
 import SearchResults from '../components/SearchResults';
 
 // const stubSearchURI = "http://localhost:3000/stubData.json"; // Use this as a test ONLY when BGA is unreachable
-const searchURI = "https://www.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
+const searchURI = "https://api.boardgameatlas.com/api/search?client_id=" + process.env.REACT_APP_BGA_APIKEY;
 
 class App extends Component {
   constructor() {
