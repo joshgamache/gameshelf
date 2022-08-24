@@ -16,7 +16,7 @@ const Header = () => {
 						<div className="navbar-end">
 							<a role="button" className="navbar-item" aria-label="refresh page" onClick={() => refreshPage()}>Reset</a>
 							<span className="navbar-item">
-								<a href="http://www.github.com/Infiniwild/gameshelf" className="button is-dark is-inverted">
+								<a href="http://www.github.com/joshgamache/gameshelf" className="button is-dark is-inverted">
 									<span className="icon">
 										<i className="fab fa-github"></i>
 									</span>
